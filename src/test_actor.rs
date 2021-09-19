@@ -19,12 +19,16 @@ pub struct TestActor {
 }
 
 impl TestActor {
-    pub fn start(parent_ref: &SupervisorRef, cam_id: String, test_redundancy: usize) -> Result<Self, ()> {
+    pub fn start(
+        parent_ref: &SupervisorRef,
+        cam_id: String,
+        test_redundancy: usize,
+    ) -> Result<Self, ()> {
         let supervisor_ref = parent_ref
             .supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
             .map_err(|_| {})?;
         let test_redundancy = test_redundancy.clone();
-        
+
         let _children_ref = supervisor_ref
             .children(move |children| {
                 children
@@ -58,8 +62,13 @@ impl TestActor {
                                 let nats = Distributor::named("publisher_actor");
                                 nats.tell_one(msg).expect("Can't send the message!");
 
+                                if sequence > 10 {
+                                    break;
+                                }
+
                                 sequence += 1;
                             }
+                            Ok(())
                         }
                     })
             })
