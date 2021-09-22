@@ -1,8 +1,9 @@
 use bastion::prelude::*;
-use log::info;
+use log::{info, warn};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use smol::{future, Executor, Timer};
+use std::time::SystemTime;
 use std::{
     ops::AddAssign,
     sync::{Arc, Mutex},
@@ -22,7 +23,7 @@ pub struct EngineRequestPublish {
 }
 
 impl PublisherActor {
-    pub fn start(parent_ref: &SupervisorRef, url: String) -> Result<Self, ()> {
+    pub fn start(parent_ref: &SupervisorRef, url: String, name: String) -> Result<Self, ()> {
         let supervisor_ref = parent_ref
             .supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
             .map_err(|_| {})?;
@@ -108,11 +109,33 @@ impl PublisherActor {
                                         //println!("{:?}", message.topic);
                                         let payload: Value =
                                             serde_json::from_slice(&message.payload).unwrap();
-                                        // info!(
-                                        //     "[BEFORE] Cam id {} with sequence {}",
-                                        //     payload["cam_id"], payload["timestamp"]
-                                        // );
-                                        // if message.payload.len() <= 1024 * 1024 {
+                                        let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH)
+                                            {
+                                                Ok(n) => n.as_millis(),
+                                                Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                                            };
+                                        let timestampstr = payload["timestamp"].as_str().unwrap().to_string();                                                   
+                                        let timestamp =  timestampstr.parse::<u128>().unwrap();
+                                        
+                                        let delay = now - timestamp;
+                                        if delay > 1000 {
+
+                                            warn!(
+                                                "[BEFORE PUBLISH][LongDelay] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}",
+                                                payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(),delay
+                                            );
+
+                                        }
+                                        else {
+
+                                            info!(
+                                                "[BEFORE PUBLISH][OK] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}",
+                                                payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(),delay
+                                            );
+
+                                        }
+                                        
+                                         if message.payload.len() <= 1024 * 1024 {
                                         run!(async move {
                                             match pub_client
                                                 .as_ref()
@@ -123,9 +146,31 @@ impl PublisherActor {
                                             {
                                                 Ok(_) => {
                                                     // info!(
-                                                    //     "[AFTER] Cam id {} with sequence {}",
-                                                    //     payload["cam_id"], payload["timestamp"]
+                                                    //     "[Published] Cam id: {}, payload length: {}",
+                                                    //     payload["cam_id"], message.payload.len()
                                                     // );
+                                                    let now1 = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH)
+                                                    {
+                                                        Ok(n) => n.as_millis(),
+                                                        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                                                    };
+                                                  
+                                                    let delay1 = now1 - now;
+
+                                                    if delay1 > 1000 {
+                                                        warn!(
+                                                            "[Published][LongDelay] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}, Payload length: {}",
+                                                            payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(), delay1, message.payload.len()
+                                                        );
+                                                    }
+                                                    else {
+
+                                                        info!(
+                                                            "[Published][OK] Cam id: {} Sequence: {}, Timestamp: {}, Delay: {}, Payload length: {}",
+                                                            payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(), delay1, message.payload.len()
+                                                        );
+
+                                                    }
                                                     // println!(
                                                     //     "count: {}",
                                                     //     *sequence.lock().unwrap()
@@ -135,12 +180,12 @@ impl PublisherActor {
                                                 Err(err) => {}
                                             };
                                         });
-                                        // } else {
-                                        //     println!(
-                                        //         "[Publisher]: Over 1 MB payload: {}",
-                                        //         message.topic
-                                        //     );
-                                        // }
+                                        } else {
+                                            println!(
+                                                "[Publisher]: Over 1 MB payload: {}",
+                                                message.topic
+                                            );
+                                        }
                                     });
                             }
                         }

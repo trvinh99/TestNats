@@ -1,5 +1,6 @@
 mod publisher_actor;
 mod test_actor;
+mod throttle;
 
 use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
@@ -27,23 +28,31 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    let url = "10.50.13.185:4222".to_string();
+    //let url = "10.50.13.185:4222".to_string();
+    //let url = "10.50.13.181:4222".to_string();
+    let url = "dev.lexray.com:60064".to_string();
     let test_redundancy = 1;
+    let max_msg = 300;
+    let max_cams = 24;
+    let fps = 5;
 
-    simple_logging::log_to_file("src/log.txt", LevelFilter::Info).unwrap();
+    simple_logging::log_to_file("logs/log.txt", LevelFilter::Info).unwrap();
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
         .expect("could not create a supervisor");
+    
+    for n in 0..test_redundancy {
+        let name =  format!("publisher_actor_{}", n);
+        let _ = PublisherActor::start(&parent_ref, url, name);
+        sleep(std::time::Duration::from_secs(1));
+    }
 
-    let _ = PublisherActor::start(&parent_ref, url);
-    sleep(std::time::Duration::from_secs(4));
-
-    for i in 1..=24 {
+    for i in 1..=max_cams {
         let parent_ref = parent_ref.clone();
         run!(async move {
             let cam_id = format!("cam_{}", i);
             println!("{}", cam_id);
-            let _ = TestActor::start(&parent_ref, cam_id, test_redundancy);
-            sleep(std::time::Duration::from_millis(100));
+            let _ = TestActor::start(&parent_ref, cam_id, test_redundancy, max_msg, fps);
+            sleep(std::time::Duration::from_millis(10));
         });
     }
 
