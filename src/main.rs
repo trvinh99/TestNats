@@ -1,5 +1,7 @@
+mod config;
 mod publisher_actor;
 mod test_actor;
+mod throttle;
 
 use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
@@ -24,26 +26,44 @@ use tokio::task;
 use crate::test_actor::TestActor;
 
 fn main() {
+    let config = config::Config::from_args(std::env::args()).unwrap();
+
     Bastion::init();
     Bastion::start();
 
-    let url = "10.50.13.185:4222".to_string();
-    let test_redundancy = 1;
+    //let url = "10.50.13.185:4222".to_string();
+    //let url = "10.50.13.181:4222".to_string();
+    let url = config.get_nats_url();
+    let test_redundancy = config.get_redundancy();
+    let publish_actors = config.get_publisher_actors();
+    let max_msg = config.get_max_msg();
+    let max_cams = config.get_max_cams();
+    let fps = config.get_fps();
 
-    simple_logging::log_to_file("src/log.txt", LevelFilter::Info).unwrap();
+    simple_logging::log_to_file("logs/log.txt", LevelFilter::Info).unwrap();
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
         .expect("could not create a supervisor");
 
-    let _ = PublisherActor::start(&parent_ref, url);
-    sleep(std::time::Duration::from_secs(4));
+    for n in 0..publish_actors {
+        let name = format!("publish_actor_{}", n);
+        let _ = PublisherActor::start(&parent_ref, url.clone(), name);
+        sleep(std::time::Duration::from_millis(10));
+    }
 
-    for i in 1..=24 {
+    for i in 1..=max_cams {
         let parent_ref = parent_ref.clone();
         run!(async move {
             let cam_id = format!("cam_{}", i);
             println!("{}", cam_id);
-            let _ = TestActor::start(&parent_ref, cam_id, test_redundancy);
-            sleep(std::time::Duration::from_millis(100));
+            let _ = TestActor::start(
+                &parent_ref,
+                cam_id,
+                test_redundancy,
+                max_msg,
+                fps,
+                publish_actors,
+            );
+            sleep(std::time::Duration::from_millis(10));
         });
     }
 

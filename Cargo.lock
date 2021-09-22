@@ -7,6 +7,8 @@ name = "En-DecryptRust"
 version = "0.1.0"
 dependencies = [
  "bastion",
+ "dashmap",
+ "fastrand",
  "log",
  "nats",
  "openssl",

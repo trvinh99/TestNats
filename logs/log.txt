@@ -1,0 +1,2064 @@
+[00:00:10.003] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.004] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.004] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.004] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.004] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.004] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.004] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.005] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.005] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.005] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_1, Total msg: 300
+[00:00:10.015] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.015] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.016] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.016] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.016] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.016] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.016] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.016] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.017] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.017] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_2, Total msg: 300
+[00:00:10.028] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.029] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.029] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.029] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.029] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.030] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.030] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.030] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.031] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.031] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_3, Total msg: 300
+[00:00:10.041] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.041] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.041] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.042] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_4, Total msg: 300
+[00:00:10.052] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.053] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_5, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.064] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.065] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.065] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.065] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_6, Total msg: 300
+[00:00:10.075] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.075] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.075] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.075] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.076] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.076] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.076] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.076] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.076] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.076] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_7, Total msg: 300
+[00:00:10.087] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.087] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.087] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.088] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.088] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.089] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.089] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.089] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.089] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.089] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_8, Total msg: 300
+[00:00:10.100] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.101] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.102] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.102] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_9, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.113] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.114] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_10, Total msg: 300
+[00:00:10.124] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.124] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.124] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.125] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_11, Total msg: 300
+[00:00:10.135] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.135] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.136] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.136] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.136] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.136] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.136] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.136] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.137] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.137] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_12, Total msg: 300
+[00:00:10.147] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.147] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.147] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.148] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_13, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.159] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.160] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.160] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_14, Total msg: 300
+[00:00:10.171] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.171] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.172] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.172] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.172] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.172] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.173] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.173] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.173] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.173] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_15, Total msg: 300
+[00:00:10.183] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.184] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_16, Total msg: 300
+[00:00:10.204] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.204] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.205] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325683986
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.205] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.206] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.206] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.206] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_17, Total msg: 300
+[00:00:10.206] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325683986
+[00:00:10.212] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.214] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.214] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325683995
+[00:00:10.215] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325683996
+[00:00:10.217] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.217] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.217] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.217] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.218] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.218] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.218] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.218] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.218] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.218] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_18, Total msg: 300
+[00:00:10.228] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.228] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.229] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_19, Total msg: 300
+[00:00:10.239] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.240] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_20, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.251] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.252] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.252] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.252] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_21, Total msg: 300
+[00:00:10.262] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.262] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.262] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.262] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.262] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.262] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.263] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.263] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.263] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.263] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_22, Total msg: 300
+[00:00:10.274] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.274] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.274] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.274] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.275] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.275] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.275] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.275] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.275] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.275] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_23, Total msg: 300
+[00:00:10.286] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.286] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.287] (7f95ceb97440) INFO   [Starting actor] Cam id: cam_24, Total msg: 300
+[00:00:10.302] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.303] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325684085
+[00:00:10.307] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.307] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325684089
+[00:00:10.393] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.394] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325684175
+[00:00:10.404] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.405] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.411] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325684192
+[00:00:10.413] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.414] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684195
+[00:00:10.414] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.414] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.414] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684196
+[00:00:10.415] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684196
+[00:00:10.425] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684186
+[00:00:10.498] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.498] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325684280
+[00:00:10.502] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.503] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 0
+[00:00:10.504] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684285
+[00:00:10.507] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 0, Timestamp: 1632325684286
+[00:00:10.507] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.511] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684293
+[00:00:10.594] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.595] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.595] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684376
+[00:00:10.604] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.604] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684377
+[00:00:10.613] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.614] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.614] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684396
+[00:00:10.614] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.614] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.615] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.634] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684396
+[00:00:10.635] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684416
+[00:00:10.636] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684416
+[00:00:10.650] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684396
+[00:00:10.651] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684386
+[00:00:10.695] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.695] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.696] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684477
+[00:00:10.696] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684477
+[00:00:10.704] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.705] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684486
+[00:00:10.705] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 1
+[00:00:10.705] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.706] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 1, Timestamp: 1632325684488
+[00:00:10.706] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684488
+[00:00:10.724] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.725] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684506
+[00:00:10.764] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.769] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684550
+[00:00:10.784] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.785] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684566
+[00:00:10.795] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.795] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:10.795] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684577
+[00:00:10.795] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684577
+[00:00:10.804] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:10.805] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684586
+[00:00:10.814] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:10.814] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:10.815] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684596
+[00:00:10.824] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:10.824] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.824] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684596
+[00:00:10.825] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684606
+[00:00:10.825] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684606
+[00:00:10.844] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:10.845] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684627
+[00:00:10.874] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.875] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684656
+[00:00:10.894] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.895] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684676
+[00:00:10.904] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.904] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:10.905] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684686
+[00:00:10.910] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:10.915] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:10.916] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684697
+[00:00:10.924] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 2
+[00:00:10.924] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684686
+[00:00:10.924] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684697
+[00:00:10.925] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 2, Timestamp: 1632325684706
+[00:00:10.934] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:10.935] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684716
+[00:00:10.954] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.955] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684736
+[00:00:10.964] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 0
+[00:00:10.965] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 0, Timestamp: 1632325684746
+[00:00:10.984] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:10.985] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684766
+[00:00:10.995] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:10.995] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325684777
+[00:00:11.004] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:11.005] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684786
+[00:00:11.005] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:11.006] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684787
+[00:00:11.014] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.015] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325684796
+[00:00:11.015] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.016] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325684797
+[00:00:11.021] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.022] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325684804
+[00:00:11.034] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:11.035] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.035] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684816
+[00:00:11.035] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325684817
+[00:00:11.044] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.045] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325684827
+[00:00:11.046] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 0
+[00:00:11.047] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 0, Timestamp: 1632325684828
+[00:00:11.074] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 0
+[00:00:11.080] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 0, Timestamp: 1632325684861
+[00:00:11.084] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:11.085] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684866
+[00:00:11.099] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:11.099] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684881
+[00:00:11.110] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.128] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.128] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.129] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325684910
+[00:00:11.129] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325684910
+[00:00:11.129] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325684911
+[00:00:11.134] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.135] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325684916
+[00:00:11.144] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:11.144] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 0
+[00:00:11.145] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684926
+[00:00:11.145] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 0, Timestamp: 1632325684927
+[00:00:11.147] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 3
+[00:00:11.147] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 0
+[00:00:11.147] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 3, Timestamp: 1632325684929
+[00:00:11.148] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 0, Timestamp: 1632325684929
+[00:00:11.164] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:11.165] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684946
+[00:00:11.174] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 1
+[00:00:11.176] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 1, Timestamp: 1632325684956
+[00:00:11.184] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.185] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325684966
+[00:00:11.204] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.205] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325684986
+[00:00:11.214] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.215] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325684996
+[00:00:11.221] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.224] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.226] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685006
+[00:00:11.227] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.227] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.228] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685009
+[00:00:11.234] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325685009
+[00:00:11.235] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685003
+[00:00:11.244] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.248] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.249] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685030
+[00:00:11.249] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685030
+[00:00:11.254] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.255] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325685036
+[00:00:11.274] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 1
+[00:00:11.275] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 1, Timestamp: 1632325685057
+[00:00:11.284] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 1
+[00:00:11.285] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 1, Timestamp: 1632325685066
+[00:00:11.304] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.305] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325685086
+[00:00:11.314] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.321] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.322] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.322] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325685104
+[00:00:11.324] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685104
+[00:00:11.324] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.324] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 0
+[00:00:11.325] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685106
+[00:00:11.325] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 0, Timestamp: 1632325685106
+[00:00:11.327] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685104
+[00:00:11.334] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.335] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685116
+[00:00:11.344] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.344] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 1
+[00:00:11.345] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325685126
+[00:00:11.345] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 1, Timestamp: 1632325685126
+[00:00:11.354] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 4
+[00:00:11.355] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 4, Timestamp: 1632325685136
+[00:00:11.364] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 0
+[00:00:11.364] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 1
+[00:00:11.365] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 0, Timestamp: 1632325685146
+[00:00:11.366] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 1, Timestamp: 1632325685147
+[00:00:11.374] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.375] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 2
+[00:00:11.376] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325685156
+[00:00:11.378] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 2, Timestamp: 1632325685158
+[00:00:11.394] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.395] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685176
+[00:00:11.414] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.415] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685196
+[00:00:11.418] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.419] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685200
+[00:00:11.421] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.421] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685203
+[00:00:11.427] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.427] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685209
+[00:00:11.434] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.434] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.435] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685216
+[00:00:11.435] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685217
+[00:00:11.445] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.448] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685229
+[00:00:11.454] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.454] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.455] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685236
+[00:00:11.456] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685237
+[00:00:11.474] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 2
+[00:00:11.480] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 2, Timestamp: 1632325685261
+[00:00:11.484] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 2
+[00:00:11.485] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 2, Timestamp: 1632325685266
+[00:00:11.514] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.515] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685296
+[00:00:11.515] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.519] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685301
+[00:00:11.527] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.527] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685309
+[00:00:11.534] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.535] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685316
+[00:00:11.544] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.544] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.545] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685326
+[00:00:11.554] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 5
+[00:00:11.554] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685326
+[00:00:11.564] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 2
+[00:00:11.564] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 1
+[00:00:11.564] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.565] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 5, Timestamp: 1632325685346
+[00:00:11.565] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 2, Timestamp: 1632325685346
+[00:00:11.565] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.565] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 1, Timestamp: 1632325685346
+[00:00:11.565] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685347
+[00:00:11.565] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685347
+[00:00:11.574] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 2
+[00:00:11.575] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 2, Timestamp: 1632325685356
+[00:00:11.575] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 3
+[00:00:11.576] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 3, Timestamp: 1632325685358
+[00:00:11.594] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 1
+[00:00:11.595] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 1, Timestamp: 1632325685376
+[00:00:11.604] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.605] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685386
+[00:00:11.614] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.615] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685396
+[00:00:11.626] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.658] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.659] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.659] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.659] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.659] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.660] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685441
+[00:00:11.660] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685441
+[00:00:11.660] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685441
+[00:00:11.660] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685441
+[00:00:11.660] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685441
+[00:00:11.664] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.664] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685440
+[00:00:11.665] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685446
+[00:00:11.674] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.675] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685456
+[00:00:11.684] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 3
+[00:00:11.685] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 3, Timestamp: 1632325685466
+[00:00:11.716] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 3
+[00:00:11.719] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 3, Timestamp: 1632325685500
+[00:00:11.734] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.735] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685516
+[00:00:11.736] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.740] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685522
+[00:00:11.745] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.745] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685527
+[00:00:11.754] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.755] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.755] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685536
+[00:00:11.756] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685537
+[00:00:11.764] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 3
+[00:00:11.764] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.765] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 3, Timestamp: 1632325685546
+[00:00:11.765] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685546
+[00:00:11.774] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 3
+[00:00:11.775] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 3, Timestamp: 1632325685556
+[00:00:11.775] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.775] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.776] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 4
+[00:00:11.776] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 6
+[00:00:11.776] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685557
+[00:00:11.777] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 6, Timestamp: 1632325685558
+[00:00:11.777] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685558
+[00:00:11.777] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 4, Timestamp: 1632325685558
+[00:00:11.784] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 2
+[00:00:11.785] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 2, Timestamp: 1632325685566
+[00:00:11.804] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.805] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685586
+[00:00:11.814] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:11.815] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685597
+[00:00:11.825] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 2
+[00:00:11.826] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 2, Timestamp: 1632325685607
+[00:00:11.831] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:11.832] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685613
+[00:00:11.844] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.844] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.844] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:11.845] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685626
+[00:00:11.845] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685626
+[00:00:11.846] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685627
+[00:00:11.854] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.855] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685636
+[00:00:11.864] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:11.865] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685647
+[00:00:11.874] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:11.875] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685656
+[00:00:11.884] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:11.885] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685666
+[00:00:11.894] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 4
+[00:00:11.895] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 4, Timestamp: 1632325685676
+[00:00:11.896] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 4
+[00:00:11.896] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 4, Timestamp: 1632325685678
+[00:00:11.944] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:11.946] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685727
+[00:00:11.950] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:11.955] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.955] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 4
+[00:00:11.956] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685738
+[00:00:11.956] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 4, Timestamp: 1632325685738
+[00:00:11.957] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685737
+[00:00:11.964] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:11.964] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:11.964] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.965] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685746
+[00:00:11.965] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685746
+[00:00:11.965] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685747
+[00:00:11.974] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 4
+[00:00:11.974] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.975] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 7
+[00:00:11.975] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685756
+[00:00:11.976] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 4, Timestamp: 1632325685756
+[00:00:11.976] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 7, Timestamp: 1632325685757
+[00:00:11.984] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.985] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685766
+[00:00:11.987] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 3
+[00:00:11.988] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 3, Timestamp: 1632325685769
+[00:00:11.994] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 5
+[00:00:11.995] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 5, Timestamp: 1632325685776
+[00:00:12.014] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:12.015] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685796
+[00:00:12.025] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 3
+[00:00:12.026] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.026] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325685808
+[00:00:12.034] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 3, Timestamp: 1632325685807
+[00:00:12.054] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:12.055] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685836
+[00:00:12.064] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:12.064] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.065] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685846
+[00:00:12.065] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325685847
+[00:00:12.066] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.069] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.073] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325685850
+[00:00:12.074] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325685854
+[00:00:12.074] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:12.074] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685856
+[00:00:12.084] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.085] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325685866
+[00:00:12.094] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 5
+[00:00:12.095] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 5, Timestamp: 1632325685876
+[00:00:12.104] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 5
+[00:00:12.105] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 5, Timestamp: 1632325685886
+[00:00:12.114] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.115] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325685896
+[00:00:12.150] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.151] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325685933
+[00:00:12.154] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:12.154] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.155] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 5
+[00:00:12.155] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685936
+[00:00:12.155] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325685936
+[00:00:12.155] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 5, Timestamp: 1632325685937
+[00:00:12.164] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:12.165] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685946
+[00:00:12.174] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.174] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:12.174] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.175] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685956
+[00:00:12.184] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325685956
+[00:00:12.184] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325685957
+[00:00:12.189] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:12.196] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 5
+[00:00:12.196] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685978
+[00:00:12.196] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 5, Timestamp: 1632325685978
+[00:00:12.204] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 6
+[00:00:12.205] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 6, Timestamp: 1632325685986
+[00:00:12.208] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 8
+[00:00:12.209] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 8, Timestamp: 1632325685991
+[00:00:12.212] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 4
+[00:00:12.212] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 4, Timestamp: 1632325685994
+[00:00:12.226] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.226] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686008
+[00:00:12.234] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 4
+[00:00:12.235] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 4, Timestamp: 1632325686016
+[00:00:12.235] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.236] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325686017
+[00:00:12.267] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.267] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686049
+[00:00:12.267] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.268] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686049
+[00:00:12.274] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.274] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.275] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325686057
+[00:00:12.275] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325686057
+[00:00:12.284] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.284] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.285] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686066
+[00:00:12.285] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325686066
+[00:00:12.294] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.295] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686076
+[00:00:12.304] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 6
+[00:00:12.305] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 6, Timestamp: 1632325686086
+[00:00:12.314] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.315] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686096
+[00:00:12.324] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 6
+[00:00:12.325] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 6, Timestamp: 1632325686107
+[00:00:12.354] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.355] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325686136
+[00:00:12.364] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.364] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.365] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686146
+[00:00:12.365] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686146
+[00:00:12.374] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 6
+[00:00:12.375] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 6, Timestamp: 1632325686156
+[00:00:12.375] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.376] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325686157
+[00:00:12.377] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.381] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686162
+[00:00:12.394] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 6
+[00:00:12.395] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.395] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 6, Timestamp: 1632325686177
+[00:00:12.395] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686177
+[00:00:12.404] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.405] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325686186
+[00:00:12.414] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.415] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325686196
+[00:00:12.424] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 5
+[00:00:12.424] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 7
+[00:00:12.424] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 9
+[00:00:12.426] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.426] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 9, Timestamp: 1632325686207
+[00:00:12.426] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686208
+[00:00:12.434] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 5, Timestamp: 1632325686206
+[00:00:12.434] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 7, Timestamp: 1632325686207
+[00:00:12.439] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.445] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686227
+[00:00:12.454] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 5
+[00:00:12.455] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 5, Timestamp: 1632325686236
+[00:00:12.467] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.468] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686249
+[00:00:12.474] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.475] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686256
+[00:00:12.484] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.485] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686266
+[00:00:12.491] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.493] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686274
+[00:00:12.494] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.494] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.494] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.495] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686276
+[00:00:12.495] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686276
+[00:00:12.504] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686277
+[00:00:12.514] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 7
+[00:00:12.514] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.515] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686296
+[00:00:12.515] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 7, Timestamp: 1632325686296
+[00:00:12.534] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 7
+[00:00:12.535] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 7, Timestamp: 1632325686316
+[00:00:12.564] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.565] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686346
+[00:00:12.574] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 7
+[00:00:12.574] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.575] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 7, Timestamp: 1632325686356
+[00:00:12.576] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686356
+[00:00:12.584] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 7
+[00:00:12.585] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 7, Timestamp: 1632325686366
+[00:00:12.594] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.594] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.594] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.595] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686376
+[00:00:12.595] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686376
+[00:00:12.595] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686377
+[00:00:12.604] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.605] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686386
+[00:00:12.614] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.615] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686396
+[00:00:12.624] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.625] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686407
+[00:00:12.626] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 6
+[00:00:12.626] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:12.626] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686408
+[00:00:12.634] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 8
+[00:00:12.635] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 8, Timestamp: 1632325686416
+[00:00:12.639] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.640] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686422
+[00:00:12.644] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 6, Timestamp: 1632325686408
+[00:00:12.644] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 10
+[00:00:12.645] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 10, Timestamp: 1632325686426
+[00:00:12.654] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 6
+[00:00:12.655] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 6, Timestamp: 1632325686436
+[00:00:12.667] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.684] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:12.685] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686466
+[00:00:12.694] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.694] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.695] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686476
+[00:00:12.695] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686476
+[00:00:12.700] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.704] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686449
+[00:00:12.706] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686486
+[00:00:12.714] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.714] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686496
+[00:00:12.714] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.714] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.715] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686496
+[00:00:12.715] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686496
+[00:00:12.729] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 8
+[00:00:12.729] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 8, Timestamp: 1632325686511
+[00:00:12.744] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 8
+[00:00:12.745] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 8, Timestamp: 1632325686526
+[00:00:12.764] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:12.769] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686551
+[00:00:12.784] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 8
+[00:00:12.785] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 8, Timestamp: 1632325686566
+[00:00:12.794] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.795] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686576
+[00:00:12.804] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.804] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:12.804] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.805] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686586
+[00:00:12.805] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686586
+[00:00:12.805] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686587
+[00:00:12.814] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 8
+[00:00:12.815] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 8, Timestamp: 1632325686596
+[00:00:12.824] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.824] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.825] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686606
+[00:00:12.826] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686607
+[00:00:12.826] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.826] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686608
+[00:00:12.834] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:12.835] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325686617
+[00:00:12.836] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 7
+[00:00:12.836] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 7, Timestamp: 1632325686618
+[00:00:12.844] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 9
+[00:00:12.844] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:12.844] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 7
+[00:00:12.845] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 9, Timestamp: 1632325686626
+[00:00:12.845] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686626
+[00:00:12.845] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 7, Timestamp: 1632325686627
+[00:00:12.854] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 11
+[00:00:12.855] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 11, Timestamp: 1632325686636
+[00:00:12.891] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.892] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686673
+[00:00:12.894] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:12.895] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325686676
+[00:00:12.904] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:12.904] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:12.905] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686686
+[00:00:12.905] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686686
+[00:00:12.909] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:12.915] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686697
+[00:00:12.924] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:12.926] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686707
+[00:00:12.927] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 9
+[00:00:12.928] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 9, Timestamp: 1632325686710
+[00:00:12.934] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:12.935] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686716
+[00:00:12.954] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:12.954] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 9
+[00:00:12.955] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686736
+[00:00:12.955] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 9, Timestamp: 1632325686736
+[00:00:12.984] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:12.989] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325686771
+[00:00:12.994] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 9
+[00:00:12.994] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:12.995] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 9, Timestamp: 1632325686776
+[00:00:12.995] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686776
+[00:00:13.004] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 9
+[00:00:13.004] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.005] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 9, Timestamp: 1632325686786
+[00:00:13.005] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325686786
+[00:00:13.014] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:13.015] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686796
+[00:00:13.024] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:13.026] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686807
+[00:00:13.034] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:13.035] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686816
+[00:00:13.044] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.045] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325686826
+[00:00:13.054] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:13.054] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:13.054] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 8
+[00:00:13.055] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686836
+[00:00:13.055] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.056] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325686837
+[00:00:13.064] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 10
+[00:00:13.065] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686836
+[00:00:13.065] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 8, Timestamp: 1632325686837
+[00:00:13.065] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 10, Timestamp: 1632325686847
+[00:00:13.074] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 8
+[00:00:13.074] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 12
+[00:00:13.075] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 8, Timestamp: 1632325686856
+[00:00:13.075] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 12, Timestamp: 1632325686857
+[00:00:13.094] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.099] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:13.100] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686881
+[00:00:13.107] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325686881
+[00:00:13.114] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.114] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:13.114] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325686896
+[00:00:13.115] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325686896
+[00:00:13.115] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.120] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325686902
+[00:00:13.133] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 10
+[00:00:13.134] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 10, Timestamp: 1632325686915
+[00:00:13.134] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.135] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325686916
+[00:00:13.144] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.146] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325686926
+[00:00:13.164] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 10
+[00:00:13.165] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 10, Timestamp: 1632325686946
+[00:00:13.184] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.185] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325686966
+[00:00:13.204] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.204] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.205] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 10
+[00:00:13.205] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325686986
+[00:00:13.206] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325686987
+[00:00:13.206] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 10, Timestamp: 1632325686987
+[00:00:13.214] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 10
+[00:00:13.215] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 10, Timestamp: 1632325686996
+[00:00:13.224] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.225] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.225] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687006
+[00:00:13.226] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325687007
+[00:00:13.234] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.260] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.260] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:13.261] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325687042
+[00:00:13.261] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.261] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.261] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 11
+[00:00:13.261] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325687042
+[00:00:13.261] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325687043
+[00:00:13.261] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687043
+[00:00:13.263] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325687042
+[00:00:13.274] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 13
+[00:00:13.274] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.275] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 11, Timestamp: 1632325687056
+[00:00:13.275] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 13, Timestamp: 1632325687056
+[00:00:13.275] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687056
+[00:00:13.286] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 9
+[00:00:13.289] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 9, Timestamp: 1632325687071
+[00:00:13.294] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 9
+[00:00:13.295] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 9, Timestamp: 1632325687076
+[00:00:13.295] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.295] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687077
+[00:00:13.324] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.325] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687107
+[00:00:13.334] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.334] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.334] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.335] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325687116
+[00:00:13.335] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325687116
+[00:00:13.344] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.345] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687117
+[00:00:13.346] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687127
+[00:00:13.354] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 11
+[00:00:13.354] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.355] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 11, Timestamp: 1632325687136
+[00:00:13.355] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687136
+[00:00:13.374] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 11
+[00:00:13.375] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 11, Timestamp: 1632325687156
+[00:00:13.404] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.405] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687186
+[00:00:13.414] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 11
+[00:00:13.414] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.414] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.415] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687197
+[00:00:13.415] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 11, Timestamp: 1632325687196
+[00:00:13.415] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687197
+[00:00:13.424] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.425] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687206
+[00:00:13.434] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.434] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 11
+[00:00:13.435] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687216
+[00:00:13.435] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 11, Timestamp: 1632325687217
+[00:00:13.436] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.441] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687222
+[00:00:13.448] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.449] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687230
+[00:00:13.454] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.455] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687236
+[00:00:13.464] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 12
+[00:00:13.465] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 12, Timestamp: 1632325687246
+[00:00:13.474] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.475] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.475] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325687256
+[00:00:13.476] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687257
+[00:00:13.484] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 14
+[00:00:13.484] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.485] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 14, Timestamp: 1632325687266
+[00:00:13.485] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687266
+[00:00:13.494] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 10
+[00:00:13.495] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 10, Timestamp: 1632325687276
+[00:00:13.499] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.505] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687287
+[00:00:13.524] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 10
+[00:00:13.525] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 10, Timestamp: 1632325687306
+[00:00:13.526] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.528] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687310
+[00:00:13.534] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.535] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687316
+[00:00:13.544] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.544] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.545] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687326
+[00:00:13.554] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.554] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687326
+[00:00:13.555] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687336
+[00:00:13.564] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.565] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687346
+[00:00:13.565] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 12
+[00:00:13.566] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 12, Timestamp: 1632325687347
+[00:00:13.584] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 12
+[00:00:13.585] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 12, Timestamp: 1632325687367
+[00:00:13.605] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 12
+[00:00:13.606] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 12, Timestamp: 1632325687387
+[00:00:13.615] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.615] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687397
+[00:00:13.624] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.625] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687406
+[00:00:13.634] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 12
+[00:00:13.634] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.635] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 12, Timestamp: 1632325687416
+[00:00:13.635] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687416
+[00:00:13.636] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.646] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.646] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687428
+[00:00:13.646] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.646] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687428
+[00:00:13.647] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687428
+[00:00:13.654] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.655] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687436
+[00:00:13.664] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.665] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687446
+[00:00:13.674] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 13
+[00:00:13.675] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 13, Timestamp: 1632325687456
+[00:00:13.684] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.684] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.685] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687466
+[00:00:13.685] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687466
+[00:00:13.686] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:13.686] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687468
+[00:00:13.699] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 15
+[00:00:13.700] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 15, Timestamp: 1632325687481
+[00:00:13.724] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:13.729] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 11
+[00:00:13.729] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 11
+[00:00:13.730] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 11, Timestamp: 1632325687511
+[00:00:13.730] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 11, Timestamp: 1632325687511
+[00:00:13.734] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687511
+[00:00:13.745] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.753] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.754] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687535
+[00:00:13.754] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687536
+[00:00:13.764] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.764] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.765] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687546
+[00:00:13.765] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687546
+[00:00:13.774] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 13
+[00:00:13.774] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.774] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.775] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 13, Timestamp: 1632325687556
+[00:00:13.775] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687557
+[00:00:13.775] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687557
+[00:00:13.794] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 13
+[00:00:13.795] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 13, Timestamp: 1632325687576
+[00:00:13.815] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.816] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687597
+[00:00:13.824] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 13
+[00:00:13.825] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 13, Timestamp: 1632325687606
+[00:00:13.834] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.834] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:13.834] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.835] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687616
+[00:00:13.835] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687617
+[00:00:13.836] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.844] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687625
+[00:00:13.845] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687616
+[00:00:13.846] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 13
+[00:00:13.846] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:13.846] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 13, Timestamp: 1632325687628
+[00:00:13.846] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687628
+[00:00:13.874] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.875] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687656
+[00:00:13.884] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.885] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687666
+[00:00:13.894] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.894] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 14
+[00:00:13.895] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687676
+[00:00:13.895] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 14, Timestamp: 1632325687676
+[00:00:13.904] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:13.905] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687686
+[00:00:13.924] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:13.924] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 12
+[00:00:13.925] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325687706
+[00:00:13.925] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 12, Timestamp: 1632325687706
+[00:00:13.929] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 16
+[00:00:13.930] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 16, Timestamp: 1632325687711
+[00:00:13.932] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:13.937] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325687719
+[00:00:13.944] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 12
+[00:00:13.945] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 12, Timestamp: 1632325687726
+[00:00:13.945] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:13.947] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687729
+[00:00:13.954] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:13.955] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687736
+[00:00:13.964] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:13.965] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 14
+[00:00:13.965] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687746
+[00:00:13.965] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 14, Timestamp: 1632325687747
+[00:00:13.974] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:13.975] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687756
+[00:00:13.984] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:13.986] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687766
+[00:00:14.004] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:14.004] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 14
+[00:00:14.005] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687786
+[00:00:14.005] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 14, Timestamp: 1632325687787
+[00:00:14.024] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.025] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687806
+[00:00:14.034] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.035] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687816
+[00:00:14.044] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.044] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.045] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325687826
+[00:00:14.045] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687826
+[00:00:14.050] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:14.057] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 14
+[00:00:14.057] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.058] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 14
+[00:00:14.058] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325687840
+[00:00:14.058] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 14, Timestamp: 1632325687840
+[00:00:14.058] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 14, Timestamp: 1632325687840
+[00:00:14.060] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687839
+[00:00:14.074] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:14.075] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687856
+[00:00:14.084] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:14.084] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:14.085] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687866
+[00:00:14.085] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687866
+[00:00:14.104] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 15
+[00:00:14.105] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 15, Timestamp: 1632325687886
+[00:00:14.114] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.115] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325687896
+[00:00:14.124] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 13
+[00:00:14.125] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 13, Timestamp: 1632325687906
+[00:00:14.134] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 13
+[00:00:14.134] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.135] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 13, Timestamp: 1632325687916
+[00:00:14.135] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325687916
+[00:00:14.136] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.145] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325687927
+[00:00:14.154] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 17
+[00:00:14.155] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 17, Timestamp: 1632325687936
+[00:00:14.156] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.157] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325687938
+[00:00:14.174] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.174] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 15
+[00:00:14.175] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 15, Timestamp: 1632325687956
+[00:00:14.184] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325687956
+[00:00:14.194] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.194] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.194] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.194] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687976
+[00:00:14.195] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325687976
+[00:00:14.195] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325687976
+[00:00:14.204] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.205] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325687986
+[00:00:14.224] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 15
+[00:00:14.225] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 15, Timestamp: 1632325688007
+[00:00:14.234] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.234] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.235] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688016
+[00:00:14.235] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688016
+[00:00:14.244] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.245] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688026
+[00:00:14.250] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.264] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.264] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.264] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 15
+[00:00:14.265] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688046
+[00:00:14.265] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688047
+[00:00:14.265] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 15, Timestamp: 1632325688047
+[00:00:14.266] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325688046
+[00:00:14.274] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.275] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325688056
+[00:00:14.284] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.285] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325688066
+[00:00:14.304] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.304] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.305] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325688086
+[00:00:14.305] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 15
+[00:00:14.306] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 15, Timestamp: 1632325688087
+[00:00:14.314] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688086
+[00:00:14.324] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 16
+[00:00:14.325] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 16, Timestamp: 1632325688106
+[00:00:14.334] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 14
+[00:00:14.335] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 14, Timestamp: 1632325688116
+[00:00:14.339] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 14
+[00:00:14.340] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 14, Timestamp: 1632325688121
+[00:00:14.340] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.347] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688129
+[00:00:14.354] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.356] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688136
+[00:00:14.360] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.362] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688143
+[00:00:14.364] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 18
+[00:00:14.365] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 18, Timestamp: 1632325688146
+[00:00:14.384] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 16
+[00:00:14.385] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 16, Timestamp: 1632325688166
+[00:00:14.394] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.394] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688176
+[00:00:14.424] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.424] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.425] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.425] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688207
+[00:00:14.425] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688207
+[00:00:14.425] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688207
+[00:00:14.434] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.435] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688216
+[00:00:14.444] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 16
+[00:00:14.449] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 16
+[00:00:14.449] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.449] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 16, Timestamp: 1632325688231
+[00:00:14.449] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688231
+[00:00:14.451] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 16, Timestamp: 1632325688231
+[00:00:14.456] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.457] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.457] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688239
+[00:00:14.457] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688239
+[00:00:14.464] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.464] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.465] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688246
+[00:00:14.465] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688246
+[00:00:14.470] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.476] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688258
+[00:00:14.484] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.485] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688266
+[00:00:14.504] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.504] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 16
+[00:00:14.505] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688286
+[00:00:14.505] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 16, Timestamp: 1632325688287
+[00:00:14.514] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.515] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688296
+[00:00:14.524] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.525] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688307
+[00:00:14.534] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 17
+[00:00:14.535] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 17, Timestamp: 1632325688316
+[00:00:14.539] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 15
+[00:00:14.539] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 15, Timestamp: 1632325688321
+[00:00:14.544] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 15
+[00:00:14.545] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 15, Timestamp: 1632325688326
+[00:00:14.554] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.555] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688336
+[00:00:14.564] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.565] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688346
+[00:00:14.574] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.575] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688356
+[00:00:14.584] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 19
+[00:00:14.585] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 19, Timestamp: 1632325688366
+[00:00:14.594] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.595] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688376
+[00:00:14.604] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.604] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 17
+[00:00:14.605] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 17, Timestamp: 1632325688386
+[00:00:14.605] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688386
+[00:00:14.607] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.615] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.616] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688398
+[00:00:14.617] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688397
+[00:00:14.625] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.625] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688407
+[00:00:14.644] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.646] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688427
+[00:00:14.647] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.648] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688429
+[00:00:14.664] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 17
+[00:00:14.665] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 17, Timestamp: 1632325688446
+[00:00:14.674] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.674] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.674] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.675] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688456
+[00:00:14.675] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688457
+[00:00:14.675] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688457
+[00:00:14.676] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 17
+[00:00:14.685] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 17, Timestamp: 1632325688466
+[00:00:14.694] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.695] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688476
+[00:00:14.699] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.704] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688485
+[00:00:14.704] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.705] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688486
+[00:00:14.714] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 17
+[00:00:14.715] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 17, Timestamp: 1632325688496
+[00:00:14.724] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.724] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.725] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688506
+[00:00:14.734] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688506
+[00:00:14.744] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 18
+[00:00:14.745] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 18, Timestamp: 1632325688526
+[00:00:14.754] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:14.755] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688536
+[00:00:14.764] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:14.764] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 20
+[00:00:14.765] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688546
+[00:00:14.765] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 20, Timestamp: 1632325688546
+[00:00:14.774] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 16
+[00:00:14.774] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 16
+[00:00:14.775] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 16, Timestamp: 1632325688556
+[00:00:14.784] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 16, Timestamp: 1632325688556
+[00:00:14.794] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:14.795] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688576
+[00:00:14.804] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.805] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688586
+[00:00:14.814] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 18
+[00:00:14.815] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 18, Timestamp: 1632325688596
+[00:00:14.816] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:14.821] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688602
+[00:00:14.824] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:14.825] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:14.825] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688606
+[00:00:14.825] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688607
+[00:00:14.834] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.835] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688616
+[00:00:14.844] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.845] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688626
+[00:00:14.854] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:14.855] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688636
+[00:00:14.864] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:14.865] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.865] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688646
+[00:00:14.865] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688647
+[00:00:14.874] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:14.875] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688656
+[00:00:14.879] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 18
+[00:00:14.884] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 18
+[00:00:14.885] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 18, Timestamp: 1632325688666
+[00:00:14.890] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 18, Timestamp: 1632325688666
+[00:00:14.898] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.898] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688680
+[00:00:14.914] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.914] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 18
+[00:00:14.914] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:14.915] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688696
+[00:00:14.915] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688697
+[00:00:14.916] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.917] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688698
+[00:00:14.924] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:14.925] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 18, Timestamp: 1632325688706
+[00:00:14.925] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688707
+[00:00:14.964] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 17
+[00:00:14.965] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 17, Timestamp: 1632325688746
+[00:00:14.967] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:14.967] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325688749
+[00:00:14.968] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 19
+[00:00:14.969] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 19, Timestamp: 1632325688750
+[00:00:14.974] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 17
+[00:00:14.974] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:14.975] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 17, Timestamp: 1632325688756
+[00:00:14.975] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325688757
+[00:00:14.994] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 21
+[00:00:14.995] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 21, Timestamp: 1632325688777
+[00:00:15.005] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.006] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325688788
+[00:00:15.024] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 19
+[00:00:15.028] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:15.028] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.029] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 19, Timestamp: 1632325688810
+[00:00:15.034] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.035] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325688816
+[00:00:15.046] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.046] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688810
+[00:00:15.046] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325688811
+[00:00:15.046] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325688828
+[00:00:15.058] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:15.059] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688840
+[00:00:15.064] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:15.065] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688846
+[00:00:15.074] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:15.075] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 19
+[00:00:15.076] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 19, Timestamp: 1632325688858
+[00:00:15.079] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 19
+[00:00:15.080] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.082] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325688864
+[00:00:15.084] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 19, Timestamp: 1632325688862
+[00:00:15.084] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688857
+[00:00:15.094] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.094] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.095] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325688876
+[00:00:15.095] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325688876
+[00:00:15.104] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:15.105] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688886
+[00:00:15.124] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:15.124] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.125] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325688906
+[00:00:15.134] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:15.134] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325688907
+[00:00:15.135] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688916
+[00:00:15.144] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 19
+[00:00:15.145] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 19, Timestamp: 1632325688926
+[00:00:15.145] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.169] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 18
+[00:00:15.174] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.174] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 18
+[00:00:15.184] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.184] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325688951
+[00:00:15.184] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 18, Timestamp: 1632325688951
+[00:00:15.185] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325688956
+[00:00:15.185] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 18, Timestamp: 1632325688956
+[00:00:15.185] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325688966
+[00:00:15.194] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.195] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325688976
+[00:00:15.214] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 20
+[00:00:15.215] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 20, Timestamp: 1632325688996
+[00:00:15.228] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.229] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689011
+[00:00:15.230] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.237] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 22
+[00:00:15.237] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689019
+[00:00:15.237] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 22, Timestamp: 1632325689019
+[00:00:15.244] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.245] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689026
+[00:00:15.245] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.245] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325689027
+[00:00:15.254] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 20
+[00:00:15.255] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 20, Timestamp: 1632325689036
+[00:00:15.258] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.259] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325689040
+[00:00:15.264] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.265] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325689046
+[00:00:15.280] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 20
+[00:00:15.286] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 20, Timestamp: 1632325689067
+[00:00:15.294] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.294] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 20
+[00:00:15.294] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.295] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.295] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689076
+[00:00:15.295] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325689077
+[00:00:15.296] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 20, Timestamp: 1632325689076
+[00:00:15.297] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689077
+[00:00:15.304] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.304] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.305] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689086
+[00:00:15.305] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325689087
+[00:00:15.324] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.325] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325689107
+[00:00:15.334] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.335] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689116
+[00:00:15.344] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.345] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325689126
+[00:00:15.349] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.356] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689138
+[00:00:15.364] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 20
+[00:00:15.365] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 20, Timestamp: 1632325689146
+[00:00:15.374] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 19
+[00:00:15.375] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 19, Timestamp: 1632325689156
+[00:00:15.384] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.385] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689166
+[00:00:15.394] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 19
+[00:00:15.394] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.395] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 19, Timestamp: 1632325689176
+[00:00:15.395] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689176
+[00:00:15.404] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.406] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689187
+[00:00:15.414] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 21
+[00:00:15.415] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 21, Timestamp: 1632325689196
+[00:00:15.434] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 23
+[00:00:15.435] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 23, Timestamp: 1632325689216
+[00:00:15.438] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.439] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689220
+[00:00:15.439] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.447] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.448] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689230
+[00:00:15.449] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689230
+[00:00:15.456] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.457] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689239
+[00:00:15.458] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.459] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689240
+[00:00:15.464] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.465] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689246
+[00:00:15.474] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 21
+[00:00:15.475] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 21, Timestamp: 1632325689256
+[00:00:15.485] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 21
+[00:00:15.487] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 21, Timestamp: 1632325689267
+[00:00:15.488] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 21
+[00:00:15.496] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 21, Timestamp: 1632325689277
+[00:00:15.504] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.504] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.505] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689286
+[00:00:15.505] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689286
+[00:00:15.514] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.514] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.515] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689296
+[00:00:15.515] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689296
+[00:00:15.534] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.535] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689316
+[00:00:15.544] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.544] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.545] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689326
+[00:00:15.545] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689326
+[00:00:15.554] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.555] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689337
+[00:00:15.559] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.569] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689351
+[00:00:15.589] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 21
+[00:00:15.590] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 21, Timestamp: 1632325689371
+[00:00:15.594] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.595] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689376
+[00:00:15.604] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 20
+[00:00:15.604] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.605] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 20, Timestamp: 1632325689386
+[00:00:15.605] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689387
+[00:00:15.614] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.618] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689396
+[00:00:15.624] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 20
+[00:00:15.625] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 20, Timestamp: 1632325689406
+[00:00:15.634] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 22
+[00:00:15.635] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 22, Timestamp: 1632325689416
+[00:00:15.638] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.639] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689420
+[00:00:15.640] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.650] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689432
+[00:00:15.654] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.655] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689436
+[00:00:15.664] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.664] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 24
+[00:00:15.665] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689446
+[00:00:15.665] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 24, Timestamp: 1632325689446
+[00:00:15.674] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.675] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689456
+[00:00:15.684] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.684] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 22
+[00:00:15.685] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689466
+[00:00:15.685] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 22, Timestamp: 1632325689466
+[00:00:15.699] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 22
+[00:00:15.700] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 22, Timestamp: 1632325689481
+[00:00:15.704] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 22
+[00:00:15.705] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.708] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 22, Timestamp: 1632325689487
+[00:00:15.709] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689488
+[00:00:15.725] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.734] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.738] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.738] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689520
+[00:00:15.739] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689520
+[00:00:15.740] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.744] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.754] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.755] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 22
+[00:00:15.757] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689527
+[00:00:15.759] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.764] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.768] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689507
+[00:00:15.768] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689536
+[00:00:15.769] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 22, Timestamp: 1632325689537
+[00:00:15.769] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689546
+[00:00:15.804] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689522
+[00:00:15.805] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 21
+[00:00:15.806] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 21, Timestamp: 1632325689587
+[00:00:15.806] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689542
+[00:00:15.815] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:15.816] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689597
+[00:00:15.824] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 23
+[00:00:15.826] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 23, Timestamp: 1632325689607
+[00:00:15.830] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:15.831] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689612
+[00:00:15.840] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:15.841] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689623
+[00:00:15.844] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 21
+[00:00:15.845] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 21, Timestamp: 1632325689627
+[00:00:15.846] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:15.847] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689628
+[00:00:15.855] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:15.857] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689637
+[00:00:15.865] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.866] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689647
+[00:00:15.884] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.885] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689666
+[00:00:15.885] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.886] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689667
+[00:00:15.887] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 23
+[00:00:15.888] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 23, Timestamp: 1632325689670
+[00:00:15.901] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:15.902] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689683
+[00:00:15.904] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 25
+[00:00:15.905] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 25, Timestamp: 1632325689686
+[00:00:15.905] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:15.906] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689688
+[00:00:15.936] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:15.937] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689718
+[00:00:15.941] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 23
+[00:00:15.942] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 23, Timestamp: 1632325689724
+[00:00:15.944] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:15.945] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689727
+[00:00:15.948] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 23
+[00:00:15.949] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 23, Timestamp: 1632325689730
+[00:00:15.954] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.955] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689736
+[00:00:15.963] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.964] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 23
+[00:00:15.965] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:15.966] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689747
+[00:00:15.966] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 23, Timestamp: 1632325689746
+[00:00:15.974] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:15.976] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:15.978] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689746
+[00:00:15.980] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689759
+[00:00:15.980] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689757
+[00:00:15.989] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:15.992] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689772
+[00:00:16.015] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.016] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325689797
+[00:00:16.030] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.034] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 22
+[00:00:16.035] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 22, Timestamp: 1632325689817
+[00:00:16.044] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.045] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325689826
+[00:00:16.054] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 24
+[00:00:16.055] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 24, Timestamp: 1632325689836
+[00:00:16.066] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325689813
+[00:00:16.074] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 22
+[00:00:16.077] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.079] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325689860
+[00:00:16.084] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 22, Timestamp: 1632325689857
+[00:00:16.085] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.086] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325689868
+[00:00:16.094] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 24
+[00:00:16.095] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 24, Timestamp: 1632325689877
+[00:00:16.095] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:16.096] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:16.096] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689878
+[00:00:16.096] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689878
+[00:00:16.104] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:16.105] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.107] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689887
+[00:00:16.110] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325689887
+[00:00:16.114] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 26
+[00:00:16.115] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 26, Timestamp: 1632325689896
+[00:00:16.124] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.128] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325689907
+[00:00:16.136] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.137] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325689918
+[00:00:16.164] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:16.165] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689946
+[00:00:16.165] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 24
+[00:00:16.166] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 24, Timestamp: 1632325689947
+[00:00:16.169] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 24
+[00:00:16.170] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 24, Timestamp: 1632325689951
+[00:00:16.174] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 24
+[00:00:16.181] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 24, Timestamp: 1632325689963
+[00:00:16.183] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:16.184] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689965
+[00:00:16.184] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:16.185] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:16.185] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325689966
+[00:00:16.185] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325689967
+[00:00:16.194] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.196] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325689976
+[00:00:16.197] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.198] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325689979
+[00:00:16.219] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.220] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325690001
+[00:00:16.234] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.235] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690016
+[00:00:16.236] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.239] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690019
+[00:00:16.264] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 23
+[00:00:16.266] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 23, Timestamp: 1632325690047
+[00:00:16.274] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.275] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 25
+[00:00:16.275] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690056
+[00:00:16.277] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 25, Timestamp: 1632325690057
+[00:00:16.279] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.279] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690061
+[00:00:16.294] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 23
+[00:00:16.295] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 23, Timestamp: 1632325690076
+[00:00:16.295] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 25
+[00:00:16.297] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 25, Timestamp: 1632325690078
+[00:00:16.305] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.313] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.314] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325690095
+[00:00:16.314] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325690095
+[00:00:16.314] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.314] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.315] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690096
+[00:00:16.315] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325690096
+[00:00:16.324] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.366] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.366] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 27
+[00:00:16.366] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.366] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.367] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690148
+[00:00:16.367] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690148
+[00:00:16.367] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 27, Timestamp: 1632325690148
+[00:00:16.367] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325690149
+[00:00:16.369] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 25
+[00:00:16.370] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690149
+[00:00:16.379] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.385] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325690161
+[00:00:16.394] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.394] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 25
+[00:00:16.395] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325690176
+[00:00:16.395] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 25, Timestamp: 1632325690177
+[00:00:16.398] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 25, Timestamp: 1632325690151
+[00:00:16.400] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 25
+[00:00:16.401] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 25, Timestamp: 1632325690183
+[00:00:16.403] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.405] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690185
+[00:00:16.414] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.415] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690196
+[00:00:16.424] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.425] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325690207
+[00:00:16.438] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.440] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690221
+[00:00:16.444] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.448] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690226
+[00:00:16.452] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.453] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690234
+[00:00:16.464] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 24
+[00:00:16.465] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 24, Timestamp: 1632325690246
+[00:00:16.475] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 26
+[00:00:16.476] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 26, Timestamp: 1632325690257
+[00:00:16.484] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.490] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690268
+[00:00:16.506] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.507] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690289
+[00:00:16.513] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.518] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690296
+[00:00:16.519] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.520] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690301
+[00:00:16.521] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 26
+[00:00:16.524] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 24
+[00:00:16.525] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 26, Timestamp: 1632325690303
+[00:00:16.525] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 24, Timestamp: 1632325690307
+[00:00:16.534] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.535] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690316
+[00:00:16.535] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.535] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690317
+[00:00:16.537] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.538] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690319
+[00:00:16.544] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 28
+[00:00:16.545] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 28, Timestamp: 1632325690326
+[00:00:16.554] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.555] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690336
+[00:00:16.574] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.578] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690357
+[00:00:16.578] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 26
+[00:00:16.579] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 26, Timestamp: 1632325690361
+[00:00:16.594] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.594] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.594] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 26
+[00:00:16.595] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690376
+[00:00:16.595] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 26, Timestamp: 1632325690377
+[00:00:16.599] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.600] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690381
+[00:00:16.604] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690376
+[00:00:16.613] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 26
+[00:00:16.614] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 26, Timestamp: 1632325690395
+[00:00:16.619] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.620] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690401
+[00:00:16.634] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.641] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690417
+[00:00:16.644] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:16.646] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690428
+[00:00:16.647] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.647] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690429
+[00:00:16.675] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.677] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690457
+[00:00:16.677] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 27
+[00:00:16.678] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 27, Timestamp: 1632325690460
+[00:00:16.679] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:16.680] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690461
+[00:00:16.684] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 25
+[00:00:16.685] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 25, Timestamp: 1632325690466
+[00:00:16.694] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.695] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690476
+[00:00:16.714] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.715] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690496
+[00:00:16.734] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.734] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 27
+[00:00:16.735] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.735] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.735] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690517
+[00:00:16.735] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 27, Timestamp: 1632325690517
+[00:00:16.735] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690517
+[00:00:16.736] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690517
+[00:00:16.737] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 25
+[00:00:16.737] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 25, Timestamp: 1632325690519
+[00:00:16.744] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.747] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690527
+[00:00:16.764] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.765] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690546
+[00:00:16.774] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.775] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690556
+[00:00:16.779] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 27
+[00:00:16.779] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 27, Timestamp: 1632325690561
+[00:00:16.784] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 29
+[00:00:16.785] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 29, Timestamp: 1632325690566
+[00:00:16.794] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.794] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.794] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 27
+[00:00:16.795] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690576
+[00:00:16.795] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690576
+[00:00:16.804] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 27, Timestamp: 1632325690577
+[00:00:16.813] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 27
+[00:00:16.814] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 27, Timestamp: 1632325690595
+[00:00:16.814] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.814] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.815] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690596
+[00:00:16.815] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690597
+[00:00:16.819] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:16.820] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690601
+[00:00:16.844] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:16.845] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690626
+[00:00:16.854] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:16.855] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690636
+[00:00:16.864] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.865] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690646
+[00:00:16.875] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:16.898] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 26
+[00:00:16.898] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:16.899] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 26, Timestamp: 1632325690681
+[00:00:16.899] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690681
+[00:00:16.904] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690680
+[00:00:16.914] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 28
+[00:00:16.915] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 28, Timestamp: 1632325690696
+[00:00:16.924] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.925] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690706
+[00:00:16.934] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:16.934] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 28
+[00:00:16.935] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:16.935] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690716
+[00:00:16.935] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 28, Timestamp: 1632325690717
+[00:00:16.935] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690717
+[00:00:16.936] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:16.942] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690723
+[00:00:16.944] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:16.945] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690727
+[00:00:16.954] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:16.955] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690736
+[00:00:16.964] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 26
+[00:00:16.965] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 26, Timestamp: 1632325690746
+[00:00:16.974] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 30
+[00:00:16.975] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 30, Timestamp: 1632325690756
+[00:00:16.984] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:16.985] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690766
+[00:00:16.994] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 28
+[00:00:16.995] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 28, Timestamp: 1632325690777
+[00:00:17.004] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:17.004] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:17.004] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:17.005] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690786
+[00:00:17.005] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690786
+[00:00:17.005] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690787
+[00:00:17.005] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:17.006] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690788
+[00:00:17.013] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 28
+[00:00:17.039] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:17.039] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 28
+[00:00:17.039] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.039] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 28, Timestamp: 1632325690821
+[00:00:17.039] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690821
+[00:00:17.040] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 28, Timestamp: 1632325690821
+[00:00:17.040] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690821
+[00:00:17.054] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.055] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325690836
+[00:00:17.074] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.075] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690856
+[00:00:17.075] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.076] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690857
+[00:00:17.084] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:17.085] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690866
+[00:00:17.104] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 27
+[00:00:17.105] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 27, Timestamp: 1632325690886
+[00:00:17.110] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.117] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325690898
+[00:00:17.124] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 29
+[00:00:17.125] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 29, Timestamp: 1632325690906
+[00:00:17.134] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:17.135] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690916
+[00:00:17.144] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.144] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 29
+[00:00:17.145] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 29, Timestamp: 1632325690926
+[00:00:17.146] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.150] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.157] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325690938
+[00:00:17.164] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.164] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690928
+[00:00:17.164] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325690926
+[00:00:17.165] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325690946
+[00:00:17.174] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:17.175] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325690956
+[00:00:17.184] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.185] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325690966
+[00:00:17.194] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 31
+[00:00:17.195] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 31, Timestamp: 1632325690976
+[00:00:17.204] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 27
+[00:00:17.204] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.205] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 27, Timestamp: 1632325690987
+[00:00:17.205] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690987
+[00:00:17.209] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.216] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325690998
+[00:00:17.222] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.222] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.222] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 29
+[00:00:17.223] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325691004
+[00:00:17.223] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325691004
+[00:00:17.223] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 29, Timestamp: 1632325691004
+[00:00:17.234] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 29
+[00:00:17.234] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 29
+[00:00:17.234] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.235] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 29, Timestamp: 1632325691016
+[00:00:17.235] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 29, Timestamp: 1632325691016
+[00:00:17.235] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325691017
+[00:00:17.244] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.245] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691026
+[00:00:17.260] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.261] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691042
+[00:00:17.274] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:17.275] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325691056
+[00:00:17.284] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.285] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691066
+[00:00:17.294] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.295] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691076
+[00:00:17.304] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 28
+[00:00:17.305] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 28, Timestamp: 1632325691086
+[00:00:17.310] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.327] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691108
+[00:00:17.334] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 30
+[00:00:17.335] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 30, Timestamp: 1632325691116
+[00:00:17.344] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.345] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325691126
+[00:00:17.346] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.346] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691128
+[00:00:17.354] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.354] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 30
+[00:00:17.355] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691136
+[00:00:17.355] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 30, Timestamp: 1632325691136
+[00:00:17.356] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.360] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691141
+[00:00:17.364] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.365] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691146
+[00:00:17.384] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.385] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691166
+[00:00:17.401] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.402] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325691183
+[00:00:17.404] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 28
+[00:00:17.404] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.405] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691186
+[00:00:17.406] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 28, Timestamp: 1632325691186
+[00:00:17.409] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.414] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691196
+[00:00:17.417] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 30
+[00:00:17.418] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 30, Timestamp: 1632325691199
+[00:00:17.424] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.424] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 30
+[00:00:17.425] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691206
+[00:00:17.425] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 30, Timestamp: 1632325691206
+[00:00:17.434] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 30
+[00:00:17.435] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.435] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.435] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 30, Timestamp: 1632325691216
+[00:00:17.435] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691217
+[00:00:17.435] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691217
+[00:00:17.444] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 32
+[00:00:17.445] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 32, Timestamp: 1632325691226
+[00:00:17.464] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.464] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.465] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691246
+[00:00:17.465] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691246
+[00:00:17.474] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.475] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325691256
+[00:00:17.484] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.485] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691266
+[00:00:17.494] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.495] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691276
+[00:00:17.504] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 29
+[00:00:17.505] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 29, Timestamp: 1632325691286
+[00:00:17.524] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.529] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691311
+[00:00:17.534] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.535] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691316
+[00:00:17.544] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 31
+[00:00:17.545] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 31, Timestamp: 1632325691326
+[00:00:17.546] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.546] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691328
+[00:00:17.554] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.555] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691336
+[00:00:17.556] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.560] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691342
+[00:00:17.564] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.564] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 31
+[00:00:17.565] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691346
+[00:00:17.565] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 31, Timestamp: 1632325691346
+[00:00:17.594] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.595] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691376
+[00:00:17.604] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.605] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691386
+[00:00:17.609] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.610] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691392
+[00:00:17.614] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 31
+[00:00:17.615] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 31, Timestamp: 1632325691396
+[00:00:17.619] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.624] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 29
+[00:00:17.624] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 31
+[00:00:17.625] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691406
+[00:00:17.625] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 29, Timestamp: 1632325691406
+[00:00:17.625] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 31, Timestamp: 1632325691406
+[00:00:17.634] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.635] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.635] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.635] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691416
+[00:00:17.635] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691417
+[00:00:17.635] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691417
+[00:00:17.644] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 31
+[00:00:17.645] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 31, Timestamp: 1632325691426
+[00:00:17.654] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 33
+[00:00:17.655] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 33, Timestamp: 1632325691436
+[00:00:17.674] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 34
+[00:00:17.674] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.675] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 34, Timestamp: 1632325691456
+[00:00:17.675] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691456
+[00:00:17.694] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.695] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691476
+[00:00:17.704] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.705] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691486
+[00:00:17.714] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.715] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691496
+[00:00:17.724] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 34
+[00:00:17.739] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 30
+[00:00:17.739] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 30, Timestamp: 1632325691521
+[00:00:17.740] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 34, Timestamp: 1632325691521
+[00:00:17.749] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.749] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 32
+[00:00:17.750] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691531
+[00:00:17.750] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 32, Timestamp: 1632325691532
+[00:00:17.754] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.755] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691536
+[00:00:17.756] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.756] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691538
+[00:00:17.764] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.765] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691546
+[00:00:17.774] (7f95429f4700) INFO   [Starting actor] Cam id: cam_3, sequence: 32
+[00:00:17.774] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.775] (7f95429f4700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 32, Timestamp: 1632325691556
+[00:00:17.775] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691557
+[00:00:17.804] (7f95cd7ed700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.805] (7f95cd7ed700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691586
+[00:00:17.814] (7f95cd5ec700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.814] (7f95431f8700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.815] (7f95cd5ec700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691596
+[00:00:17.815] (7f95431f8700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691596
+[00:00:17.824] (7f9542bf5700) INFO   [Starting actor] Cam id: cam_3, sequence: 32
+[00:00:17.824] (7f95423f1700) INFO   [Starting actor] Cam id: cam_3, sequence: 30
+[00:00:17.825] (7f9542bf5700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 32, Timestamp: 1632325691606
+[00:00:17.825] (7f95423f1700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 30, Timestamp: 1632325691606
+[00:00:17.826] (7f95427f3700) INFO   [Starting actor] Cam id: cam_3, sequence: 32
+[00:00:17.826] (7f9542ff7700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.833] (7f95427f3700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 32, Timestamp: 1632325691608
+[00:00:17.835] (7f9542ff7700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691615
+[00:00:17.844] (7f95425f2700) INFO   [Starting actor] Cam id: cam_3, sequence: 32
+[00:00:17.845] (7f95425f2700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 32, Timestamp: 1632325691626
+[00:00:17.854] (7f95ccde8700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.855] (7f95ccde8700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691636
+[00:00:17.864] (7f95743f0700) INFO   [Starting actor] Cam id: cam_1, sequence: 34
+[00:00:17.864] (7f95ccfe9700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.864] (7f9542df6700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.865] (7f95743f0700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 34, Timestamp: 1632325691646
+[00:00:17.865] (7f95ccfe9700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691646
+[00:00:17.865] (7f9542df6700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691647
+[00:00:17.894] (7f9543dfe700) INFO   [Starting actor] Cam id: cam_2, sequence: 35
+[00:00:17.895] (7f9543dfe700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 35, Timestamp: 1632325691676
+[00:00:17.904] (7f95439fc700) INFO   [Starting actor] Cam id: cam_2, sequence: 34
+[00:00:17.905] (7f95439fc700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 34, Timestamp: 1632325691686
+[00:00:17.914] (7f9543bfd700) INFO   [Starting actor] Cam id: cam_2, sequence: 34
+[00:00:17.915] (7f9543bfd700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 34, Timestamp: 1632325691696
+[00:00:17.924] (7f95745f1700) INFO   [Starting actor] Cam id: cam_1, sequence: 35
+[00:00:17.924] (7f95437fb700) INFO   [Starting actor] Cam id: cam_2, sequence: 34
+[00:00:17.925] (7f95745f1700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 35, Timestamp: 1632325691706
+[00:00:17.925] (7f95437fb700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 34, Timestamp: 1632325691706
+[00:00:17.930] (7f9543fff700) INFO   [Starting actor] Cam id: cam_2, sequence: 35
+[00:00:17.936] (7f9543fff700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 35, Timestamp: 1632325691718
+[00:00:17.951] (7f95435fa700) INFO   [Starting actor] Cam id: cam_2, sequence: 34
+[00:00:17.952] (7f95435fa700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 34, Timestamp: 1632325691733
+[00:00:17.954] (7f95433f9700) INFO   [Starting actor] Cam id: cam_2, sequence: 33
+[00:00:17.955] (7f95433f9700) INFO   [SendToPublisher] Cam id: cam_2, Sequence: 33, Timestamp: 1632325691736
+[00:00:17.964] (7f95cd3eb700) INFO   [Starting actor] Cam id: cam_1, sequence: 36
+[00:00:17.965] (7f95cd3eb700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 36, Timestamp: 1632325691746
+[00:00:17.969] (7f95cd9ee700) INFO   [Starting actor] Cam id: cam_1, sequence: 37
+[00:00:17.974] (7f95421f0700) INFO   [Starting actor] Cam id: cam_3, sequence: 31
+[00:00:17.975] (7f95421f0700) INFO   [SendToPublisher] Cam id: cam_3, Sequence: 31, Timestamp: 1632325691756
+[00:00:17.980] (7f95cd9ee700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 37, Timestamp: 1632325691755
+[00:00:17.984] (7f95cd1ea700) INFO   [Starting actor] Cam id: cam_1, sequence: 37
+[00:00:17.985] (7f95cd1ea700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 37, Timestamp: 1632325691766
+[00:00:17.994] (7f95cdbef700) INFO   [Starting actor] Cam id: cam_1, sequence: 37
+[00:00:17.995] (7f95cdbef700) INFO   [SendToPublisher] Cam id: cam_1, Sequence: 37, Timestamp: 1632325691776
