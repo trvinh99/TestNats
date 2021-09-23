@@ -39,6 +39,7 @@ fn main() {
     let max_msg = config.get_max_msg();
     let max_cams = config.get_max_cams();
     let fps = config.get_fps();
+    println!("url: {}, Cams: {}, Publisher: {}, total Msg/Cam: {}, fps: {}",url,max_cams,publish_actors,max_msg,fps);
 
     simple_logging::log_to_file("logs/log.txt", LevelFilter::Info).unwrap();
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))

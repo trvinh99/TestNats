@@ -1,5 +1,5 @@
 [package]
-name = "En-DecryptRust"
+name = "TestNats"
 version = "0.1.0"
 authors = ["trvinh99 <48145607+shint1001@users.noreply.github.com>"]
 edition = "2018"
