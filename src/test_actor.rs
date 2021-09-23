@@ -63,27 +63,29 @@ impl TestActor {
                             );
                             //for x in 1..10
                             loop {
-                                let result = throttle.accept();
-                                match result {
-                                    Ok(_) => {
-                                        info!(
-                                            "[Starting actor] Cam id: {}, sequence: {}",
-                                            cam_id, sequence
-                                        );
-                                        TestActor::publish_nats(
-                                            cam_id.clone(),
-                                            contents.clone(),
-                                            sequence,
-                                            distr_name.clone(),
-                                        );
-                                        if sequence == max_msg - 1 {
-                                            break Ok(());
-                                            //return;
-                                        }
-                                        sequence += 1;
-                                    }
-                                    Err(_) => {}
+                                // let result = throttle.accept();
+                                // match result {
+                                // Ok(_) => {
+                                info!(
+                                    "[Starting actor] Cam id: {}, sequence: {}",
+                                    cam_id, sequence
+                                );
+                                TestActor::publish_nats(
+                                    cam_id.clone(),
+                                    contents.clone(),
+                                    sequence,
+                                    distr_name.clone(),
+                                );
+                                if sequence == max_msg - 1 {
+                                    break Ok(());
+                                    //return;
                                 }
+                                sequence += 1;
+                                //     }
+                                //     Err(_) => {}
+                                // }
+
+                                Timer::after(Duration::from_millis(200)).await;
                             }
                             //Ok(());
                         }
