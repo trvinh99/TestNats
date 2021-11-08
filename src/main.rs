@@ -42,14 +42,15 @@ fn main() {
                     Ok(n) => n.as_nanos(),
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                 };
-                println!("NOW: {}", now);
 
                 let _ = batch.insert(now.to_string().as_bytes(), contents.to_vec());
+                println!("J: {}", j);
 
                 j += 1;
 
                 Timer::after(Duration::from_millis(200)).await;
             }
+            println!("I: {}", j);
             i += 1;
 
             record_db.apply_batch(batch).unwrap();
