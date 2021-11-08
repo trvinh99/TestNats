@@ -37,7 +37,7 @@ fn main() {
         while i < 50 {
             let mut batch = sled::Batch::default();
             let mut j = 0;
-            while i < 10 {
+            while j < 10 {
                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                     Ok(n) => n.as_nanos(),
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
