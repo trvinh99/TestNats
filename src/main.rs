@@ -40,7 +40,7 @@ fn main() {
             };
             println!("NOW: {}", now);
             let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
-            record_db.flush();
+            record_db.flush_async().await.unwrap();
 
             Timer::after(Duration::from_millis(200)).await;
         }
