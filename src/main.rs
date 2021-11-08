@@ -33,13 +33,16 @@ fn main() {
     file.read_to_end(&mut contents).unwrap();
 
     run!(async move {
-        loop {
+        let mut i = 0;
+        while i < 100 {
             let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                 Ok(n) => n.as_nanos(),
                 Err(_) => panic!("SystemTime before UNIX EPOCH!"),
             };
             println!("NOW: {}", now);
             let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
+
+            i += 1;
 
             Timer::after(Duration::from_millis(200)).await;
         }
