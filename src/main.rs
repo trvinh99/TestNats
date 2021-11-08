@@ -28,13 +28,13 @@ fn main() {
         .mode(sled::Mode::HighThroughput);
     let record_db = record_db_config.open().unwrap();
 
-    let mut file = File::open("src/image.jpg").unwrap();
+    let mut file = File::open("src/logo.png").unwrap();
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
     run!(async move {
         let mut i = 0;
-        while i < 5 {
+        while i < 20 {
             let mut batch = sled::Batch::default();
             let mut j = 0;
             while j < 10 {
