@@ -34,7 +34,7 @@ fn main() {
 
     run!(async move {
         let mut i = 0;
-        while i < 50 {
+        while i < 5 {
             let mut batch = sled::Batch::default();
             let mut j = 0;
             while j < 10 {
