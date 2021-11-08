@@ -34,6 +34,8 @@ fn main() {
 
     let record_db_config = sled::Config::default()
         .path(format!("src/record"))
+        .cache_capacity(10_000_000_000)
+        .flush_every_ms(Some(1000))
         .mode(sled::Mode::HighThroughput);
     let record_db = record_db_config.open().unwrap();
 
