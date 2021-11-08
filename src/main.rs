@@ -21,52 +21,71 @@ use std::io::Read;
 use std::io::Write;
 use std::thread::{self, sleep};
 use std::time::Duration;
+use std::time::SystemTime;
 use tokio::task;
 
 use crate::test_actor::TestActor;
 
 fn main() {
-    let config = config::Config::from_args(std::env::args()).unwrap();
+    // let config = config::Config::from_args(std::env::args()).unwrap();
 
     Bastion::init();
     Bastion::start();
 
-    //let url = "10.50.13.185:4222".to_string();
-    //let url = "10.50.13.181:4222".to_string();
-    let url = config.get_nats_url();
-    let test_redundancy = config.get_redundancy();
-    let publish_actors = config.get_publisher_actors();
-    let max_msg = config.get_max_msg();
-    let max_cams = config.get_max_cams();
-    let fps = config.get_fps();
-    println!("url: {}, Cams: {}, Publisher: {}, total Msg/Cam: {}, fps: {}",url,max_cams,publish_actors,max_msg,fps);
+    let record_db_config = sled::Config::default()
+        .path(format!("src/record"))
+        .mode(sled::Mode::HighThroughput);
+    let record_db = record_db_config.open().unwrap();
 
-    simple_logging::log_to_file("logs/log.txt", LevelFilter::Info).unwrap();
-    let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
-        .expect("could not create a supervisor");
+    let mut file = File::open("src/image.jpg").unwrap();
+    let mut contents = vec![];
+    file.read_to_end(&mut contents).unwrap();
 
-    for n in 0..publish_actors {
-        let name = format!("publish_actor_{}", n);
-        let _ = PublisherActor::start(&parent_ref, url.clone(), name);
-        sleep(std::time::Duration::from_millis(10));
+    loop {
+        let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+            Ok(n) => n.as_nanos(),
+            Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+        };
+        println!("NOW: {}", now);
+        let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
     }
 
-    for i in 1..=max_cams {
-        let parent_ref = parent_ref.clone();
-        run!(async move {
-            let cam_id = format!("cam_{}", i);
-            println!("{}", cam_id);
-            let _ = TestActor::start(
-                &parent_ref,
-                cam_id,
-                test_redundancy,
-                max_msg,
-                fps,
-                publish_actors,
-            );
-            sleep(std::time::Duration::from_millis(10));
-        });
-    }
+    // //let url = "10.50.13.185:4222".to_string();
+    // //let url = "10.50.13.181:4222".to_string();
+    // let url = config.get_nats_url();
+    // let test_redundancy = config.get_redundancy();
+    // let publish_actors = config.get_publisher_actors();
+    // let max_msg = config.get_max_msg();
+    // let max_cams = config.get_max_cams();
+    // let fps = config.get_fps();
+    // println!("url: {}, Cams: {}, Publisher: {}, total Msg/Cam: {}, fps: {}",url,max_cams,publish_actors,max_msg,fps);
+
+    // simple_logging::log_to_file("logs/log.txt", LevelFilter::Info).unwrap();
+    // let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
+    //     .expect("could not create a supervisor");
+
+    // for n in 0..publish_actors {
+    //     let name = format!("publish_actor_{}", n);
+    //     let _ = PublisherActor::start(&parent_ref, url.clone(), name);
+    //     sleep(std::time::Duration::from_millis(10));
+    // }
+
+    // for i in 1..=max_cams {
+    //     let parent_ref = parent_ref.clone();
+    //     run!(async move {
+    //         let cam_id = format!("cam_{}", i);
+    //         println!("{}", cam_id);
+    //         let _ = TestActor::start(
+    //             &parent_ref,
+    //             cam_id,
+    //             test_redundancy,
+    //             max_msg,
+    //             fps,
+    //             publish_actors,
+    //         );
+    //         sleep(std::time::Duration::from_millis(10));
+    //     });
+    // }
 
     // spawn!(async move {
     //     simple_logging::log_to_file("src/log.txt", LevelFilter::Info).unwrap();
@@ -102,5 +121,5 @@ fn main() {
     //     }
     // });
 
-    Bastion::block_until_stopped();
+    // Bastion::block_until_stopped();
 }
