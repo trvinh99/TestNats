@@ -27,6 +27,7 @@ fn main() {
         .flush_every_ms(Some(200));
     // .mode(sled::Mode::HighThroughput);
     let record_db = record_db_config.open().unwrap();
+    let record_db_2 = record_db.clone();
 
     let mut file = File::open("src/image.jpg").unwrap();
     let mut contents = vec![];
@@ -34,7 +35,7 @@ fn main() {
 
     run!(async move {
         let mut i = 0;
-        while i < 100 {
+        while i < 50 {
             let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                 Ok(n) => n.as_nanos(),
                 Err(_) => panic!("SystemTime before UNIX EPOCH!"),
@@ -47,6 +48,8 @@ fn main() {
             Timer::after(Duration::from_millis(200)).await;
         }
     });
+
+    drop(record_db_2);
 
     // //let url = "10.50.13.185:4222".to_string();
     // //let url = "10.50.13.181:4222".to_string();
