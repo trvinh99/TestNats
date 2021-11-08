@@ -50,7 +50,7 @@ fn insert() {
         let record_db = record_db_config.open().unwrap();
         spawn!(async move {
             let mut i = 0;
-            while i < 20 {
+            while i < 200 {
                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                     Ok(n) => n.as_nanos(),
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
