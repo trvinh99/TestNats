@@ -43,14 +43,18 @@ fn main() {
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
-    loop {
-        let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-            Ok(n) => n.as_nanos(),
-            Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-        };
-        println!("NOW: {}", now);
-        let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
-    }
+    async move {
+        loop {
+            let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+                Ok(n) => n.as_nanos(),
+                Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+            };
+            println!("NOW: {}", now);
+            let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
+
+            Timer::after(Duration::from_millis(200)).await;
+        }
+    };
 
     // //let url = "10.50.13.185:4222".to_string();
     // //let url = "10.50.13.181:4222".to_string();
