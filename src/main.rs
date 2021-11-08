@@ -51,25 +51,17 @@ fn insert() {
         spawn!(async move {
             let mut i = 0;
             while i < 20 {
-                let mut batch = sled::Batch::default();
-                let mut j = 0;
-                while j < 10 {
-                    let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-                        Ok(n) => n.as_nanos(),
-                        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-                    };
+                let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+                    Ok(n) => n.as_nanos(),
+                    Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                };
 
-                    let _ = batch.insert(now.to_string().as_bytes(), contents.to_vec());
-                    println!("J: {}", j);
+                let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
 
-                    j += 1;
-
-                    Timer::after(Duration::from_millis(200)).await;
-                }
-                println!("I: {}", j);
+                println!("I: {}", i);
                 i += 1;
 
-                record_db.apply_batch(batch).unwrap();
+                Timer::after(Duration::from_millis(200)).await;
             }
         });
     }
