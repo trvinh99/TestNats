@@ -34,22 +34,26 @@ fn main() {
 
     run!(async move {
         let mut i = 0;
-        let mut batch = sled::Batch::default();
         while i < 50 {
-            let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-                Ok(n) => n.as_nanos(),
-                Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-            };
-            println!("NOW: {}", now);
+            let mut batch = sled::Batch::default();
+            let mut j = 0;
+            while i < 10 {
+                let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+                    Ok(n) => n.as_nanos(),
+                    Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                };
+                println!("NOW: {}", now);
 
-            let _ = batch.insert(now.to_string().as_bytes(), contents.to_vec());
+                let _ = batch.insert(now.to_string().as_bytes(), contents.to_vec());
 
+                j += 1;
+
+                Timer::after(Duration::from_millis(200)).await;
+            }
             i += 1;
 
-            Timer::after(Duration::from_millis(200)).await;
+            record_db.apply_batch(batch).unwrap();
         }
-
-        record_db.apply_batch(batch).unwrap();
     });
 
     // //let url = "10.50.13.185:4222".to_string();
