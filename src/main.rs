@@ -21,41 +21,43 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    let record_db_config = sled::Config::default()
-        .path(format!("src/record"))
-        .cache_capacity(10 * 1024 * 1024)
-        // .flush_every_ms(Some(200))
-        .mode(sled::Mode::HighThroughput);
-    let record_db = record_db_config.open().unwrap();
-
     let mut file = File::open("src/logo.png").unwrap();
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
-    run!(async move {
-        let mut i = 0;
-        while i < 20 {
-            let mut batch = sled::Batch::default();
-            let mut j = 0;
-            while j < 10 {
-                let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-                    Ok(n) => n.as_nanos(),
-                    Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-                };
+    for i in 1..=30 {
+        let contents = contents.clone();
+        let record_db_config = sled::Config::default()
+            .path(format!("src/record/{}", i))
+            .cache_capacity(10 * 1024 * 1024)
+            // .flush_every_ms(Some(200))
+            .mode(sled::Mode::HighThroughput);
+        let record_db = record_db_config.open().unwrap();
+        spawn!(async move {
+            let mut i = 0;
+            while i < 20 {
+                let mut batch = sled::Batch::default();
+                let mut j = 0;
+                while j < 10 {
+                    let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+                        Ok(n) => n.as_nanos(),
+                        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                    };
 
-                let _ = batch.insert(now.to_string().as_bytes(), contents.to_vec());
-                println!("J: {}", j);
+                    let _ = batch.insert(now.to_string().as_bytes(), contents.to_vec());
+                    println!("J: {}", j);
 
-                j += 1;
+                    j += 1;
 
-                Timer::after(Duration::from_millis(200)).await;
+                    Timer::after(Duration::from_millis(200)).await;
+                }
+                println!("I: {}", j);
+                i += 1;
+
+                record_db.apply_batch(batch).unwrap();
             }
-            println!("I: {}", j);
-            i += 1;
-
-            record_db.apply_batch(batch).unwrap();
-        }
-    });
+        });
+    }
 
     // //let url = "10.50.13.185:4222".to_string();
     // //let url = "10.50.13.181:4222".to_string();
