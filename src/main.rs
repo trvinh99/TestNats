@@ -29,8 +29,8 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    //insert();
-    query();
+    insert();
+    //query();
 
     Bastion::block_until_stopped();
 }
