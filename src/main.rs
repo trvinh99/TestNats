@@ -119,5 +119,5 @@ fn main() {
     //     }
     // });
 
-    // Bastion::block_until_stopped();
+    Bastion::block_until_stopped();
 }
