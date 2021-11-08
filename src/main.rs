@@ -56,7 +56,7 @@ fn insert() {
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                 };
 
-                let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
+                //let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
 
                 println!("I: {}", i);
                 i += 1;
