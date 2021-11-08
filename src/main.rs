@@ -45,6 +45,7 @@ fn main() {
             i += 1;
 
             Timer::after(Duration::from_millis(200)).await;
+            record_db.flush_async().await.unwrap();
         }
 
         drop(record_db);
