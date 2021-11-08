@@ -3,26 +3,15 @@ mod publisher_actor;
 mod test_actor;
 mod throttle;
 
-use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use bastion::{run, spawn};
 use log::LevelFilter;
 use log::{info, trace, warn};
-use openssl::rsa::Padding;
-use openssl::rsa::Rsa;
-use publisher_actor::PublisherActor;
-use serde_json::json;
-use serde_json::Value;
-use smol::future;
-use smol::Executor;
 use smol::Timer;
 use std::fs::File;
 use std::io::Read;
-use std::io::Write;
-use std::thread::{self, sleep};
 use std::time::Duration;
 use std::time::SystemTime;
-use tokio::task;
 
 use crate::test_actor::TestActor;
 
@@ -43,7 +32,7 @@ fn main() {
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
-    spawn!(async move {
+    run!(async move {
         loop {
             let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                 Ok(n) => n.as_nanos(),
