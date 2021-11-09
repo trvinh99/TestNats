@@ -26,8 +26,8 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    //insert();
-    spawn!(query(1636432243220342000, 1636493293220342000));
+    insert();
+    //spawn!(query(1636432243220342000, 1636493293220342000));
 
     Bastion::block_until_stopped();
 }
@@ -41,11 +41,10 @@ fn insert() {
         let contents = contents.clone();
         let record_db_config = sled::Config::default()
             .path(format!("src/record/{}", i))
-            .cache_capacity(10 * 1024 * 1024)
-            // .flush_every_ms(Some(200))
+            //.cache_capacity(10 * 1024 * 1024)
             .mode(sled::Mode::HighThroughput);
         let record_db = record_db_config.open().unwrap();
-        spawn!(async move {
+        bastion::spawn!(async move {
             let mut i = 0;
             while i < 200 {
                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
@@ -55,7 +54,6 @@ fn insert() {
 
                 let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
 
-                //println!("I: {}", i);
                 i += 1;
 
                 Timer::after(Duration::from_millis(200)).await;
