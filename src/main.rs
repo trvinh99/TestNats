@@ -26,8 +26,8 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    insert();
-    //spawn!(query(1636432243220342000, 1636432293220342000));
+    //insert();
+    spawn!(query(1636432243220342000, 1636432293220342000));
 
     Bastion::block_until_stopped();
 }
