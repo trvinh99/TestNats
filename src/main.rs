@@ -1,13 +1,7 @@
-mod config;
-mod publisher_actor;
-mod test_actor;
-mod throttle;
-
+use bastion::spawn;
 use bastion::Bastion;
-use bastion::{run, spawn};
 use chrono::Utc;
-use log::LevelFilter;
-use log::{info, trace, warn};
+use sled::Db;
 use smol::Timer;
 use std::fs::File;
 use std::io::Read;
@@ -21,7 +15,10 @@ use std::{
     sync::Arc,
 };
 
-use crate::test_actor::TestActor;
+const LIMIT_STEP: i64 = 20_000_000_000i64;
+const ONE_SEC: i64 = 1_000_000_000i64;
+const ONE_MIL_SEC: i64 = 1_000_000i64;
+const ONE_NAN_SEC: i64 = 1i64;
 
 fn main() {
     // let config = config::Config::from_args(std::env::args()).unwrap();
@@ -29,8 +26,8 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    insert();
-    //query();
+    //insert();
+    spawn!(query(1636432243220342000, 1636432293220342000));
 
     Bastion::block_until_stopped();
 }
@@ -67,40 +64,104 @@ fn insert() {
     }
 }
 
-fn query() {
+async fn query(start_time: i64, end_time: i64) {
     let record_db_config = sled::Config::default()
         .path(format!("src/record/{}", 1))
         .cache_capacity(10 * 1024 * 1024)
         // .flush_every_ms(Some(200))
         .mode(sled::Mode::HighThroughput);
     let record_db = record_db_config.open().unwrap();
+    let mut sleep = 0;
 
-    let frame = record_db.first().unwrap().unwrap();
-    let frame_key_str = String::from_utf8(frame.0.to_vec()).unwrap();
-    let start = i64::from_str(&frame_key_str).unwrap();
-    let frame_l = record_db.last().unwrap().unwrap();
-    let frame_key_l_str = String::from_utf8(frame_l.0.to_vec()).unwrap();
-    let last = i64::from_str(&frame_key_l_str).unwrap();
-    println!("start: {}", start);
-    println!("last: {}", last);
-    println!("size: {}", (last - start) / 1_000_000_000i64);
-    let end = (start / 1_000_000_000i64) + 20;
+    let mut limit_step = 0;
 
-    let start_str = start.to_string();
-    let start_bin = start_str.as_bytes();
-    let end_str = end.to_string();
-    let end_bin = end_str.as_bytes();
+    let start_record = get_start_record_time(record_db.clone());
+    let end_record = get_end_record_time(record_db.clone());
 
-    let bef = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-        Ok(n) => n.as_nanos(),
-        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    if start_time <= end_record && end_time >= start_record && start_time <= end_time {
+        let mut start = if start_time < start_record {
+            start_record
+        } else {
+            start_time
+        };
+        let end = if end_time > end_record {
+            end_record
+        } else {
+            end_time
+        };
+
+        println!("Start time: {} and End time: {}", start, end);
+
+        while start <= end {
+            let record_db = record_db.clone();
+            limit_step = if end - start >= limit_step {
+                LIMIT_STEP
+            } else {
+                end - start + ONE_SEC
+            };
+
+            let frames = range_query(
+                record_db,
+                start.to_string().as_bytes(),
+                (start + limit_step).to_string().as_bytes(),
+                1,
+            );
+
+            let mut cur_index = 0;
+            for i in 0..frames.len() {
+                let frame = &frames[i];
+                if i < frames.len() - 1 {
+                    let next_frame = &frames[i + 1];
+                    sleep = ((next_frame.0 - frame.0) / 1_000_000i64) as u64;
+                }
+                cur_index = frame.0;
+                println!("{}", frame.0);
+
+                Timer::after(Duration::from_millis(sleep)).await;
+            }
+
+            println!("Limit: {}", limit_step);
+
+            start = cur_index + ONE_NAN_SEC;
+        }
+    }
+}
+
+pub fn range_query(db: Db, start: &[u8], end: &[u8], speed: usize) -> Vec<(i64, Vec<u8>)> {
+    let query = db.range(start..end);
+    let mut value_array: Vec<(i64, Vec<u8>)> = Vec::<(i64, Vec<u8>)>::new();
+    for q in query.step_by(speed) {
+        if let Ok(tuple_res) = q {
+            let timestamp_str = String::from_utf8(tuple_res.0.to_vec()).unwrap();
+            let timestamp = i64::from_str(&timestamp_str).unwrap();
+            let data = tuple_res.1.to_vec();
+
+            value_array.push((timestamp, data));
+        } else {
+            break;
+        }
+    }
+    value_array
+}
+
+pub fn get_start_record_time(db: Db) -> i64 {
+    let result = match db.first().unwrap() {
+        Some(frame) => {
+            let frame_key_str = String::from_utf8(frame.0.to_vec()).unwrap();
+            i64::from_str(&frame_key_str).unwrap()
+        }
+        None => 0,
     };
+    result
+}
 
-    let data = record_db.range(start_bin..end_bin);
-
-    let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-        Ok(n) => n.as_nanos(),
-        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+pub fn get_end_record_time(db: Db) -> i64 {
+    let result = match db.last().unwrap() {
+        Some(frame) => {
+            let frame_key_str = String::from_utf8(frame.0.to_vec()).unwrap();
+            i64::from_str(&frame_key_str).unwrap()
+        }
+        None => 0,
     };
-    println!("Query time: {}", aft - bef);
+    result
 }
