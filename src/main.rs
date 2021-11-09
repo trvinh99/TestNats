@@ -56,9 +56,9 @@ fn insert() {
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                 };
 
-                //let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
+                let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
 
-                println!("I: {}", i);
+                //println!("I: {}", i);
                 i += 1;
 
                 Timer::after(Duration::from_millis(200)).await;
