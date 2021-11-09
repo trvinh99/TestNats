@@ -29,7 +29,8 @@ fn main() {
     insert();
     //spawn!(query(1636432243220342000, 1636493293220342000));
 
-    Bastion::block_until_stopped();
+    // Bastion::block_until_stopped();
+    loop {}
 }
 
 fn insert() {
