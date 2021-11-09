@@ -27,7 +27,7 @@ fn main() {
     Bastion::start();
 
     //insert();
-    spawn!(query(1636432243220342000, 1636432293220342000));
+    spawn!(query(1636432243220342000, 1636493293220342000));
 
     Bastion::block_until_stopped();
 }
@@ -65,6 +65,7 @@ fn insert() {
 }
 
 async fn query(start_time: i64, end_time: i64) {
+    println!("QUERYYY");
     let record_db_config = sled::Config::default()
         .path(format!("src/record/{}", 1))
         .cache_capacity(10 * 1024 * 1024)
@@ -76,9 +77,12 @@ async fn query(start_time: i64, end_time: i64) {
     let mut limit_step = 0;
 
     let start_record = get_start_record_time(record_db.clone());
+    println!("Start record: {}", start_record);
     let end_record = get_end_record_time(record_db.clone());
+    println!("End record: {}", end_record);
 
     if start_time <= end_record && end_time >= start_record && start_time <= end_time {
+        println!("YUPPP");
         let mut start = if start_time < start_record {
             start_record
         } else {
