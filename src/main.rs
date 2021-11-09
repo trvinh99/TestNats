@@ -110,6 +110,7 @@ async fn query(start_time: i64, end_time: i64) {
                 (start + limit_step).to_string().as_bytes(),
                 1,
             );
+            println!("Vec length: {}", frames.len());
 
             let mut cur_index = 0;
             for i in 0..frames.len() {
