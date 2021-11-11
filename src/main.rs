@@ -64,7 +64,7 @@ fn main() {
     //     .unwrap();
 
     let found_docs = query!(
-        find MyDoc in collection
+        find MyDoc in collection order desc
     )
     .unwrap()
     .collect::<Result<Vec<_>, _>>()
@@ -77,7 +77,7 @@ fn main() {
     println!("{}", (aft - bef) / 1_000_000u128);
     // println!("len: {}", elements.len());
 
-    println!("{:?}", found_docs.last().unwrap().id);
+    println!("{:?}", found_docs[0].timestamp);
 
     Bastion::block_until_stopped();
 }
