@@ -112,13 +112,14 @@ fn insert() {
                 };
                 //if !record_db.contains_key(now.to_string().as_bytes()).unwrap() {
                 // let _ = record_db.put(now.to_string().as_bytes(), contents.to_vec());
-                let first_id = collection
-                    .insert(&MyDoc {
-                        id: None,
-                        timestamp: now as i64,
-                        frame: contents.to_vec(),
-                    })
-                    .unwrap();
+
+                // let first_id = collection
+                //     .insert(&MyDoc {
+                //         id: None,
+                //         timestamp: now as i64,
+                //         frame: contents.to_vec(),
+                //     })
+                //     .unwrap();
 
                 println!("{}", i);
                 i += 1;
