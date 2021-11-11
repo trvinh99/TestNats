@@ -36,42 +36,42 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    //insert();
+    insert();
     //spawn!(query(1636432243220342000, 1636493293220342000));
 
-    let path = format!("src/record/{}", 1);
-    let storage = Storage::new(&path, Options::default()).unwrap();
+    // let path = format!("src/record/{}", 1);
+    // let storage = Storage::new(&path, Options::default()).unwrap();
 
-    // Get collection
-    let collection = storage.collection("record").unwrap();
+    // // Get collection
+    // let collection = storage.collection("record").unwrap();
 
-    // Ensure indexes
-    query!(index for collection
-        timestamp int unique,
-    )
-    .unwrap();
+    // // Ensure indexes
+    // query!(index for collection
+    //     timestamp int unique,
+    // )
+    // .unwrap();
 
-    let bef = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-        Ok(n) => n.as_nanos(),
-        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    };
+    // let bef = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //     Ok(n) => n.as_nanos(),
+    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    // };
 
-    let filter = query!(@filter timestamp in 1636616633633086000..1636616647280748000);
-    let elements: Vec<MyDoc> = collection
-        .find(filter, Order::Primary(OrderKind::Asc))
-        .unwrap()
-        .collect::<Result<Vec<_>, _>>()
-        .unwrap();
+    // let filter = query!(@filter timestamp in 1636616633633086000..1636616647280748000);
+    // let elements: Vec<MyDoc> = collection
+    //     .find(filter, Order::Primary(OrderKind::Asc))
+    //     .unwrap()
+    //     .collect::<Result<Vec<_>, _>>()
+    //     .unwrap();
 
-    let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-        Ok(n) => n.as_nanos(),
-        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    };
-    println!("{}", (aft - bef) / 1_000_000u128);
-    println!("len: {}", elements.len());
-    for element in elements {
-        println!("{}", element.timestamp);
-    }
+    // let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //     Ok(n) => n.as_nanos(),
+    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    // };
+    // println!("{}", (aft - bef) / 1_000_000u128);
+    // println!("len: {}", elements.len());
+    // for element in elements {
+    //     println!("{}", element.timestamp);
+    // }
     // println!("{:?}", found_docs.last().unwrap().id);
 
     Bastion::block_until_stopped();
