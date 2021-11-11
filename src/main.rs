@@ -63,8 +63,11 @@ fn main() {
     //     .collect::<Result<Vec<_>, _>>()
     //     .unwrap();
 
-    let last_id = collection.last_id().unwrap();
-    println!("last id: {}", last_id);
+    // let last_id = collection.last_id().unwrap();
+    // println!("last id: {}", last_id);
+
+    let last_frame: MyDoc = collection.get(136680).unwrap().unwrap();
+    println!("last timestamp: {}", last_frame.timestamp);
 
     let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
         Ok(n) => n.as_nanos(),
