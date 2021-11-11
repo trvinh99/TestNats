@@ -56,12 +56,12 @@ fn main() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    // let filter = query!(@filter timestamp in 1636616633633086000..1636616647280748000);
-    // let elements: Vec<MyDoc> = collection
-    //     .find(filter, Order::Primary(OrderKind::Asc))
-    //     .unwrap()
-    //     .collect::<Result<Vec<_>, _>>()
-    //     .unwrap();
+    let filter = query!(@filter timestamp in 1636637798736768110..1636637818736768110);
+    let elements: Vec<MyDoc> = collection
+        .find(filter, Order::Primary(OrderKind::Asc))
+        .unwrap()
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap();
 
     // let last_id = collection.last_id().unwrap();
     // println!("last id: {}", last_id);
@@ -74,7 +74,7 @@ fn main() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
     println!("{}", (aft - bef) / 1_000_000u128);
-    // println!("len: {}", elements.len());
+    println!("len: {}", elements.len());
 
     Bastion::block_until_stopped();
 }
