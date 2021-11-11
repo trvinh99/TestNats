@@ -63,12 +63,8 @@ fn main() {
     //     .collect::<Result<Vec<_>, _>>()
     //     .unwrap();
 
-    let found_docs = query!(
-        find MyDoc in collection order desc
-    )
-    .unwrap()
-    .collect::<Result<Vec<_>, _>>()
-    .unwrap();
+    let last_id = collection.last_id().unwrap();
+    println!("last id: {}", last_id);
 
     let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
         Ok(n) => n.as_nanos(),
@@ -76,8 +72,6 @@ fn main() {
     };
     println!("{}", (aft - bef) / 1_000_000u128);
     // println!("len: {}", elements.len());
-
-    println!("{:?}", found_docs.last().unwrap().timestamp);
 
     Bastion::block_until_stopped();
 }
