@@ -1,6 +1,8 @@
 use bastion::spawn;
 use bastion::Bastion;
 use chrono::Utc;
+use serde::Deserialize;
+use serde::Serialize;
 use sled::Db;
 use smol::Timer;
 use std::fs::File;
@@ -8,26 +10,63 @@ use std::io::Read;
 use std::time::Duration;
 use std::time::SystemTime;
 
-use std::{
-    convert::{TryFrom, TryInto},
-    io::Write,
-    str::FromStr,
-    sync::Arc,
+use ledb::{
+    query, query_extr, Comp, Document, Filter, Identifier, IndexKind, KeyType, Options, Order,
+    OrderKind, Primary, Storage,
 };
+
+use std::str::FromStr;
 
 const LIMIT_STEP: i64 = 20_000_000_000i64;
 const ONE_SEC: i64 = 1_000_000_000i64;
 const ONE_MIL_SEC: i64 = 1_000_000i64;
 const ONE_NAN_SEC: i64 = 1i64;
 
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, Document)]
+struct MyDoc {
+    #[document(primary, index)]
+    id: Option<Primary>,
+    #[document(index)]
+    timestamp: i64,
+    frame: Vec<u8>,
+}
 fn main() {
     // let config = config::Config::from_args(std::env::args()).unwrap();
 
     Bastion::init();
     Bastion::start();
 
-    insert();
+    //insert();
     //spawn!(query(1636432243220342000, 1636493293220342000));
+
+    let path = format!("src/record/{}", 1);
+    let storage = Storage::new(&path, Options::default()).unwrap();
+
+    // Get collection
+    let collection = storage.collection("record").unwrap();
+
+    let bef = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+        Ok(n) => n.as_nanos(),
+        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    };
+
+    let filter = query!(@filter timestamp in 1636616633633086000..1636616647280748000);
+    let elements: Vec<MyDoc> = collection
+        .find(filter, Order::Primary(OrderKind::Asc))
+        .unwrap()
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap();
+
+    let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+        Ok(n) => n.as_nanos(),
+        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    };
+    println!("{}", (aft - bef) / 1_000_000u128);
+    println!("len: {}", elements.len());
+    for element in elements {
+        println!("{}", element.timestamp);
+    }
+    // println!("{:?}", found_docs.last().unwrap().id);
 
     Bastion::block_until_stopped();
 }
@@ -39,30 +78,52 @@ fn insert() {
 
     for i in 1..=30 {
         let contents = contents.clone();
-        let record_db_config = sled::Config::default()
-            .path(format!("src/record/{}", i))
-            //.cache_capacity(10 * 1024 * 1024)
-            .mode(sled::Mode::HighThroughput);
-        let record_db = record_db_config.open().unwrap();
+        let path = format!("src/record/{}", i);
+        // let record_db_config = sled::Config::default()
+        //     .path(format!("src/record/{}", i))
+        //     .cache_capacity(10 * 1024 * 1024)
+        //     .mode(sled::Mode::HighThroughput);
+        //let record_db = record_db_config.open().unwrap();
+        // let mut db_opts = Options::default();
+        // db_opts.create_if_missing(true);
+        // let record_db: DB = DB::open(&db_opts, path).unwrap();
+        // Open storage
+        let storage = Storage::new(&path, Options::default()).unwrap();
+
+        // Get collection
+        let collection = storage.collection("record").unwrap();
+
+        // Ensure indexes using document type
+        query!(index MyDoc for collection).unwrap();
+
         bastion::spawn!(async move {
-            let mut i = 0;
+            let mut i: i64 = 0;
             while i < 200 {
                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                     Ok(n) => n.as_nanos(),
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                 };
+                //if !record_db.contains_key(now.to_string().as_bytes()).unwrap() {
+                // let _ = record_db.put(now.to_string().as_bytes(), contents.to_vec());
+                let first_id = collection
+                    .insert(&MyDoc {
+                        id: None,
+                        timestamp: now as i64,
+                        frame: contents.to_vec(),
+                    })
+                    .unwrap();
 
-                let _ = record_db.insert(now.to_string().as_bytes(), contents.to_vec());
-
+                println!("{}", i);
                 i += 1;
 
                 Timer::after(Duration::from_millis(200)).await;
+                //}
             }
         });
     }
 }
 
-async fn query(start_time: i64, end_time: i64) {
+async fn query_db(start_time: i64, end_time: i64) {
     println!("QUERYYY");
     let record_db_config = sled::Config::default()
         .path(format!("src/record/{}", 1))
