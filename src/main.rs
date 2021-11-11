@@ -105,7 +105,7 @@ fn insert() {
 
         bastion::spawn!(async move {
             let mut i: i64 = 0;
-            while i < 20000 {
+            while i < 432000 {
                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                     Ok(n) => n.as_nanos(),
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
