@@ -45,6 +45,12 @@ fn main() {
     // Get collection
     let collection = storage.collection("record").unwrap();
 
+    // Ensure indexes
+    query!(index for collection
+        timestamp int unique,
+    )
+    .unwrap();
+
     let bef = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
         Ok(n) => n.as_nanos(),
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
