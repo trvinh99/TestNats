@@ -123,7 +123,7 @@ fn insert() {
                 println!("{}", i);
                 i += 1;
 
-                Timer::after(Duration::from_millis(200)).await;
+                Timer::after(Duration::from_millis(50)).await;
                 //}
             }
         });
