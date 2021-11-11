@@ -56,17 +56,17 @@ fn main() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    let filter = query!(@filter timestamp in 1636637798736768110..1636637818736768110);
+    let filter = query!(@filter timestamp in 1636637819236768110..1636637818736768110);
     let elements: Vec<MyDoc> = collection
         .find(filter, Order::Primary(OrderKind::Asc))
         .unwrap()
         .collect::<Result<Vec<_>, _>>()
         .unwrap();
 
-    // let last_id = collection.last_id().unwrap();
-    // println!("last id: {}", last_id);
+    let last_id = collection.last_id().unwrap();
+    println!("last id: {}", last_id);
 
-    let last_frame: MyDoc = collection.get(136680).unwrap().unwrap();
+    let last_frame: MyDoc = collection.get(last_id).unwrap().unwrap();
     println!("last timestamp: {}", last_frame.timestamp);
 
     let aft = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
