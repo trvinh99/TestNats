@@ -95,7 +95,7 @@ fn insert() {
         // let record_db: DB = DB::open(&db_opts, path).unwrap();
         // Open storage
         let storage = Storage::new(&path, Options::default()).unwrap();
-        unsafe { storage.set_mapsize(1024 * 1024 * 1024 * 30) };
+        unsafe { storage.set_mapsize(1024 * 30) };
 
         // Get collection
         let collection = storage.collection("record").unwrap();
