@@ -5,8 +5,10 @@ use serde::Deserialize;
 use serde::Serialize;
 use sled::Db;
 use smol::Timer;
+use std::fs;
 use std::fs::File;
 use std::io::Read;
+use std::io::Write;
 use std::time::Duration;
 use std::time::SystemTime;
 
@@ -28,7 +30,7 @@ struct MyDoc {
     id: Option<Primary>,
     #[document(index)]
     timestamp: i64,
-    frame: Vec<u8>,
+    frame: String,
 }
 fn main() {
     // let config = config::Config::from_args(std::env::args()).unwrap();
@@ -115,11 +117,19 @@ fn insert() {
                 //if !record_db.contains_key(now.to_string().as_bytes()).unwrap() {
                 // let _ = record_db.put(now.to_string().as_bytes(), contents.to_vec());
 
+                let folder_url = format!("src/record_frame/{}/{}", "2021/11/12", i);
+                fs::create_dir_all(&folder_url).unwrap();
+
+                let file_url = format!("src/record_frame/{}/{}/{}", "2021/11/12", i, now);
+
+                let mut file = File::create(file_url.clone()).unwrap();
+                file.write_all(&contents).unwrap();
+
                 let first_id = collection
                     .insert(&MyDoc {
                         id: None,
                         timestamp: now as i64,
-                        frame: contents.to_vec(),
+                        frame: file_url,
                     })
                     .unwrap();
 
