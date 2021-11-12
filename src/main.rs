@@ -142,7 +142,7 @@ fn insert() {
                 println!("{}", i);
                 i += 1;
 
-                Timer::after(Duration::from_millis(50)).await;
+                Timer::after(Duration::from_millis(5)).await;
                 //}
             }
         });
