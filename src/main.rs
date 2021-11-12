@@ -96,7 +96,7 @@ fn insert() {
 
     for i in 1..=30 {
         let contents = contents.clone();
-        let path = format!("src/record/{}", i);
+        let path = format!("/data/record/{}", i);
         // let record_db_config = sled::Config::default()
         //     .path(format!("src/record/{}", i))
         //     .cache_capacity(10 * 1024 * 1024)
