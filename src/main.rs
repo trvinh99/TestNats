@@ -44,6 +44,7 @@ fn main() {
 
     let path = format!("/data/record/{}", 1);
     let storage = Storage::new(&path, Options::default()).unwrap();
+    unsafe { storage.set_mapsize(1024 * 1024 * 1024 * 25) };
 
     // Get collection
     let collection = storage.collection("record").unwrap();
