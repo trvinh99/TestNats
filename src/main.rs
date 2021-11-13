@@ -42,7 +42,7 @@ fn main() {
     //insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
 
-    let path = format!("data/record/{}", 1);
+    let path = format!("/data/record/{}", 1);
     let storage = Storage::new(&path, Options::default()).unwrap();
 
     // Get collection
