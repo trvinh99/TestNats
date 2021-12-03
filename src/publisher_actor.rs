@@ -70,7 +70,7 @@ impl PublisherActor {
                                         let mut c_client = Arc::clone(&c_client);
                                         if let Some(c_client) = Arc::get_mut(&mut c_client) {
                                             *c_client = nats::asynk::Options::with_credentials(
-                                                "src/hub.creds",
+                                                "data/stage.creds",
                                             )
                                             .close_callback(move || {
                                                 *c_is_closed.lock().unwrap() = true;
