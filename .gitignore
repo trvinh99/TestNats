@@ -1,5 +1,7 @@
 /target
-
+Cargo.lock
+data
+run.sh
 
 # Added by cargo
 #
