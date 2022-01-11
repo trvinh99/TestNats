@@ -76,16 +76,17 @@ impl TestTranscodeActor {
                                 let result = throttle.accept();
                                 match result {
                                     Ok(_) => {
-                                        info!(
-                                            "[Starting actor] Cam id: {}, sequence: {}",
-                                            cam_id, sequence
-                                        );
-                                        let now = match SystemTime::now()
+                                         let now = match SystemTime::now()
                                             .duration_since(SystemTime::UNIX_EPOCH)
                                         {
                                             Ok(n) => n.as_nanos(),
                                             Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                                         };
+                                        println!(
+                                            "[Starting actor] Cam id: {}, sequence: {}, timestamp: {}",
+                                            cam_id, sequence, now
+                                        );
+                                       
                                         let msg = lexray_jp2k::FrameItem {
                                             camera_id: cam_id.as_bytes().to_vec(),
                                             timestamp: now, //TODO GET TIME OF FRAME NOT NOW
