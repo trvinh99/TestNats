@@ -1,7 +1,9 @@
+use crate::constants::ONE_SEC;
 use crate::jp2k::encode::lexray_jp2k;
 use crate::throttle::Throttle;
 use crate::transcode_actor::FrameType;
 use bastion::prelude::*;
+use chrono::{NaiveDateTime, DateTime, Utc};
 use dashmap::DashMap;
 use log::info;
 use rand::rngs::OsRng;
@@ -84,7 +86,7 @@ impl TestTranscodeActor {
                                         };
                                         println!(
                                             "[Starting actor] Cam id: {}, sequence: {}, timestamp: {}",
-                                            cam_id, sequence, now
+                                            cam_id, sequence, timestamp_to_date_time(now as i64)
                                         );
                                        
                                         let msg = lexray_jp2k::FrameItem {
@@ -175,4 +177,10 @@ fn loadbalance_publisher(
     let name = format! {"publish_actor_{}",index};
     source.insert(cam_id, name.clone());
     name
+}
+
+pub fn timestamp_to_date_time(timestamp: i64)  -> DateTime<Utc> {
+    let timestamp = timestamp / ONE_SEC;
+    let naive = NaiveDateTime::from_timestamp_opt(timestamp, (timestamp % 1000) as u32 * 1_000_000).unwrap();
+    DateTime::<Utc>::from_utc(naive, Utc)
 }
