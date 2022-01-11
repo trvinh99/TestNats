@@ -41,10 +41,11 @@ impl PublisherActor {
                             let is_closed = Arc::new(Mutex::new(false));
                             let c_is_closed = Arc::clone(&is_closed);
                             let mut client = Arc::new(
-                                nats::asynk::Options::with_credentials("src/hub.creds")
+                                //nats::asynk::Options::with_credentials("data/stage.creds")
+                                nats::asynk::Options::with_user_pass("leaf","changeme")
                                     .close_callback(move || {
                                         *c_is_closed.lock().unwrap() = true;
-                                        println!("trying to reconnect..")
+                                        println!("1 trying to reconnect..")
                                     })
                                     .reconnect_callback(|| println!("reconnected"))
                                     .disconnect_callback(|| println!("disconnected"))
@@ -74,7 +75,7 @@ impl PublisherActor {
                                             )
                                             .close_callback(move || {
                                                 *c_is_closed.lock().unwrap() = true;
-                                                println!("trying to reconnect..")
+                                                println!("2 trying to reconnect..")
                                             })
                                             .reconnect_callback(|| println!("reconnected"))
                                             .disconnect_callback(|| println!("disconnected"))
