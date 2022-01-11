@@ -246,9 +246,9 @@ impl TranscodeEngine {
                                                                         
                                                                         j2c_frame_count += 1;
 
-                                                                        publish_actor.tell_one(msg).expect(
-                                                                            "Publish frame to Publish Actor Failed.",
-                                                                        );
+                                                                        // publish_actor.tell_one(msg).expect(
+                                                                        //     "Publish frame to Publish Actor Failed.",
+                                                                        // );
 
                                                                     } else {
                                                                         println!("[TRANSCODE-{}]: Over 1 MB payload: {}", cam_id, (serialized.len()) / (1024 *1024));
