@@ -67,7 +67,7 @@ fn main() {
         let cam_id = format!("cam_{}", i);
         TranscodeEngine::init(
             &parent_ref.clone(),
-            1,
+            publish_actors,
             format!("transcode-{}", cam_id.clone()).as_str(),
             1,
             j2c_host,
