@@ -73,41 +73,41 @@ impl TestTranscodeActor {
                             rng.fill_bytes(&mut session_key);
                             //for x in 1..10
                             loop {
-                                // let result = throttle.accept();
-                                // match result {
-                                // Ok(_) => {
-                                info!(
-                                    "[Starting actor] Cam id: {}, sequence: {}",
-                                    cam_id, sequence
-                                );
-                                let now = match SystemTime::now()
-                                    .duration_since(SystemTime::UNIX_EPOCH)
-                                {
-                                    Ok(n) => n.as_nanos(),
-                                    Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-                                };
-                                let msg = lexray_jp2k::FrameItem {
-                                    camera_id: cam_id.as_bytes().to_vec(),
-                                    timestamp: now, //TODO GET TIME OF FRAME NOT NOW
-                                    image: contents.clone(),
-                                    session_key: session_key.to_vec(),
-                                    frame_type: FrameType::J2C,
-                                    frame_width: 0,
-                                    frame_height: 0,
-                                };
+                                let result = throttle.accept();
+                                match result {
+                                    Ok(_) => {
+                                        info!(
+                                            "[Starting actor] Cam id: {}, sequence: {}",
+                                            cam_id, sequence
+                                        );
+                                        let now = match SystemTime::now()
+                                            .duration_since(SystemTime::UNIX_EPOCH)
+                                        {
+                                            Ok(n) => n.as_nanos(),
+                                            Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                                        };
+                                        let msg = lexray_jp2k::FrameItem {
+                                            camera_id: cam_id.as_bytes().to_vec(),
+                                            timestamp: now, //TODO GET TIME OF FRAME NOT NOW
+                                            image: contents.clone(),
+                                            session_key: session_key.to_vec(),
+                                            frame_type: FrameType::J2C,
+                                            frame_width: 0,
+                                            frame_height: 0,
+                                        };
 
-                                transcode_distributor
-                                    .tell_one(msg)
-                                    .expect("Camera send frame failed.");
+                                        transcode_distributor
+                                            .tell_one(msg)
+                                            .expect("Camera send frame failed.");
 
-                                if sequence == max_msg - 1 {
-                                    break Ok(());
-                                    //return;
+                                        if sequence == max_msg - 1 {
+                                            break Ok(());
+                                            //return;
+                                        }
+                                        sequence += 1;
+                                    }
+                                    Err(_) => {}
                                 }
-                                sequence += 1;
-                                //     }
-                                //     Err(_) => {}
-                                // }
 
                                 Timer::after(Duration::from_millis(200)).await;
                             }
