@@ -70,7 +70,7 @@ fn main() {
             &parent_ref.clone(),
             publish_actors,
             format!("transcode-{}", cam_id.clone()).as_str(),
-            1,
+            publish_actors,
             j2c_host,
         )
         .unwrap();

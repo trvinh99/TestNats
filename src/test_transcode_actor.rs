@@ -57,7 +57,7 @@ impl TestTranscodeActor {
                         );
 
                         let transcode_distributor =
-                            Distributor::named(format!("transcode-{}", cam_id));
+                            Distributor::named(format!("transcode-{}", cam_id.clone()).as_str());
 
                         let mut camera_source_map_child = camera_source_map.clone();
                         async move {
