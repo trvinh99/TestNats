@@ -6,6 +6,8 @@ use std::env::Args;
 use std::error::Error;
 use std::fmt::{Display, Formatter};
 
+use crate::constants::J2C_HOST;
+
 #[derive(Debug, Clone)]
 pub struct ConfigError {
     msg: String,
@@ -85,7 +87,7 @@ impl ConfigBuilder {
     }
 
     /// Build the configuration.
-    pub fn build(self) -> Result<Config, ConfigError> {
+    pub fn build(self, j2c_host: String) -> Result<Config, ConfigError> {
         let config = Config {
             nats_url: self.nats_url.clone(),
             redundancy: self.redundancy,
@@ -93,6 +95,7 @@ impl ConfigBuilder {
             max_msg: self.max_msg,
             max_cams: self.max_cams,
             fps: self.fps,
+            j2c_host,
         };
 
         Ok(config)
@@ -107,6 +110,7 @@ pub struct ConfigParser {
     max_msg: usize,
     max_cams: usize,
     fps: usize,
+    j2c_host: String,
 }
 
 impl ConfigParser {
@@ -119,6 +123,7 @@ impl ConfigParser {
             max_msg: 300,
             max_cams: 24,
             fps: 5,
+            j2c_host: String::from(&*J2C_HOST),
         }
     }
 
@@ -134,7 +139,7 @@ impl ConfigParser {
             .max_cams(self.max_cams)
             .fps(self.fps);
 
-        let config = config_builder.build()?;
+        let config = config_builder.build(self.j2c_host)?;
 
         Ok(config)
     }
@@ -160,6 +165,8 @@ impl ConfigParser {
                         self.max_cams(arg)?;
                     } else if arg.starts_with("--fps") {
                         self.fps(arg)?;
+                    } else if arg.starts_with("--j2c-host=") {
+                        self.j2c_host(arg)?;
                     } else {
                         return Err(ConfigError::new(format!("unknown argument: \"{}\"", arg)));
                     }
@@ -184,6 +191,14 @@ impl ConfigParser {
         self.publisher_actors = actors.parse().map_err(|_| {
             ConfigError::new(format!("invalid value given for {}, number expected", arg))
         })?;
+
+        Ok(())
+    }
+
+    fn j2c_host(&mut self, arg: &str) -> Result<(), ConfigError> {
+        let j2c_host = &arg["--j2c-host=".len()..];
+
+        self.j2c_host = j2c_host.to_owned();
 
         Ok(())
     }
@@ -237,6 +252,7 @@ pub struct Config {
     max_msg: usize,
     max_cams: usize,
     fps: usize,
+    j2c_host: String,
 }
 
 impl Config {
@@ -273,6 +289,10 @@ impl Config {
 
     pub fn get_fps(&self) -> usize {
         self.fps
+    }
+
+    pub fn get_j2c_host(&self) -> String {
+        self.j2c_host.clone()
     }
 }
 

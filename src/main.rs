@@ -1,7 +1,13 @@
+mod aes;
 mod config;
+pub mod constants;
+pub mod jp2k;
+pub mod protos;
 mod publisher_actor;
 mod test_actor;
+pub mod test_transcode_actor;
 mod throttle;
+mod transcode_actor;
 
 use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
@@ -24,6 +30,7 @@ use std::time::Duration;
 use tokio::task;
 
 use crate::test_actor::TestActor;
+use crate::transcode_actor::TranscodeEngine;
 
 fn main() {
     let config = config::Config::from_args(std::env::args()).unwrap();
@@ -39,7 +46,11 @@ fn main() {
     let max_msg = config.get_max_msg();
     let max_cams = config.get_max_cams();
     let fps = config.get_fps();
-    println!("url: {}, Cams: {}, Publisher: {}, total Msg/Cam: {}, fps: {}",url,max_cams,publish_actors,max_msg,fps);
+    let j2c_host = config.get_j2c_host();
+    println!(
+        "url: {}, Cams: {}, Publisher: {}, total Msg/Cam: {}, fps: {}",
+        url, max_cams, publish_actors, max_msg, fps
+    );
 
     simple_logging::log_to_file("logs/log.txt", LevelFilter::Info).unwrap();
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
@@ -52,9 +63,19 @@ fn main() {
     }
 
     for i in 1..=max_cams {
+        let j2c_host = j2c_host.clone();
+        let cam_id = format!("cam_{}", i);
+        TranscodeEngine::init(
+            &parent_ref.clone(),
+            1,
+            format!("transcode-{}", cam_id.clone()).as_str(),
+            1,
+            j2c_host,
+        )
+        .unwrap();
+        sleep(std::time::Duration::from_secs(1));
         let parent_ref = parent_ref.clone();
         run!(async move {
-            let cam_id = format!("cam_{}", i);
             println!("{}", cam_id);
             let _ = TestActor::start(
                 &parent_ref,
