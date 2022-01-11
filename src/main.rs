@@ -30,6 +30,7 @@ use std::time::Duration;
 use tokio::task;
 
 use crate::test_actor::TestActor;
+use crate::test_transcode_actor::TestTranscodeActor;
 use crate::transcode_actor::TranscodeEngine;
 
 fn main() {
@@ -77,7 +78,7 @@ fn main() {
         let parent_ref = parent_ref.clone();
         run!(async move {
             println!("{}", cam_id);
-            let _ = TestActor::start(
+            let _ = TestTranscodeActor::start(
                 &parent_ref,
                 cam_id,
                 test_redundancy,
