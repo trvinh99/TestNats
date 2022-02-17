@@ -85,7 +85,7 @@ impl TestActor {
                                 //     Err(_) => {}
                                 // }
 
-                                Timer::after(Duration::from_millis(200)).await;
+                                Timer::after(Duration::from_millis((1000/fps) as u64)).await;
                             }
                             //Ok(());
                         }
