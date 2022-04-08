@@ -41,7 +41,7 @@ impl PublisherActor {
                             let is_closed = Arc::new(Mutex::new(false));
                             let c_is_closed = Arc::clone(&is_closed);
                             let mut client = Arc::new(
-                                nats::asynk::Options::with_credentials("data/stage.creds")
+                                nats::asynk::Options::with_credentials("data/nats.creds")
                                // nats::asynk::Options::with_user_pass("leaf","changeme")
                                     .close_callback(move || {
                                         *c_is_closed.lock().unwrap() = true;
@@ -71,7 +71,7 @@ impl PublisherActor {
                                         let mut c_client = Arc::clone(&c_client);
                                         if let Some(c_client) = Arc::get_mut(&mut c_client) {
                                             *c_client = nats::asynk::Options::with_credentials(
-                                                "data/stage.creds",
+                                                "data/nats.creds",
                                             )
                                             .close_callback(move || {
                                                 *c_is_closed.lock().unwrap() = true;
