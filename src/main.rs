@@ -95,7 +95,7 @@ fn insert() {
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
-    for i in 1..=30 {
+    for i in 1..=39 {
         let contents = contents.clone();
         let path = format!("src/record/{}", i);
         // let record_db_config = sled::Config::default()
@@ -117,22 +117,24 @@ fn insert() {
         query!(index MyDoc for collection).unwrap();
 
         bastion::spawn!(async move {
-            let mut i: i64 = 0;
-            while i < 432000 {
+            let mut j: i64 = 0;
+            while j < 432000 {
                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                     Ok(n) => n.as_nanos(),
                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                 };
 
-                // let folder_url = format!("src/record_frame/{}/{}", "2021/11/12", i);
-                // fs::create_dir_all(&folder_url).unwrap();
+                let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
+                fs::create_dir_all(&folder_url).unwrap();
 
-                // let file_url = format!("src/record_frame/{}/{}/{}", "2021/11/12", i, now);
+                let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
 
-                // let mut file = File::create(file_url.clone()).unwrap();
-                // file.write_all(&contents).unwrap();
+                // let file_url = format!("src/record_frame/{}", i);
 
-                let first_id = collection
+                let mut file = File::create(file_url.clone()).unwrap();
+                file.write_all(&contents).unwrap();
+
+                let _ = collection
                     .insert(&MyDoc {
                         id: None,
                         timestamp: now as i64,
@@ -140,10 +142,10 @@ fn insert() {
                     })
                     .unwrap();
 
-                println!("{}", i);
-                i += 1;
+                println!("CAM: {}, SEQ: {}", i, j);
+                j += 1;
 
-                Timer::after(Duration::from_millis(50)).await;
+                Timer::after(Duration::from_millis(333)).await;
                 //}
             }
         });
