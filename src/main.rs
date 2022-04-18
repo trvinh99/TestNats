@@ -129,7 +129,7 @@ fn insert() {
 
                     spawn!(async move {
                         let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
-                        fs::create_dir_all(&folder_url).unwrap();
+                        async_std::fs::create_dir_all(&folder_url).await.unwrap();
 
                         let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
 
