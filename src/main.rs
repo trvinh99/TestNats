@@ -127,17 +127,17 @@ fn insert() {
                         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                     };
 
-                    spawn!(async move {
-                        let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
-                        fs::create_dir_all(&folder_url).unwrap();
+                    // spawn!(async move {
+                    let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
+                    fs::create_dir_all(&folder_url).unwrap();
 
-                        let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
+                    let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
 
-                        // let file_url = format!("src/record_frame/{}", i);
+                    // let file_url = format!("src/record_frame/{}", i);
 
-                        let mut file = std::fs::File::create(file_url.clone()).unwrap();
-                        file.write_all(&contents).unwrap();
-                    });
+                    let mut file = std::fs::File::create(file_url.clone()).unwrap();
+                    file.write_all(&contents).unwrap();
+                    // });
 
                     let _ = collection
                         .insert(&MyDoc {
