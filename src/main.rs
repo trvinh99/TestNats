@@ -1,3 +1,4 @@
+use async_std::io::WriteExt;
 use bastion::spawn;
 use bastion::Bastion;
 use chrono::Utc;
@@ -31,7 +32,6 @@ struct MyDoc {
     id: Option<Primary>,
     #[document(index)]
     timestamp: i64,
-    frame: Vec<u8>,
 }
 fn main() {
     // let config = config::Config::from_args(std::env::args()).unwrap();
@@ -98,8 +98,8 @@ fn insert() {
     for i in 1..=39 {
         let contents = contents.clone();
         spawn!(async move {
-            let contents = contents.clone();
             let path = format!("src/record/{}", i);
+            let contents = contents.clone();
             // let record_db_config = sled::Config::default()
             //     .path(format!("src/record/{}", i))
             //     .cache_capacity(10 * 1024 * 1024)
@@ -121,26 +121,28 @@ fn insert() {
             spawn!(async move {
                 let mut j: i64 = 0;
                 while j < 432000 {
+                    let contents = contents.clone();
                     let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
                         Ok(n) => n.as_nanos(),
                         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                     };
 
-                    let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
-                    fs::create_dir_all(&folder_url).unwrap();
+                    spawn!(async move {
+                        let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
+                        fs::create_dir_all(&folder_url).unwrap();
 
-                    let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
+                        let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
 
-                    // let file_url = format!("src/record_frame/{}", i);
+                        // let file_url = format!("src/record_frame/{}", i);
 
-                    let mut file = File::create(file_url.clone()).unwrap();
-                    file.write_all(&contents).unwrap();
+                        let mut file = async_std::fs::File::create(file_url.clone()).await.unwrap();
+                        file.write_all(&contents).await.unwrap();
+                    });
 
                     let _ = collection
                         .insert(&MyDoc {
                             id: None,
                             timestamp: now as i64,
-                            frame: contents.to_vec(),
                         })
                         .unwrap();
 
@@ -155,93 +157,88 @@ fn insert() {
     }
 }
 
-async fn query_db(start_time: i64, end_time: i64) {
-    println!("QUERYYY");
-    let path = format!("src/record/{}", 1);
-    let storage = Storage::new(&path, Options::default()).unwrap();
+// async fn query_db(start_time: i64, end_time: i64) {
+//     println!("QUERYYY");
+//     let path = format!("src/record/{}", 1);
+//     let storage = Storage::new(&path, Options::default()).unwrap();
 
-    // Get collection
-    let collection = storage.collection("record").unwrap();
+//     // Get collection
+//     let collection = storage.collection("record").unwrap();
 
-    // Ensure indexes
-    query!(index for collection
-        timestamp int unique,
-    )
-    .unwrap();
+//     // Ensure indexes
+//     query!(index for collection
+//         timestamp int unique,
+//     )
+//     .unwrap();
 
-    let mut sleep = 0;
+//     let mut sleep = 0;
 
-    let mut limit_step = 0;
+//     let mut limit_step = 0;
 
-    let start_record = get_start_record_time(collection.clone());
-    println!("Start record: {}", start_record);
-    let end_record = get_end_record_time(collection.clone());
-    println!("End record: {}", end_record);
+//     let start_record = get_start_record_time(collection.clone());
+//     println!("Start record: {}", start_record);
+//     let end_record = get_end_record_time(collection.clone());
+//     println!("End record: {}", end_record);
 
-    if start_time <= end_record && end_time >= start_record && start_time <= end_time {
-        println!("YUPPP");
-        let mut start = if start_time < start_record {
-            start_record
-        } else {
-            start_time
-        };
-        let end = if end_time > end_record {
-            end_record
-        } else {
-            end_time
-        };
+//     if start_time <= end_record && end_time >= start_record && start_time <= end_time {
+//         println!("YUPPP");
+//         let mut start = if start_time < start_record {
+//             start_record
+//         } else {
+//             start_time
+//         };
+//         let end = if end_time > end_record {
+//             end_record
+//         } else {
+//             end_time
+//         };
 
-        println!("Start time: {} and End time: {}", start, end);
+//         println!("Start time: {} and End time: {}", start, end);
 
-        while start <= end {
-            let collection = collection.clone();
-            limit_step = if end - start >= limit_step {
-                LIMIT_STEP
-            } else {
-                end - start + ONE_SEC
-            };
+//         while start <= end {
+//             let collection = collection.clone();
+//             limit_step = if end - start >= limit_step {
+//                 LIMIT_STEP
+//             } else {
+//                 end - start + ONE_SEC
+//             };
 
-            let frames = range_query(collection, start, start + limit_step, 1);
-            println!("Vec length: {}", frames.len());
+//             let frames = range_query(collection, start, start + limit_step, 1);
+//             println!("Vec length: {}", frames.len());
 
-            let mut cur_index = 0;
-            for i in 0..frames.len() {
-                let frame = &frames[i];
-                if i < frames.len() - 1 {
-                    let next_frame = &frames[i + 1];
-                    sleep = ((next_frame.0 - frame.0) / 1_000_000i64) as u64;
-                }
-                cur_index = frame.0;
-                println!("{}", frame.0);
+//             let mut cur_index = 0;
+//             for i in 0..frames.len() {
+//                 let frame = &frames[i];
+//                 if i < frames.len() - 1 {
+//                     let next_frame = &frames[i + 1];
+//                     sleep = ((next_frame.0 - frame.0) / 1_000_000i64) as u64;
+//                 }
+//                 cur_index = frame.0;
+//                 println!("{}", frame.0);
 
-                Timer::after(Duration::from_millis(sleep)).await;
-            }
+//                 Timer::after(Duration::from_millis(sleep)).await;
+//             }
 
-            println!("Limit: {}", limit_step);
+//             println!("Limit: {}", limit_step);
 
-            start = cur_index + ONE_NAN_SEC;
-        }
-    }
-}
+//             start = cur_index + ONE_NAN_SEC;
+//         }
+//     }
+// }
 
-pub fn range_query(
-    collection: Collection,
-    start: i64,
-    end: i64,
-    speed: usize,
-) -> Vec<(i64, Vec<u8>)> {
-    let filter = query!(@filter timestamp in start..end);
-    let elements: Vec<MyDoc> = collection
-        .find(filter, Order::Primary(OrderKind::Asc))
-        .unwrap()
-        .collect::<Result<Vec<_>, _>>()
-        .unwrap();
-    let mut value_array: Vec<(i64, Vec<u8>)> = Vec::<(i64, Vec<u8>)>::new();
-    for q in elements.into_iter().step_by(speed) {
-        value_array.push((q.timestamp, q.frame));
-    }
-    value_array
-}
+// pub fn range_query(collection: Collection, start: i64, end: i64, speed: usize) -> Vec<i64> {
+//     let filter = query!(@filter timestamp in start..end);
+//     let elements: Vec<MyDoc> = collection
+//         .find(filter, Order::Primary(OrderKind::Asc))
+//         .unwrap()
+//         .collect::<Result<Vec<_>, _>>()
+//         .unwrap();
+//     let mut value_array: Vec<(i64, Vec<u8>)> = Vec::<i64>::new();
+//     for q in elements.into_iter().step_by(speed) {
+//         value_array.push((q.timestamp));
+//     }
+//     value_array
+// }
 
 pub fn get_start_record_time(collection: Collection) -> i64 {
     let first_id = 1;
