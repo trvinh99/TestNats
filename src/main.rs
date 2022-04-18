@@ -95,7 +95,7 @@ fn insert() {
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
-    for i in 1..=39 {
+    for i in 1..=30 {
         let contents = contents.clone();
         spawn!(async move {
             let path = format!("src/record/{}", i);
@@ -149,7 +149,7 @@ fn insert() {
                     println!("CAM: {}, SEQ: {}", i, j);
                     j += 1;
 
-                    Timer::after(Duration::from_millis(333)).await;
+                    Timer::after(Duration::from_millis(50)).await;
                     //}
                 }
             });
