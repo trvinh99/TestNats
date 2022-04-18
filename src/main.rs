@@ -39,21 +39,21 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    //insert();
+    insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
 
-    let path = format!("/data/record/{}", 1);
-    let storage = Storage::new(&path, Options::default()).unwrap();
-    unsafe { storage.set_mapsize(1024 * 1024 * 1024 * 25) };
+    // let path = format!("/data/record/{}", 1);
+    // let storage = Storage::new(&path, Options::default()).unwrap();
+    // unsafe { storage.set_mapsize(1024 * 1024 * 1024 * 25) };
 
-    // Get collection
-    let collection = storage.collection("record").unwrap();
+    // // Get collection
+    // let collection = storage.collection("record").unwrap();
 
-    // Ensure indexes
-    query!(index for collection
-        timestamp int unique,
-    )
-    .unwrap();
+    // // Ensure indexes
+    // query!(index for collection
+    //     timestamp int unique,
+    // )
+    // .unwrap();
 
     // let bef = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
     //     Ok(n) => n.as_nanos(),
@@ -67,8 +67,8 @@ fn main() {
     //     .collect::<Result<Vec<_>, _>>()
     //     .unwrap();
 
-    let last_id = collection.last_id().unwrap();
-    println!("last id: {}", last_id);
+    // let last_id = collection.last_id().unwrap();
+    // println!("last id: {}", last_id);
 
     // let last_frame: MyDoc = collection.get(last_id).unwrap().unwrap();
     // let url = last_frame.frame;
@@ -97,7 +97,7 @@ fn insert() {
 
     for i in 1..=30 {
         let contents = contents.clone();
-        let path = format!("/data/record/{}", i);
+        let path = format!("src/record/{}", i);
         // let record_db_config = sled::Config::default()
         //     .path(format!("src/record/{}", i))
         //     .cache_capacity(10 * 1024 * 1024)
