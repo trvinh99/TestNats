@@ -112,7 +112,7 @@ impl RecordSavingActor {
                                         // spawn!(async move {
                                         //Save a frame data into disk.
                                         let rt = tokio::runtime::Runtime::new().unwrap();
-                                        rt.block_on(async move {
+                                        rt.spawn_blocking(|| async move {
                                             let folder_url = format!(
                                                 "src/record_frame/{}/{}",
                                                 date, message.cam_id,
