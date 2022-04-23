@@ -11,6 +11,7 @@ dependencies = [
  "chrono",
  "dashmap",
  "fastrand",
+ "lazy_static",
  "ledb",
  "ledb-types",
  "log",

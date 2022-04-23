@@ -1,4 +1,8 @@
+pub mod record_saving_actor;
+
+use bastion::distributor::Distributor;
 use bastion::spawn;
+use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use chrono::Utc;
 use ledb::Collection;
@@ -19,6 +23,9 @@ use ledb::{
 };
 
 use std::str::FromStr;
+
+use crate::record_saving_actor::RecordSavingActor;
+use crate::record_saving_actor::SaveRecordFrameMessage;
 
 const LIMIT_STEP: i64 = 20_000_000_000i64;
 const ONE_SEC: i64 = 1_000_000_000i64;
@@ -94,8 +101,18 @@ fn insert() {
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
+    let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
+        .expect("could not create a supervisor");
+
     for i in 1..=39 {
         let contents = contents.clone();
+        let (_, mut record_saving_rx) =
+            RecordSavingActor::init(&parent_ref, i.to_string()).unwrap();
+
+        let rt = tokio::runtime::Runtime::new().unwrap();
+        rt.block_on(async {
+            let _ = record_saving_rx.recv().await;
+        });
         spawn!(async move {
             let path = format!("src/record/{}", i);
             let contents = contents.clone();
@@ -117,25 +134,18 @@ fn insert() {
                         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                     };
 
-                    let rt = tokio::runtime::Runtime::new().unwrap();
-                    rt.block_on(async move {
-                        let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
-                        tokio::fs::create_dir_all(&folder_url).await.unwrap();
+                    let msg_to_record_saving = SaveRecordFrameMessage {
+                        cam_id: i.to_string(),
+                        timestamp: now as i64,
+                        payload: contents,
+                        record_cloud: false,
+                    };
 
-                        let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
-
-                        // let file_url = format!("src/record_frame/{}", i);
-
-                        let mut file = tokio::fs::File::create(file_url.clone()).await.unwrap();
-                        file.write_all(&contents).await.unwrap();
-                    });
-
-                    let _ = collection
-                        .insert(&MyDoc {
-                            id: None,
-                            timestamp: now as i64,
-                        })
-                        .unwrap();
+                    let record_saving_actor =
+                        Distributor::named(format!("record_saving_actor_{}", i.to_string()));
+                    record_saving_actor
+                        .tell_one(msg_to_record_saving)
+                        .expect("Can't send the message!");
 
                     println!("CAM: {}, SEQ: {}", i, j);
                     j += 1;
