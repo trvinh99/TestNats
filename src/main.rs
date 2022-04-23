@@ -106,24 +106,15 @@ fn insert() {
 
     for i in 1..=39 {
         let contents = contents.clone();
-        let (_, mut record_saving_rx) =
-            RecordSavingActor::init(&parent_ref, i.to_string()).unwrap();
-
-        let rt = tokio::runtime::Runtime::new().unwrap();
-        rt.block_on(async {
-            let _ = record_saving_rx.recv().await;
-        });
+        let parent_ref = parent_ref.clone();
         spawn!(async move {
-            let path = format!("src/record/{}", i);
-            let contents = contents.clone();
+            let (_, mut record_saving_rx) =
+                RecordSavingActor::init(&parent_ref, i.to_string()).unwrap();
 
-            let storage = Storage::new(&path, Options::default()).unwrap();
-
-            // Get collection
-            let collection = storage.collection("record").unwrap();
-
-            // Ensure indexes using document type
-            query!(index MyDoc for collection).unwrap();
+            let rt = tokio::runtime::Runtime::new().unwrap();
+            rt.block_on(async {
+                let _ = record_saving_rx.recv().await;
+            });
 
             spawn!(async move {
                 let mut j: i64 = 0;
