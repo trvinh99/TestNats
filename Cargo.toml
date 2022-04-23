@@ -11,7 +11,7 @@ bastion = { git = "https://github.com/bastion-rs/bastion.git" }
 nats = { git = "https://github.com/trvinh99/nats.rs-1.git", branch="main" }
 smol = "*"
 openssl = "0.10.28"
-tokio="*"
+tokio = { version = "1.8.1", features = ["full"] }
 tracing-appender = "0.1.2"
 serde_json = "*"
 simple-logging="*"

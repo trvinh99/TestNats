@@ -1,4 +1,3 @@
-use async_std::io::WriteExt;
 use bastion::spawn;
 use bastion::Bastion;
 use chrono::Utc;
@@ -10,9 +9,9 @@ use smol::Timer;
 use std::fs;
 use std::fs::File;
 use std::io::Read;
-use std::io::Write;
 use std::time::Duration;
 use std::time::SystemTime;
+use tokio::io::AsyncWriteExt;
 
 use ledb::{
     query, query_extr, Comp, Document, Filter, Identifier, IndexKind, KeyType, Options, Order,
@@ -95,22 +94,13 @@ fn insert() {
     let mut contents = vec![];
     file.read_to_end(&mut contents).unwrap();
 
-    for i in 1..=30 {
+    for i in 1..=39 {
         let contents = contents.clone();
         spawn!(async move {
             let path = format!("src/record/{}", i);
             let contents = contents.clone();
-            // let record_db_config = sled::Config::default()
-            //     .path(format!("src/record/{}", i))
-            //     .cache_capacity(10 * 1024 * 1024)
-            //     .mode(sled::Mode::HighThroughput);
-            //let record_db = record_db_config.open().unwrap();
-            // let mut db_opts = Options::default();
-            // db_opts.create_if_missing(true);
-            // let record_db: DB = DB::open(&db_opts, path).unwrap();
-            // Open storage
+
             let storage = Storage::new(&path, Options::default()).unwrap();
-            unsafe { storage.set_mapsize(1024 * 1024 * 1024 * 25) };
 
             // Get collection
             let collection = storage.collection("record").unwrap();
@@ -127,17 +117,18 @@ fn insert() {
                         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                     };
 
-                    // spawn!(async move {
-                    let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
-                    fs::create_dir_all(&folder_url).unwrap();
+                    let rt = tokio::runtime::Runtime::new().unwrap();
+                    rt.block_on(async move {
+                        let folder_url = format!("src/record_frame/{}/{}", "2022/04/18", i);
+                        tokio::fs::create_dir_all(&folder_url).await.unwrap();
 
-                    let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
+                        let file_url = format!("src/record_frame/{}/{}/{}", "2022/04/18", i, now);
 
-                    // let file_url = format!("src/record_frame/{}", i);
+                        // let file_url = format!("src/record_frame/{}", i);
 
-                    let mut file = std::fs::File::create(file_url.clone()).unwrap();
-                    file.write_all(&contents).unwrap();
-                    // });
+                        let mut file = tokio::fs::File::create(file_url.clone()).await.unwrap();
+                        file.write_all(&contents).await.unwrap();
+                    });
 
                     let _ = collection
                         .insert(&MyDoc {
@@ -149,9 +140,9 @@ fn insert() {
                     println!("CAM: {}, SEQ: {}", i, j);
                     j += 1;
 
-                    Timer::after(Duration::from_millis(50)).await;
-                    //}
+                    Timer::after(Duration::from_millis(333)).await;
                 }
+                // }
             });
         });
     }
