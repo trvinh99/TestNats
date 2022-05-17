@@ -112,7 +112,7 @@ fn insert() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    for i in 0..1000 {
+    for i in 0..100000 {
         println!("COUNT: {}", count);
         let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
             Ok(n) => n.as_nanos(),
