@@ -115,7 +115,7 @@ fn insert() {
     for i in 0..1000 {
         println!("COUNT: {}", count);
         let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-            Ok(n) => n.as_nanos(),
+            Ok(n) => n.as_millis(),
             Err(_) => panic!("SystemTime before UNIX EPOCH!"),
         };
 
@@ -140,7 +140,7 @@ fn insert() {
     }
 
     let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-        Ok(n) => n.as_nanos(),
+        Ok(n) => n.as_millis(),
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
@@ -149,14 +149,14 @@ fn insert() {
     // let folder_url = format!("/data/record_frame/{}/{}", "2022-05-17", "1",);
 
     // let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
+    //     Ok(n) => n.as_millis(),
     //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     // };
 
     // let _ = std::fs::remove_dir_all(folder_url);
 
     // let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
+    //     Ok(n) => n.as_millis(),
     //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     // };
 
