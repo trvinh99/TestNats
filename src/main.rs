@@ -13,6 +13,7 @@ use smol::Timer;
 use std::fs;
 use std::fs::File;
 use std::io::Read;
+use std::io::Write;
 use std::time::Duration;
 use std::time::SystemTime;
 use tokio::io::AsyncWriteExt;
@@ -104,49 +105,78 @@ fn insert() {
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
         .expect("could not create a supervisor");
 
-    for i in 1..=39 {
-        let contents = contents.clone();
-        let parent_ref = parent_ref.clone();
-        spawn!(async move {
-            let (_, mut record_saving_rx) =
-                RecordSavingActor::init(&parent_ref, i.to_string()).unwrap();
+    let mut count = 0;
 
-            let rt = tokio::runtime::Runtime::new().unwrap();
-            rt.block_on(async {
-                let _ = record_saving_rx.recv().await;
-            });
+    for i in 0..200000 {
+        println!("COUNT: {}", count);
+        let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+            Ok(n) => n.as_nanos(),
+            Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+        };
 
-            spawn!(async move {
-                let mut j: i64 = 0;
-                while j < 432000 {
-                    let contents = contents.clone();
-                    let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-                        Ok(n) => n.as_nanos(),
-                        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-                    };
+        let folder_url = format!("src/record_frame/{}/{}", "2022-05-17", "1",);
 
-                    let msg_to_record_saving = SaveRecordFrameMessage {
-                        cam_id: i.to_string(),
-                        timestamp: now as i64,
-                        payload: contents,
-                        record_cloud: false,
-                    };
+        match fs::create_dir_all(&folder_url) {
+            Ok(_) => {
+                let file_url = format!(
+                    "src/record_frame/{}/{}/{}",
+                    "2022-05-17",
+                    "1",
+                    now.to_string()
+                );
 
-                    let record_saving_actor =
-                        Distributor::named(format!("record_saving_actor_{}", i.to_string()));
-                    record_saving_actor
-                        .tell_one(msg_to_record_saving)
-                        .expect("Can't send the message!");
+                let mut file = File::create(file_url.clone()).unwrap();
+                file.write_all(&contents).unwrap();
+            }
+            Err(_) => {}
+        };
 
-                    println!("CAM: {}, SEQ: {}", i, j);
-                    j += 1;
-
-                    Timer::after(Duration::from_millis(333)).await;
-                }
-                // }
-            });
-        });
+        count += 1;
     }
+
+    // for i in 1..=39 {
+    //     let contents = contents.clone();
+    //     let parent_ref = parent_ref.clone();
+    //     spawn!(async move {
+    //         let (_, mut record_saving_rx) =
+    //             RecordSavingActor::init(&parent_ref, i.to_string()).unwrap();
+
+    //         let rt = tokio::runtime::Runtime::new().unwrap();
+    //         rt.block_on(async {
+    //             let _ = record_saving_rx.recv().await;
+    //         });
+
+    //         spawn!(async move {
+    //             let mut j: i64 = 0;
+    //             while j < 432000 {
+    //                 let contents = contents.clone();
+    //                 let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //                     Ok(n) => n.as_nanos(),
+    //                     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    //                 };
+
+    //                 let msg_to_record_saving = SaveRecordFrameMessage {
+    //                     cam_id: i.to_string(),
+    //                     timestamp: now as i64,
+    //                     payload: contents,
+    //                     record_cloud: false,
+    //                 };
+
+    //                 let record_saving_actor =
+    //                     Distributor::named(format!("record_saving_actor_{}", i.to_string()));
+    //                 record_saving_actor
+    //                     .tell_one(msg_to_record_saving)
+    //                     .expect("Can't send the message!");
+
+    //                 println!("CAM: {}, SEQ: {}", i, j);
+    //                 j += 1;
+
+    //                 Timer::after(Duration::from_millis(333)).await;
+    //             }
+    //             // }
+    //         });
+    //     });
+    // }
 }
 
 // async fn query_db(start_time: i64, end_time: i64) {
