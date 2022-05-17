@@ -144,7 +144,7 @@ fn insert() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    println!("SAVE SUCCESSFUL: {}", end - start);
+    println!("SAVE SUCCESSFUL: {:?}", end - start);
 
     // let folder_url = format!("/data/record_frame/{}/{}", "2022-05-17", "1",);
 
@@ -160,7 +160,7 @@ fn insert() {
     //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     // };
 
-    // println!("DELETE SUCCESSFUL: {}", end - start);
+    // println!("DELETE SUCCESSFUL: {:?}", end - start);
 
     // for i in 1..=39 {
     //     let contents = contents.clone();
