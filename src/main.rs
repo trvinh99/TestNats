@@ -145,10 +145,10 @@ fn insert() {
 
     // let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", "1",);
 
-    // let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
-    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    // };
+    let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+        Ok(n) => n.as_nanos(),
+        Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    };
 
     // let mut count = 0;
 
