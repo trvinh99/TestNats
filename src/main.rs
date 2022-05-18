@@ -148,7 +148,16 @@ fn insert() {
     //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     // };
 
-    // let _ = std::fs::remove_dir_all(folder_url);
+    // let mut count = 0;
+
+    // while count < 256000 {
+    //     let mut c = 0;
+    //     for i in count..count + 500 {
+    //         let _ = std::fs::remove_file(format!("{}/{}", folder_url, i));
+    //         c = i;
+    //     }
+    //     count = c;
+    // }
 
     // let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
     //     Ok(n) => n.as_nanos(),
