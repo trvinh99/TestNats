@@ -161,7 +161,7 @@ fn insert() {
             Err(_) => panic!("SystemTime before UNIX EPOCH!"),
         };
 
-        let _ = std::fs::remove_file(folder_url);
+        let _ = std::fs::remove_dir_all(folder_url);
 
         let end_c = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
             Ok(n) => n.as_nanos(),
