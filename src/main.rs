@@ -105,70 +105,35 @@ fn insert() {
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
         .expect("could not create a supervisor");
 
-    // let mut count = 0;
-
-    // let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
-    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    // };
-
-    // for i in 0..1000 {
-    //     for j in 0..256 {
-    //         println!("COUNT: {}", count);
-    //         // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //         //     Ok(n) => n.as_nanos(),
-    //         //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    //         // };
-
-    //         let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", i,);
-
-    //         match fs::create_dir_all(&folder_url) {
-    //             Ok(_) => {
-    //                 let file_url = format!("{}/{}", folder_url, j);
-
-    //                 let mut file = File::create(file_url.clone()).unwrap();
-    //                 file.write_all(&contents).unwrap();
-    //             }
-    //             Err(_) => {}
-    //         };
-
-    //         count += 1;
-    //     }
-    // }
-
-    // let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
-    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    // };
-
-    // println!("SAVE SUCCESSFUL: {}", end - start);
-
-    // let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", "1",);
+    let mut count = 0;
 
     let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
         Ok(n) => n.as_nanos(),
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    // let mut count = 0;
+    for i in 0..256000 {
+        // for j in 0..256 {
+        println!("COUNT: {}", count);
+        // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+        //     Ok(n) => n.as_nanos(),
+        //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+        // };
 
-    // let _ = std::fs::remove_dir_all(format!("{}", folder_url));
+        let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", "1",);
 
-    for i in 0..1000 {
-        let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", i,);
-        let start_c = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-            Ok(n) => n.as_nanos(),
-            Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+        match fs::create_dir_all(&folder_url) {
+            Ok(_) => {
+                let file_url = format!("{}/{}", folder_url, i);
+
+                let mut file = File::create(file_url.clone()).unwrap();
+                file.write_all(&contents).unwrap();
+            }
+            Err(_) => {}
         };
 
-        let _ = std::fs::remove_dir_all(folder_url);
-
-        let end_c = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-            Ok(n) => n.as_nanos(),
-            Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-        };
-
-        println!("DELETE 256 FILES SUCCESSFUL: {}", end_c - start_c);
+        count += 1;
+        // }
     }
 
     let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
@@ -176,7 +141,36 @@ fn insert() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    println!("DELETE SUCCESSFUL: {}", end - start);
+    println!("SAVE SUCCESSFUL: {}", end - start);
+
+    // let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //     Ok(n) => n.as_nanos(),
+    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    // };
+
+    // for i in 0..1000 {
+    //     let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", i,);
+    //     let start_c = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //         Ok(n) => n.as_nanos(),
+    //         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    //     };
+
+    //     let _ = std::fs::remove_dir_all(folder_url);
+
+    //     let end_c = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //         Ok(n) => n.as_nanos(),
+    //         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    //     };
+
+    //     println!("DELETE 256 FILES SUCCESSFUL: {}", end_c - start_c);
+    // }
+
+    // let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //     Ok(n) => n.as_nanos(),
+    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    // };
+
+    // println!("DELETE SUCCESSFUL: {}", end - start);
 
     // for i in 1..=39 {
     //     let contents = contents.clone();
