@@ -105,46 +105,6 @@ fn insert() {
     let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
         .expect("could not create a supervisor");
 
-    // let mut count = 0;
-
-    // let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
-    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    // };
-
-    // // for i in 0..39 {
-    // for j in 0..256000 {
-    //     // for j in 0..256 {
-    //     println!("COUNT: {}", count);
-    //     // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     //     Ok(n) => n.as_nanos(),
-    //     //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    //     // };
-
-    //     let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", "39",);
-
-    //     match fs::create_dir_all(&folder_url) {
-    //         Ok(_) => {
-    //             let file_url = format!("{}/{}", folder_url, j);
-
-    //             let mut file = File::create(file_url.clone()).unwrap();
-    //             file.write_all(&contents).unwrap();
-    //         }
-    //         Err(_) => {}
-    //     };
-    //     count += 1;
-    // }
-
-    // // }
-    // // }
-
-    // let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-    //     Ok(n) => n.as_nanos(),
-    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-    // };
-
-    // println!("SAVE SUCCESSFUL: {}", end - start);
-
     let mut count = 0;
 
     let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
@@ -152,26 +112,66 @@ fn insert() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    for i in 0..39 {
-        let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", i,);
-        let _ = std::fs::remove_dir_all(folder_url);
+    // for i in 0..39 {
+    for j in 0..256000 {
+        // for j in 0..256 {
+        println!("COUNT: {}", count);
+        // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+        //     Ok(n) => n.as_nanos(),
+        //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+        // };
+
+        let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", "39",);
+
+        match fs::create_dir_all(&folder_url) {
+            Ok(_) => {
+                let file_url = format!("{}/{}", folder_url, j);
+
+                let mut file = File::create(file_url.clone()).unwrap();
+                file.write_all(&contents).unwrap();
+            }
+            Err(_) => {}
+        };
         count += 1;
     }
+
+    // }
+    // }
 
     let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
         Ok(n) => n.as_nanos(),
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    println!("DELETE SUCCESSFUL: {}", end - start);
+    println!("SAVE SUCCESSFUL: {}", end - start);
 
-    let total_size = count * (23 * 256000) / 1024;
-    let total_time = end - start;
+    // let mut count = 0;
 
-    println!("DELETE SUCCESSFUL total_size :  {} Mb", total_size);
-    println!("DELETE SUCCESSFUL total_size :  {} Gb", total_size / 1024);
-    println!("DELETE SUCCESSFUL total_time:   {} s", total_time);
-    println!("DELETE SUCCESSFUL:   {} Mb/s", total_size / total_time);
+    // let start = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //     Ok(n) => n.as_nanos(),
+    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    // };
+
+    // for i in 0..39 {
+    //     let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", i,);
+    //     let _ = std::fs::remove_dir_all(folder_url);
+    //     count += 1;
+    // }
+
+    // let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+    //     Ok(n) => n.as_nanos(),
+    //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+    // };
+
+    // println!("DELETE SUCCESSFUL: {}", end - start);
+
+    // let total_size = count * (23 * 256000) / 1024;
+    // let total_time = end - start;
+
+    // println!("DELETE SUCCESSFUL total_size :  {} Mb", total_size);
+    // println!("DELETE SUCCESSFUL total_size :  {} Gb", total_size / 1024);
+    // println!("DELETE SUCCESSFUL total_time:   {} s", total_time);
+    // println!("DELETE SUCCESSFUL:   {} Mb/s", total_size / total_time);
 
     // for i in 1..=39 {
     //     let contents = contents.clone();
