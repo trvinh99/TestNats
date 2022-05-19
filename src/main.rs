@@ -112,31 +112,31 @@ fn insert() {
         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
     };
 
-    for i in 0..39 {
-        for j in 0..256000 {
-            // for j in 0..256 {
-            println!("COUNT: {}", count);
-            // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
-            //     Ok(n) => n.as_nanos(),
-            //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-            // };
+    // for i in 0..39 {
+    for j in 0..256000 {
+        // for j in 0..256 {
+        println!("COUNT: {}", count);
+        // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+        //     Ok(n) => n.as_nanos(),
+        //     Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+        // };
 
-            let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", i,);
+        let folder_url = format!("/data/record_frames/{}/{}", "2022-05-17", "39",);
 
-            match fs::create_dir_all(&folder_url) {
-                Ok(_) => {
-                    let file_url = format!("{}/{}", folder_url, j);
+        match fs::create_dir_all(&folder_url) {
+            Ok(_) => {
+                let file_url = format!("{}/{}", folder_url, j);
 
-                    let mut file = File::create(file_url.clone()).unwrap();
-                    file.write_all(&contents).unwrap();
-                }
-                Err(_) => {}
-            };
-            count += 1;
-        }
-
-        // }
+                let mut file = File::create(file_url.clone()).unwrap();
+                file.write_all(&contents).unwrap();
+            }
+            Err(_) => {}
+        };
+        count += 1;
     }
+
+    // }
+    // }
 
     let end = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
         Ok(n) => n.as_nanos(),
