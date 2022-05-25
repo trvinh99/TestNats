@@ -229,7 +229,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
     let pipeline = gst::parse_launch(
         
-        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! h264parse ! multifilesink max-files=5 post-messages=true next-file=5 max-file-duration=6 location={}/hls/ch%05d.ts", root_path)
+        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! h264parse ! multifilesink max-files=5 post-messages=true next-file=5 max-file-duration=5000000000 location={}/hls/ch%05d.ts", root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
