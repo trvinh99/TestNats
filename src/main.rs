@@ -150,67 +150,66 @@ fn watch_file() {
                         }
                     }
                     notify::DebouncedEvent::Write(path) => {
-                        // println!("WROTE: {:?} on {:?}", path, now);
+                        println!("WROTE: {:?} on {:?}", path, now);
                     }
-                    // notify::DebouncedEvent::Create(path) => {
-                    //     println!("CREATE: {:?} on {:?}", path, now);
-                    // }
+                    notify::DebouncedEvent::Create(path) => {
+                        println!("CREATE: {:?} on {:?}", path, now);
+                    }
                     notify::DebouncedEvent::Chmod(_) => {}
                     notify::DebouncedEvent::Remove(_) => {}
                     notify::DebouncedEvent::Rename(_, _) => {}
                     notify::DebouncedEvent::Rescan => {}
-                    notify::DebouncedEvent::Error(_, _) => {}
-                    notify::DebouncedEvent::Create(path) => {
-                        let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
-                        let is_contains = map.contains_key(&file_name);
-                        if is_contains {
-                            let time = *map.get(&file_name).unwrap();
-                            println!("FILE NAME: {}", file_name);
-                            let _ = fs::copy(
-                                format!("{}/hls/{}", root_path, file_name),
-                                format!("{}/hls_cp/{}", root_path, file_name),
-                            )
-                            .unwrap();
-                            let _ = fs::rename(
-                                format!("{}/hls_cp/{}", root_path, file_name),
-                                format!("{}/hls_cp/{}.ts", root_path, time),
-                            )
-                            .unwrap();
+                    notify::DebouncedEvent::Error(_, _) => {} // notify::DebouncedEvent::Create(path) => {
+                                                              //     let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
+                                                              //     let is_contains = map.contains_key(&file_name);
+                                                              //     if is_contains {
+                                                              //         let time = *map.get(&file_name).unwrap();
+                                                              //         println!("FILE NAME: {}", file_name);
+                                                              //         let _ = fs::copy(
+                                                              //             format!("{}/hls/{}", root_path, file_name),
+                                                              //             format!("{}/hls_cp/{}", root_path, file_name),
+                                                              //         )
+                                                              //         .unwrap();
+                                                              //         let _ = fs::rename(
+                                                              //             format!("{}/hls_cp/{}", root_path, file_name),
+                                                              //             format!("{}/hls_cp/{}.ts", root_path, time),
+                                                              //         )
+                                                              //         .unwrap();
 
-                            let mut file =
-                                std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
-                                    .unwrap();
-                            let mut bytes: Vec<u8> = Vec::new();
-                            file.read_to_end(&mut bytes).unwrap();
+                                                              //         let mut file =
+                                                              //             std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
+                                                              //                 .unwrap();
+                                                              //         let mut bytes: Vec<u8> = Vec::new();
+                                                              //         file.read_to_end(&mut bytes).unwrap();
 
-                            match m3u8_rs::parse_playlist(&bytes) {
-                                Result::Ok((_, Playlist::MasterPlaylist(pl))) => {
-                                    println!("Master playlist:\n{:?}", pl)
-                                }
-                                Result::Ok((_, Playlist::MediaPlaylist(pl))) => {
-                                    for media in pl.segments.clone() {
-                                        println!("FILE: {} media: {}", file_name, media.uri);
-                                        if media.uri == file_name {
-                                            println!(
-                                                "FILE: {} duration: {}",
-                                                file_name, media.duration
-                                            );
-                                        }
-                                    }
-                                    // println!("Media playlist:\n{:?}", pl)
-                                }
-                                Result::Err(e) => panic!("Parsing error: \n{}", e),
-                            }
+                                                              //         match m3u8_rs::parse_playlist(&bytes) {
+                                                              //             Result::Ok((_, Playlist::MasterPlaylist(pl))) => {
+                                                              //                 println!("Master playlist:\n{:?}", pl)
+                                                              //             }
+                                                              //             Result::Ok((_, Playlist::MediaPlaylist(pl))) => {
+                                                              //                 for media in pl.segments.clone() {
+                                                              //                     println!("FILE: {} media: {}", file_name, media.uri);
+                                                              //                     if media.uri == file_name {
+                                                              //                         println!(
+                                                              //                             "FILE: {} duration: {}",
+                                                              //                             file_name, media.duration
+                                                              //                         );
+                                                              //                     }
+                                                              //                 }
+                                                              //                 // println!("Media playlist:\n{:?}", pl)
+                                                              //             }
+                                                              //             Result::Err(e) => panic!("Parsing error: \n{}", e),
+                                                              //         }
 
-                            // map.remove(&file_name);
-                        } else {
-                            if file_name.contains(".ts") {
-                                map.insert(file_name, now as i64);
-                            }
-                        }
+                                                              //         // map.remove(&file_name);
+                                                              //     } else {
+                                                              //         if file_name.contains(".ts") {
+                                                              //             map.insert(file_name, now as i64);
+                                                              //         }
+                                                              //     }
 
-                        // println!("MAP: {:?}", map);
-                    }
+                                                              //     // println!("MAP: {:?}", map);
+                                                              // }
                 }
             }
             Err(e) => println!("watch error: {:?}", e),
