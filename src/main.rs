@@ -138,7 +138,7 @@ fn watch_file() {
                 };
                 let map = map.clone();
 
-                // println!("{:?} on {:?}", event, now);
+                println!("{:?} on {:?}", event, now);
 
                 match event {
                     notify::DebouncedEvent::NoticeWrite(_) => {}
@@ -189,7 +189,7 @@ fn watch_file() {
                                 }
                                 Result::Ok((_, Playlist::MediaPlaylist(pl))) => {
                                     for media in pl.segments.clone() {
-                                        println!("FILE: {} media: {}", file_name, media.uri);
+                                        // println!("FILE: {} media: {}", file_name, media.uri);
                                         if media.uri == file_name {
                                             println!(
                                                 "FILE: {} duration: {}",
@@ -209,7 +209,7 @@ fn watch_file() {
                             }
                         }
 
-                        println!("MAP: {:?}", map);
+                        // println!("MAP: {:?}", map);
                     }
                 }
             }
