@@ -155,6 +155,11 @@ fn watch_file() {
                     // notify::DebouncedEvent::Create(path) => {
                     //     println!("CREATE: {:?} on {:?}", path, now);
                     // }
+                    notify::DebouncedEvent::Chmod(_) => {}
+                    notify::DebouncedEvent::Remove(_) => {}
+                    notify::DebouncedEvent::Rename(_, _) => {}
+                    notify::DebouncedEvent::Rescan => {}
+                    notify::DebouncedEvent::Error(_, _) => {}
                     notify::DebouncedEvent::Create(path) | notify::DebouncedEvent::Write(path) => {
                         let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
                         let is_contains = map.contains_key(&file_name);
@@ -206,11 +211,6 @@ fn watch_file() {
 
                         println!("MAP: {:?}", map);
                     }
-                    notify::DebouncedEvent::Chmod(_) => {}
-                    notify::DebouncedEvent::Remove(_) => {}
-                    notify::DebouncedEvent::Rename(_, _) => {}
-                    notify::DebouncedEvent::Rescan => {}
-                    notify::DebouncedEvent::Error(_, _) => {}
                 }
             }
             Err(e) => println!("watch error: {:?}", e),
