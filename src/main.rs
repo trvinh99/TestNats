@@ -117,7 +117,7 @@ fn watch_file() {
     // below will be monitored for changes.
     // let watcher_path = "/Users/shint1001/Desktop/hls";
     // let root_path = "/Users/shint1001/Desktop";
-    let root_path = "/etc/lexhub";
+    let root_path = "/home/lexhub";
     let _ = create_dir_all(format!("{}/hls", root_path));
     let _ = create_dir_all(format!("{}/hls_cp", root_path));
     let _ = create_dir_all(format!("{}/m3u8", root_path));
@@ -202,7 +202,7 @@ fn watch_file() {
                             }
                         }
 
-                        // println!("MAP: {:?}", map);
+                        println!("MAP: {:?}", map);
                     }
                     notify::DebouncedEvent::Chmod(_) => {}
                     notify::DebouncedEvent::Remove(_) => {}
