@@ -121,6 +121,7 @@ fn watch_file() {
     let _ = create_dir_all(format!("{}/hls", root_path));
     let _ = create_dir_all(format!("{}/hls_cp", root_path));
     let _ = create_dir_all(format!("{}/m3u8", root_path));
+    let _ = File::create(format!("{}/m3u8/hlstest.m3u8", root_path));
     watcher
         .watch(format!("{}/hls", root_path), RecursiveMode::Recursive)
         .unwrap();
