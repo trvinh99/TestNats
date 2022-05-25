@@ -15,6 +15,7 @@ use serde::Serialize;
 use sled::Db;
 use smol::Timer;
 use std::fs;
+use std::fs::create_dir_all;
 use std::fs::File;
 use std::io::Read;
 use std::io::Write;
@@ -116,9 +117,9 @@ fn watch_file() {
     // below will be monitored for changes.
     // let watcher_path = "/Users/shint1001/Desktop/hls";
     let root_path = "/home/lexhub/";
-    let _ = create_dir(format!("{}/hls", root_path));
-    let _ = create_dir(format!("{}/hls_cp", root_path));
-    let _ = create_dir(format!("{}/m3u8", root_path));
+    let _ = create_dir_all(format!("{}/hls", root_path));
+    let _ = create_dir_all(format!("{}/hls_cp", root_path));
+    let _ = create_dir_all(format!("{}/m3u8", root_path));
     watcher
         .watch(format!("{}/hls", root_path), RecursiveMode::Recursive)
         .unwrap();
@@ -186,10 +187,12 @@ fn watch_file() {
                                             );
                                         }
                                     }
-                                    println!("Media playlist:\n{:?}", pl)
+                                    // println!("Media playlist:\n{:?}", pl)
                                 }
                                 Result::Err(e) => panic!("Parsing error: \n{}", e),
                             }
+
+                            map.remove(&file_name);
                         } else {
                             if file_name.contains(".ts") {
                                 map.insert(file_name, now as i64);
