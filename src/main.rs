@@ -160,14 +160,14 @@ fn watch_file() {
                         if is_contains {
                             let time = *map.get(&file_name).unwrap();
                             println!("FILE NAME: {}", file_name);
-                            let _ = fs::copy(
-                                format!("{}/hls/{}", root_path, file_name),
-                                format!("{}/hls_cp/{}", root_path, file_name),
-                            );
-                            let _ = fs::rename(
-                                format!("{}/hls_cp/{}", root_path, file_name),
-                                format!("{}/hls_cp/{}.ts", root_path, time),
-                            );
+                            // let _ = fs::copy(
+                            //     format!("{}/hls/{}", root_path, file_name),
+                            //     format!("{}/hls_cp/{}", root_path, file_name),
+                            // );
+                            // let _ = fs::rename(
+                            //     format!("{}/hls_cp/{}", root_path, file_name),
+                            //     format!("{}/hls_cp/{}.ts", root_path, time),
+                            // );
 
                             let mut file =
                                 std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
