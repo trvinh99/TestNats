@@ -164,11 +164,13 @@ fn watch_file() {
                             let _ = fs::copy(
                                 format!("{}/hls/{}", root_path, file_name),
                                 format!("{}/hls_cp/{}", root_path, file_name),
-                            );
+                            )
+                            .unwrap();
                             let _ = fs::rename(
                                 format!("{}/hls_cp/{}", root_path, file_name),
                                 format!("{}/hls_cp/{}.ts", root_path, time),
-                            );
+                            )
+                            .unwrap();
 
                             let mut file =
                                 std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
@@ -195,7 +197,7 @@ fn watch_file() {
                                 Result::Err(e) => panic!("Parsing error: \n{}", e),
                             }
 
-                            map.remove(&file_name);
+                            // map.remove(&file_name);
                         } else {
                             if file_name.contains(".ts") {
                                 map.insert(file_name, now as i64);
