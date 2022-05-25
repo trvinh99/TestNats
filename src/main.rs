@@ -149,9 +149,9 @@ fn watch_file() {
                             map.remove(&file_name);
                         }
                     }
-                    // notify::DebouncedEvent::Write(path) => {
-                    //     println!("WROTE: {:?} on {:?}", path, now);
-                    // }
+                    notify::DebouncedEvent::Write(path) => {
+                        // println!("WROTE: {:?} on {:?}", path, now);
+                    }
                     // notify::DebouncedEvent::Create(path) => {
                     //     println!("CREATE: {:?} on {:?}", path, now);
                     // }
@@ -160,7 +160,7 @@ fn watch_file() {
                     notify::DebouncedEvent::Rename(_, _) => {}
                     notify::DebouncedEvent::Rescan => {}
                     notify::DebouncedEvent::Error(_, _) => {}
-                    notify::DebouncedEvent::Create(path) | notify::DebouncedEvent::Write(path) => {
+                    notify::DebouncedEvent::Create(path) => {
                         let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
                         let is_contains = map.contains_key(&file_name);
                         if is_contains {
