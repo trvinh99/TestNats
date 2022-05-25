@@ -7,6 +7,8 @@ use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use chrono::Utc;
 use dashmap::DashMap;
+use gst::prelude::Cast;
+use gst::prelude::ElementExt;
 use ledb::Collection;
 use m3u8_rs::Playlist;
 use notify::{watcher, RecursiveMode, Watcher};
@@ -23,7 +25,9 @@ use std::sync::mpsc::channel;
 use std::sync::Arc;
 use std::time::Duration;
 use std::time::SystemTime;
+use std::time::UNIX_EPOCH;
 use tokio::io::AsyncWriteExt;
+extern crate gstreamer as gst;
 
 use ledb::{
     query, query_extr, Comp, Document, Filter, Identifier, IndexKind, KeyType, Options, Order,
@@ -53,7 +57,11 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    watch_file();
+    let root_path = "/home/lexhub";
+    // let root_path = "/Users/shint1001/Desktop";
+
+    start_pipeline(root_path.to_owned()).unwrap();
+    // watch_file(root_path.to_owned());
     // insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
 
@@ -105,7 +113,7 @@ fn main() {
     Bastion::block_until_stopped();
 }
 
-fn watch_file() {
+fn watch_file(root_path: String) {
     // Create a channel to receive the events.
     let (tx, rx) = channel();
 
@@ -116,8 +124,7 @@ fn watch_file() {
     // Add a path to be watched. All files and directories at that path and
     // below will be monitored for changes.
     // let watcher_path = "/Users/shint1001/Desktop/hls";
-    // let root_path = "/Users/shint1001/Desktop";
-    let root_path = "/home/lexhub";
+
     let _ = create_dir_all(format!("{}/hls", root_path));
     let _ = create_dir_all(format!("{}/hls_cp", root_path));
     let _ = create_dir_all(format!("{}/m3u8", root_path));
@@ -215,6 +222,43 @@ fn watch_file() {
             Err(e) => println!("watch error: {:?}", e),
         }
     }
+}
+
+fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
+    gst::init()?;
+
+    let pipeline = gst::parse_launch(
+        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  avdec_h264 ! videoconvert !  x264enc ! h264parse ! multifilesink max-files=5 post-messages=true next-file=2 location={}/hls/ch%05d.ts target-duration=6", root_path)
+    )?;
+    let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
+
+    pipeline.set_state(gst::State::Playing)?;
+
+    let bus = pipeline.bus().unwrap();
+
+    for msg in bus.iter_timed(gst::ClockTime::NONE) {
+        use gst::MessageView;
+
+        println!(".");
+        match msg.view() {
+            MessageView::Eos(_) => break,
+            MessageView::Error(err) => {
+                println!("{:?}", err.view());
+                break;
+            }
+            MessageView::Element(elm) => {
+                let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+                println!("{}", now);
+                println!("element {:?}", elm.view());
+            }
+            _ => {}
+        }
+    }
+
+    println!("break");
+    pipeline.set_state(gst::State::Null)?;
+
+    Ok(())
 }
 
 fn insert() {
