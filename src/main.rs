@@ -1,11 +1,15 @@
 pub mod record_saving_actor;
 
+use async_std::fs::create_dir;
 use bastion::distributor::Distributor;
 use bastion::spawn;
 use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use chrono::Utc;
+use dashmap::DashMap;
 use ledb::Collection;
+use m3u8_rs::Playlist;
+use notify::{watcher, RecursiveMode, Watcher};
 use serde::Deserialize;
 use serde::Serialize;
 use sled::Db;
@@ -14,6 +18,8 @@ use std::fs;
 use std::fs::File;
 use std::io::Read;
 use std::io::Write;
+use std::sync::mpsc::channel;
+use std::sync::Arc;
 use std::time::Duration;
 use std::time::SystemTime;
 use tokio::io::AsyncWriteExt;
@@ -46,7 +52,8 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    insert();
+    watch_file();
+    // insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
 
     // let path = format!("/data/record/{}", 1);
@@ -95,6 +102,112 @@ fn main() {
     // println!("len: {}", elements.len());
 
     Bastion::block_until_stopped();
+}
+
+fn watch_file() {
+    // Create a channel to receive the events.
+    let (tx, rx) = channel();
+
+    // Create a watcher object, delivering debounced events.
+    // The notification back-end is selected based on the platform.
+    let mut watcher = notify::watcher(tx, Duration::from_secs(0)).unwrap();
+
+    // Add a path to be watched. All files and directories at that path and
+    // below will be monitored for changes.
+    // let watcher_path = "/Users/shint1001/Desktop/hls";
+    let root_path = "/home/lexhub/";
+    let _ = create_dir(format!("{}/hls", root_path));
+    let _ = create_dir(format!("{}/hls_cp", root_path));
+    let _ = create_dir(format!("{}/m3u8", root_path));
+    watcher
+        .watch(format!("{}/hls", root_path), RecursiveMode::Recursive)
+        .unwrap();
+    // fs::remove_dir_all(watcher_path).unwrap();
+    // fs::create_dir(watcher_path).unwrap();
+
+    let map: Arc<DashMap<String, i64>> = Arc::new(DashMap::new());
+    loop {
+        match rx.recv() {
+            Ok(event) => {
+                let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH) {
+                    Ok(n) => n.as_nanos(),
+                    Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                };
+                let map = map.clone();
+
+                // println!("{:?} on {:?}", event, now);
+
+                match event {
+                    notify::DebouncedEvent::NoticeWrite(_) => {}
+                    notify::DebouncedEvent::NoticeRemove(path) => {
+                        let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
+                        let is_contains = map.contains_key(&file_name);
+                        if is_contains {
+                            map.remove(&file_name);
+                        }
+                    }
+                    // notify::DebouncedEvent::Write(path) => {
+                    //     println!("WROTE: {:?} on {:?}", path, now);
+                    // }
+                    // notify::DebouncedEvent::Create(path) => {
+                    //     println!("CREATE: {:?} on {:?}", path, now);
+                    // }
+                    notify::DebouncedEvent::Create(path) | notify::DebouncedEvent::Write(path) => {
+                        let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
+                        let is_contains = map.contains_key(&file_name);
+                        if is_contains {
+                            let time = *map.get(&file_name).unwrap();
+                            println!("FILE NAME: {}", file_name);
+                            let _ = fs::copy(
+                                format!("{}/hls/{}", root_path, file_name),
+                                format!("{}/hls_cp/{}", root_path, file_name),
+                            );
+                            let _ = fs::rename(
+                                format!("{}/hls_cp/{}", root_path, file_name),
+                                format!("{}/hls_cp/{}.ts", root_path, time),
+                            );
+
+                            let mut file =
+                                std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
+                                    .unwrap();
+                            let mut bytes: Vec<u8> = Vec::new();
+                            file.read_to_end(&mut bytes).unwrap();
+
+                            match m3u8_rs::parse_playlist(&bytes) {
+                                Result::Ok((_, Playlist::MasterPlaylist(pl))) => {
+                                    println!("Master playlist:\n{:?}", pl)
+                                }
+                                Result::Ok((_, Playlist::MediaPlaylist(pl))) => {
+                                    for media in pl.segments.clone() {
+                                        if media.uri == file_name {
+                                            println!(
+                                                "FILE: {} duration: {}",
+                                                file_name, media.duration
+                                            );
+                                        }
+                                    }
+                                    println!("Media playlist:\n{:?}", pl)
+                                }
+                                Result::Err(e) => panic!("Parsing error: \n{}", e),
+                            }
+                        } else {
+                            if file_name.contains(".ts") {
+                                map.insert(file_name, now as i64);
+                            }
+                        }
+
+                        // println!("MAP: {:?}", map);
+                    }
+                    notify::DebouncedEvent::Chmod(_) => {}
+                    notify::DebouncedEvent::Remove(_) => {}
+                    notify::DebouncedEvent::Rename(_, _) => {}
+                    notify::DebouncedEvent::Rescan => {}
+                    notify::DebouncedEvent::Error(_, _) => {}
+                }
+            }
+            Err(e) => println!("watch error: {:?}", e),
+        }
+    }
 }
 
 fn insert() {
