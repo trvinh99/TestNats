@@ -167,7 +167,7 @@ fn watch_file(root_path: String) {
                     notify::DebouncedEvent::Remove(_) => {}
                     notify::DebouncedEvent::Rename(_, _) => {}
                     notify::DebouncedEvent::Rescan => {}
-                    notify::DebouncedEvent::Error(_, _) => {} 
+                    notify::DebouncedEvent::Error(_, _) => {}
                     notify::DebouncedEvent::Create(path) | notify::DebouncedEvent::Write(path) => {
                         let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
                         let is_contains = map.contains_key(&file_name);
@@ -230,8 +230,8 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     gst::init()?;
 
     let pipeline = gst::parse_launch(
-        
-        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc ! h264parse ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6 message-forward=true", root_path, root_path)
+        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc ! h264parse ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts message-forward=true target-duration=6", root_path, root_path)
+        // &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc ! h264parse ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6 message-forward=true", root_path, root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
@@ -265,7 +265,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 //         println!("filename: {}", path_name);
                 //         println!("duration: {}", duration);
 
-                //         let path = Path::new(&path_name); 
+                //         let path = Path::new(&path_name);
                 //         let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
 
                 //         let _ = fs::copy(
@@ -283,11 +283,9 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 //     None => {},
                 // }
 
-                
-                
                 // println!("filename: {:?}", filename);
                 // println!("stream_time: {:?}", stream_time);
-                
+
                 println!("element {:?}", elm.view());
             }
             _ => {}
