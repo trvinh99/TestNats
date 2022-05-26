@@ -58,8 +58,8 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    // let root_path = "/home/lexhub";
-    let root_path = "/Users/shint1001/Desktop";
+    let root_path = "/home/lexhub";
+    // let root_path = "/Users/shint1001/Desktop";
 
     start_pipeline(root_path.to_owned()).unwrap();
     // watch_file(root_path.to_owned());
@@ -231,7 +231,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
     let pipeline = gst::parse_launch(
         
-        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! h264parse ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6 message-forward=true", root_path, root_path)
+        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc ! h264parse ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6 message-forward=true", root_path, root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
