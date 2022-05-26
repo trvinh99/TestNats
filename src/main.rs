@@ -119,7 +119,7 @@ fn watch_file(root_path: String) {
 
     // Create a watcher object, delivering debounced events.
     // The notification back-end is selected based on the platform.
-    let mut watcher = notify::watcher(tx, Duration::from_secs(1)).unwrap();
+    let mut watcher = notify::watcher(tx, Duration::from_millis(100)).unwrap();
 
     // Add a path to be watched. All files and directories at that path and
     // below will be monitored for changes.
