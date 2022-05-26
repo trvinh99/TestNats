@@ -257,36 +257,29 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos() as i64;
                 println!("{}", now);
 
-                // let structure = elm.structure();
-                // match structure {
-                //     Some(structure) => {
-                //         let path_name = structure.get::<String>("filename").unwrap();
-                //         let stream_time = structure.get::<u64>("stream-time").unwrap();
-                //         let duration = stream_time - last_pipeline_timestamp;
-                //         last_pipeline_timestamp = stream_time;
-                //         println!("filename: {}", path_name);
-                //         println!("duration: {}", duration);
+                let structure = elm.structure();
+                match structure {
+                    Some(structure) => {
+                        let path_name = structure.get::<String>("filename").unwrap();
+                        let stream_time = structure.get::<u64>("stream-time").unwrap();
+                        let duration = stream_time - last_pipeline_timestamp;
+                        last_pipeline_timestamp = stream_time;
+                        println!("filename: {}", path_name);
+                        println!("duration: {}", duration);
 
-                //         let path = Path::new(&path_name);
-                //         let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+                        let path = Path::new(&path_name);
+                        let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
 
-                //         let _ = fs::copy(
-                //                 path_name,
-                //                 format!("{}/hls_cp/{}", root_path, filename),
-                //             )
-                //             .unwrap();
-                //             let _ = fs::rename(
-                //                 format!("{}/hls_cp/{}", root_path, filename),
-                //                 format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
-                //             )
-                //             .unwrap();
-
-                //     },
-                //     None => {},
-                // }
-
-                // println!("filename: {:?}", filename);
-                // println!("stream_time: {:?}", stream_time);
+                        let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
+                            .unwrap();
+                        let _ = fs::rename(
+                            format!("{}/hls_cp/{}", root_path, filename),
+                            format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
+                        )
+                        .unwrap();
+                    }
+                    None => {}
+                }
 
                 println!("element {:?}", elm.view());
             }
