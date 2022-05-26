@@ -231,7 +231,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
     let pipeline = gst::parse_launch(
         
-        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! h264parse ! multifilesink max-files=5 post-messages=true next-file=5 max-file-duration=5000000000 location={}/hls/ch%05d.ts", root_path)
+        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! h264parse ! multifilesink max-files=5 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
@@ -260,8 +260,10 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                     Some(structure) => {
                         let path_name = structure.get::<String>("filename").unwrap();
                         let stream_time = structure.get::<u64>("stream-time").unwrap();
+                        let duration = stream_time - last_pipeline_timestamp;
+                        last_pipeline_timestamp = stream_time;
                         println!("filename: {}", path_name);
-                        println!("stream_time: {}", stream_time);
+                        println!("duration: {}", duration);
 
                         let path = Path::new(&path_name); 
                         let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
@@ -273,7 +275,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                             .unwrap();
                             let _ = fs::rename(
                                 format!("{}/hls_cp/{}", root_path, filename),
-                                format!("{}/hls_cp/{}.ts", root_path, now - stream_time as i64),
+                                format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
                             )
                             .unwrap();
 
