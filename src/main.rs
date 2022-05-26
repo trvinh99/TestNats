@@ -253,13 +253,23 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
             MessageView::Element(elm) => {
                 let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
                 println!("{}", now);
-                let filename: &str = elm.structure().unwrap().get("filename").unwrap();
-                 let stream_time: i64 = elm.structure().unwrap().get("stream-time").unwrap();
-                // for f in a.into_iter() {
-                    
-                // }
-                println!("filename: {:?}", filename);
-                println!("stream_time: {:?}", stream_time);
+
+                let structure = elm.structure();
+                match structure {
+                    Some(structure) => {
+                        let filename = structure.get::<String>("filename").unwrap();
+                        let stream_time = structure.get::<u64>("stream-time").unwrap();
+                        println!("filename: {}", filename);
+                        println!("stream_time: {}", stream_time);
+
+                    },
+                    None => {},
+                }
+
+                
+                
+                // println!("filename: {:?}", filename);
+                // println!("stream_time: {:?}", stream_time);
                 
                 println!("element {:?}", elm.view());
             }
