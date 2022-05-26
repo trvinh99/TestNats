@@ -254,7 +254,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
                 println!("{}", now);
                 let filename: &str = elm.structure().unwrap().get("filename").unwrap();
-                 let stream_time: i64 = elm.structure().unwrap().get("stream_time").unwrap();
+                 let stream_time: i64 = elm.structure().unwrap().get("stream-time").unwrap();
                 // for f in a.into_iter() {
                     
                 // }
