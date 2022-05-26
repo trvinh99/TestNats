@@ -21,6 +21,7 @@ use std::fs::create_dir_all;
 use std::fs::File;
 use std::io::Read;
 use std::io::Write;
+use std::path::Path;
 use std::sync::mpsc::channel;
 use std::sync::Arc;
 use std::time::Duration;
@@ -251,16 +252,30 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 break;
             }
             MessageView::Element(elm) => {
-                let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+                let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos() as i64;
                 println!("{}", now);
 
                 let structure = elm.structure();
                 match structure {
                     Some(structure) => {
-                        let filename = structure.get::<String>("filename").unwrap();
+                        let path_name = structure.get::<String>("filename").unwrap();
                         let stream_time = structure.get::<u64>("stream-time").unwrap();
-                        println!("filename: {}", filename);
+                        println!("filename: {}", path_name);
                         println!("stream_time: {}", stream_time);
+
+                        let path = Path::new(&path_name); 
+                        let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+
+                        let _ = fs::copy(
+                                path_name,
+                                format!("{}/hls_cp/{}", root_path, filename),
+                            )
+                            .unwrap();
+                            let _ = fs::rename(
+                                format!("{}/hls_cp/{}", root_path, filename),
+                                format!("{}/hls_cp/{}.ts", root_path, now - stream_time as i64),
+                            )
+                            .unwrap();
 
                     },
                     None => {},
@@ -271,7 +286,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 // println!("filename: {:?}", filename);
                 // println!("stream_time: {:?}", stream_time);
                 
-                println!("element {:?}", elm.view());
+                // println!("element {:?}", elm.view());
             }
             _ => {}
         }
