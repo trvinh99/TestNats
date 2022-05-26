@@ -60,8 +60,8 @@ fn main() {
     let root_path = "/home/lexhub";
     // let root_path = "/Users/shint1001/Desktop";
 
-    start_pipeline(root_path.to_owned()).unwrap();
-    // watch_file(root_path.to_owned());
+    // start_pipeline(root_path.to_owned()).unwrap();
+    watch_file(root_path.to_owned());
     // insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
 
@@ -119,7 +119,7 @@ fn watch_file(root_path: String) {
 
     // Create a watcher object, delivering debounced events.
     // The notification back-end is selected based on the platform.
-    let mut watcher = notify::watcher(tx, Duration::from_secs(0)).unwrap();
+    let mut watcher = notify::watcher(tx, Duration::from_secs(1)).unwrap();
 
     // Add a path to be watched. All files and directories at that path and
     // below will be monitored for changes.
