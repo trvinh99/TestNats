@@ -216,7 +216,7 @@ fn watch_file(root_path: String) {
                                                                       }
                                                                   }
 
-                                                                  // println!("MAP: {:?}", map);
+                                                                  println!("MAP: {:?}", map);
                                                               }
                 }
             }
