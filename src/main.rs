@@ -60,8 +60,8 @@ fn main() {
     let root_path = "/home/lexhub";
     // let root_path = "/Users/shint1001/Desktop";
 
-    // start_pipeline(root_path.to_owned()).unwrap();
-    watch_file(root_path.to_owned());
+    start_pipeline(root_path.to_owned()).unwrap();
+    // watch_file(root_path.to_owned());
     // insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
 
@@ -119,7 +119,7 @@ fn watch_file(root_path: String) {
 
     // Create a watcher object, delivering debounced events.
     // The notification back-end is selected based on the platform.
-    let mut watcher = notify::watcher(tx, Duration::from_millis(1000)).unwrap();
+    let mut watcher = notify::watcher(tx, Duration::from_secs(0)).unwrap();
 
     // Add a path to be watched. All files and directories at that path and
     // below will be monitored for changes.
@@ -156,9 +156,9 @@ fn watch_file(root_path: String) {
                             map.remove(&file_name);
                         }
                     }
-                    notify::DebouncedEvent::Write(path) => {
-                        println!("WROTE: {:?} on {:?}", path, now);
-                    }
+                    // notify::DebouncedEvent::Write(path) => {
+                    //     println!("WROTE: {:?} on {:?}", path, now);
+                    // }
                     // notify::DebouncedEvent::Create(path) => {
                     //     println!("CREATE: {:?} on {:?}", path, now);
                     // }
@@ -167,57 +167,57 @@ fn watch_file(root_path: String) {
                     notify::DebouncedEvent::Rename(_, _) => {}
                     notify::DebouncedEvent::Rescan => {}
                     notify::DebouncedEvent::Error(_, _) => {} 
-                    notify::DebouncedEvent::Create(path) => {
-                                                                  let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
-                                                                  let is_contains = map.contains_key(&file_name);
-                                                                  if is_contains {
-                                                                      let time = *map.get(&file_name).unwrap();
-                                                                      println!("FILE NAME: {}", file_name);
-                                                                      let _ = fs::copy(
-                                                                          format!("{}/hls/{}", root_path, file_name),
-                                                                          format!("{}/hls_cp/{}", root_path, file_name),
-                                                                      )
-                                                                      .unwrap();
-                                                                      let _ = fs::rename(
-                                                                          format!("{}/hls_cp/{}", root_path, file_name),
-                                                                          format!("{}/hls_cp/{}.ts", root_path, time),
-                                                                      )
-                                                                      .unwrap();
+                    notify::DebouncedEvent::Create(path) | notify::DebouncedEvent::Write(path) => {
+                        let file_name = path.file_name().unwrap().to_str().unwrap().to_owned();
+                        let is_contains = map.contains_key(&file_name);
+                        if is_contains {
+                            let time = *map.get(&file_name).unwrap();
+                            println!("FILE NAME: {}", file_name);
+                            let _ = fs::copy(
+                                format!("{}/hls/{}", root_path, file_name),
+                                format!("{}/hls_cp/{}", root_path, file_name),
+                            )
+                            .unwrap();
+                            let _ = fs::rename(
+                                format!("{}/hls_cp/{}", root_path, file_name),
+                                format!("{}/hls_cp/{}.ts", root_path, time),
+                            )
+                            .unwrap();
 
-                                                                      let mut file =
-                                                                          std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
-                                                                              .unwrap();
-                                                                      let mut bytes: Vec<u8> = Vec::new();
-                                                                      file.read_to_end(&mut bytes).unwrap();
+                            let mut file =
+                                std::fs::File::open(format!("{}/m3u8/hlstest.m3u8", root_path))
+                                    .unwrap();
+                            let mut bytes: Vec<u8> = Vec::new();
+                            file.read_to_end(&mut bytes).unwrap();
 
-                                                                      match m3u8_rs::parse_playlist(&bytes) {
-                                                                          Result::Ok((_, Playlist::MasterPlaylist(pl))) => {
-                                                                              println!("Master playlist:\n{:?}", pl)
-                                                                          }
-                                                                          Result::Ok((_, Playlist::MediaPlaylist(pl))) => {
-                                                                              for media in pl.segments.clone() {
-                                                                                  println!("FILE: {} media: {}", file_name, media.uri);
-                                                                                  if media.uri == file_name {
-                                                                                      println!(
-                                                                                          "FILE: {} duration: {}",
-                                                                                          file_name, media.duration
-                                                                                      );
-                                                                                  }
-                                                                              }
-                                                                              // println!("Media playlist:\n{:?}", pl)
-                                                                          }
-                                                                          Result::Err(e) => panic!("Parsing error: \n{}", e),
-                                                                      }
+                            match m3u8_rs::parse_playlist(&bytes) {
+                                Result::Ok((_, Playlist::MasterPlaylist(pl))) => {
+                                    println!("Master playlist:\n{:?}", pl)
+                                }
+                                Result::Ok((_, Playlist::MediaPlaylist(pl))) => {
+                                    for media in pl.segments.clone() {
+                                        println!("FILE: {} media: {}", file_name, media.uri);
+                                        if media.uri == file_name {
+                                            println!(
+                                                "FILE: {} duration: {}",
+                                                file_name, media.duration
+                                            );
+                                        }
+                                    }
+                                    // println!("Media playlist:\n{:?}", pl)
+                                }
+                                Result::Err(e) => panic!("Parsing error: \n{}", e),
+                            }
 
-                                                                      // map.remove(&file_name);
-                                                                  } else {
-                                                                      if file_name.contains(".ts") {
-                                                                          map.insert(file_name, now as i64);
-                                                                      }
-                                                                  }
+                            // map.remove(&file_name);
+                        } else {
+                            if file_name.contains(".ts") {
+                                map.insert(file_name, now as i64);
+                            }
+                        }
 
-                                                                  println!("MAP: {:?}", map);
-                                                              }
+                        println!("MAP: {:?}", map);
+                    }
                 }
             }
             Err(e) => println!("watch error: {:?}", e),
@@ -238,6 +238,8 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
     let bus = pipeline.bus().unwrap();
 
+    let mut last_pipeline_timestamp = 0;
+
     for msg in bus.iter_timed(gst::ClockTime::NONE) {
         use gst::MessageView;
 
@@ -251,6 +253,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
             MessageView::Element(elm) => {
                 let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
                 println!("{}", now);
+                let a = elm.view();
                 println!("element {:?}", elm.view());
             }
             _ => {}
