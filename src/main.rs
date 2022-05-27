@@ -233,7 +233,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     gst::init()?;
 
     let pipeline = gst::parse_launch(
-        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink name=src max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
+        &format!("rtspsrc name=src location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
         // &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc tune=zerolatency ! mpegtsmux ! hlssink  message-forward=true playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6", root_path, root_path)
     )?;
@@ -283,7 +283,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                         let src = pipeline.by_name("src").unwrap();
 
                         let new_structure = gst::Structure::new(
-                            "force_key_frame",
+                            "GstForceKeyUnit",
                             &[
                                 ("timestamp", &timestamp),
                                 ("stream-time", &stream_time),
@@ -293,7 +293,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                         );
 
                         let _ = src.emit_by_name(
-                            "set-parameter",
+                            "new-transcript",
                             &[&new_structure, &None::<gst::Promise>],
                         );
 
