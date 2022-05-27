@@ -245,8 +245,8 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     for msg in bus.iter_timed(gst::ClockTime::NONE) {
         use gst::MessageView;
 
-        println!(".");
-        println!("MSG VIEW: {}", msg.view());
+        // println!(".");
+        println!("MSG VIEW: {:?}", msg.view());
         match msg.view() {
             MessageView::Eos(_) => break,
             MessageView::Error(err) => {
