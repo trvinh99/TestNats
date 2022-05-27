@@ -246,6 +246,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
         use gst::MessageView;
 
         println!(".");
+        println!("MSG VIEW: {}", msg.view());
         match msg.view() {
             MessageView::Eos(_) => break,
             MessageView::Error(err) => {
