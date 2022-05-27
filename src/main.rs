@@ -311,7 +311,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                     None => {}
                 }
 
-                println!("element {:?}", elm.view());
+                // println!("element {:?}", elm.view());
             }
             _ => {}
         }
