@@ -292,7 +292,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                             ],
                         );
 
-                        src.emit_by_name(
+                        let _ = src.emit_by_name(
                             "new-transcript",
                             &[&new_structure, &None::<gst::Promise>],
                         );
