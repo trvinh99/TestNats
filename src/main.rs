@@ -251,7 +251,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
         use gst::MessageView;
 
         // println!(".");
-        println!("MSG VIEW: {:?}", msg.view());
+        // println!("MSG VIEW: {:?}", msg.view());
         match msg.view() {
             MessageView::Eos(_) => break,
             MessageView::Error(err) => {
@@ -311,7 +311,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                     None => {}
                 }
 
-                // println!("element {:?}", elm.view());
+                println!("element {:?}", elm.view());
             }
             _ => {}
         }
