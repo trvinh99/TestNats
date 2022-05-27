@@ -7,8 +7,12 @@ use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use chrono::Utc;
 use dashmap::DashMap;
+use gst::glib::SendValue;
 use gst::prelude::Cast;
 use gst::prelude::ElementExt;
+use gst::prelude::GstBinExt;
+use gst::prelude::ObjectExt;
+use gst::prelude::ToSendValue;
 use ledb::Collection;
 use m3u8_rs::Playlist;
 use notify::{watcher, RecursiveMode, Watcher};
@@ -28,7 +32,6 @@ use std::time::Duration;
 use std::time::SystemTime;
 use std::time::UNIX_EPOCH;
 use tokio::io::AsyncWriteExt;
-extern crate gstreamer as gst;
 
 use ledb::{
     query, query_extr, Comp, Document, Filter, Identifier, IndexKind, KeyType, Options, Order,
@@ -230,9 +233,9 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     gst::init()?;
 
     let pipeline = gst::parse_launch(
-        // &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
+        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
-        &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc tune=zerolatency ! mpegtsmux ! hlssink  message-forward=true playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6", root_path, root_path)
+        // &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc tune=zerolatency ! mpegtsmux ! hlssink  message-forward=true playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6", root_path, root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
@@ -241,6 +244,8 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     let bus = pipeline.bus().unwrap();
 
     let mut last_pipeline_timestamp = 0;
+
+    let pl_weak = ObjectExt::downgrade(&pipeline);
 
     for msg in bus.iter_timed(gst::ClockTime::NONE) {
         use gst::MessageView;
@@ -257,29 +262,54 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                 let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos() as i64;
                 println!("{}", now);
 
-                // let structure = elm.structure();
-                // match structure {
-                //     Some(structure) => {
-                //         let path_name = structure.get::<String>("filename").unwrap();
-                //         let stream_time = structure.get::<u64>("stream-time").unwrap();
-                //         let duration = stream_time - last_pipeline_timestamp;
-                //         last_pipeline_timestamp = stream_time;
-                //         println!("filename: {}", path_name);
-                //         println!("duration: {}", duration);
+                let structure = elm.structure();
 
-                //         let path = Path::new(&path_name);
-                //         let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+                match structure {
+                    Some(structure) => {
+                        let path_name = structure.get::<String>("filename").unwrap();
+                        let stream_time = structure.get::<u64>("stream-time").unwrap();
+                        let timestamp = structure.get::<u64>("timestamp").unwrap();
+                        let running_time = structure.get::<u64>("running-time").unwrap();
+                        let duration = stream_time - last_pipeline_timestamp;
+                        last_pipeline_timestamp = stream_time;
+                        println!("filename: {}", path_name);
+                        println!("duration: {}", duration);
 
-                //         let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
-                //             .unwrap();
-                //         let _ = fs::rename(
-                //             format!("{}/hls_cp/{}", root_path, filename),
-                //             format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
-                //         )
-                //         .unwrap();
-                //     }
-                //     None => {}
-                // }
+                        // let pipeline = match pl_weak.upgrade() {
+                        //     Some(pl) => pl,
+                        //     None => return,
+                        // };
+
+                        let src = pipeline.by_name("rtspsrc").unwrap();
+
+                        let new_structure = gst::Structure::new(
+                            "force_key_frame",
+                            &[
+                                ("timestamp", &timestamp),
+                                ("stream-time", &stream_time),
+                                ("running-time", &running_time),
+                                ("all-headers", &true),
+                            ],
+                        );
+
+                        src.emit_by_name(
+                            "new-transcript",
+                            &[&new_structure, &None::<gst::Promise>],
+                        );
+
+                        let path = Path::new(&path_name);
+                        let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+
+                        let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
+                            .unwrap();
+                        let _ = fs::rename(
+                            format!("{}/hls_cp/{}", root_path, filename),
+                            format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
+                        )
+                        .unwrap();
+                    }
+                    None => {}
+                }
 
                 println!("element {:?}", elm.view());
             }
