@@ -66,7 +66,7 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    let root_path = "/home/lexhub";
+    let root_path = "/home/zero";
     // let root_path = "/Users/shint1001/Desktop";
 
     start_pipeline(root_path.to_owned()).unwrap();
@@ -238,11 +238,11 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     gst::init()?;
 
     let pipeline = gst::parse_launch(
-        &format!("videotestsrc name=src !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
+        // &format!("videotestsrc name=src pattern=ball is_live=true !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
-        // &format!("rtspsrc name=src location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
+        // &format!("rtspsrc name=src location=rtsp://test:test123@192.168.1.11:88/videoMain ! rtph264depay ! avdec_h264 ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
-        // &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc tune=zerolatency ! mpegtsmux ! hlssink  message-forward=true playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6", root_path, root_path)
+        &format!("rtspsrc location=rtsp://test:test123@192.168.1.11:88/videoMain ! rtph264depay ! avdec_h264 ! videoconvert ! x264enc ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=5 message-forward=true", root_path, root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
@@ -273,52 +273,85 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
                 match structure {
                     Some(structure) => {
-                        let path_name = structure.get::<String>("filename").unwrap();
-                        let stream_time = structure.get::<u64>("stream-time").unwrap();
-                        let timestamp = structure.get::<u64>("timestamp").unwrap();
-                        let running_time = structure.get::<u64>("running-time").unwrap();
-                        let duration = stream_time - last_pipeline_timestamp;
-                        last_pipeline_timestamp = stream_time;
-                        println!("filename: {}", path_name);
-                        println!("duration: {}", duration);
+                        let structure_name = structure.name();
+                        let src = elm.src().unwrap();
+                        if src.to_string() == "splitmuxsink0" {
+                        match structure_name {
+                            "splitmuxsink-fragment-opened" => {
+                                let running_time = structure.get::<u64>("running-time").unwrap();
+                                println!("OPEN RUNTIME: {}", running_time);
+                                last_pipeline_timestamp = running_time;
 
-                        // let pipeline = match pl_weak.upgrade() {
-                        //     Some(pl) => pl,
-                        //     None => return,
-                        // };
+                            }
+                            _ => {
+                                let path_name = structure.get::<String>("location").unwrap();
+                                let running_time = structure.get::<u64>("running-time").unwrap();
+                                println!("CLOSE RUNTIME: {}", running_time);
 
-                        let src = pipeline.by_name("src").unwrap();
+                                let duration = running_time - last_pipeline_timestamp;
 
-                        let new_structure = gst::Structure::new(
-                            "GstForceKeyUnit",
-                            &[]
-                            // &[
-                            //     ("timestamp", &timestamp),
-                            //     ("stream-time", &stream_time),
-                            //     ("running-time", &running_time),
-                            //     ("all-headers", &true),
-                            // ],
-                        );
+                                println!("DURATION: {}", duration/1000000000);
 
-                        let event = CustomUpstream::new(new_structure);
-                        src.send_event(event);
-                        // pipeline.send_event(event);
+                                println!("DURATION_SYS: {}", now - duration as i64);
 
-                        // let _ = src.emit_by_name(
-                        //     "new-transcript",
-                        //     &[&new_structure, &None::<gst::Promise>],
-                        // );
+                                let path = Path::new(&path_name);
+                                let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
 
-                        let path = Path::new(&path_name);
-                        let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+                                let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
+                                    .unwrap();
+                                let _ = fs::rename(
+                                    format!("{}/hls_cp/{}", root_path, filename),
+                                    format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
+                                )
+                                .unwrap();
+                            }
+                        }
+                    }
+                        // let src = elm.src().unwrap();
+                        // if src.to_string() == "multifilesink0" {
+                        //     let path_name = structure.get::<String>("filename").unwrap();
+                        //     let stream_time = structure.get::<u64>("stream-time").unwrap();
+                        //     let timestamp = structure.get::<u64>("timestamp").unwrap();
+                        //     let running_time = structure.get::<u64>("running-time").unwrap();
+                        //     let duration = stream_time - last_pipeline_timestamp;
+                        //     last_pipeline_timestamp = stream_time;
+                        //     println!("filename: {}", path_name);
+                        //     println!("duration: {}", duration);
 
-                        let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
-                            .unwrap();
-                        let _ = fs::rename(
-                            format!("{}/hls_cp/{}", root_path, filename),
-                            format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
-                        )
-                        .unwrap();
+                        //     // let pipeline = match pl_weak.upgrade() {
+                        //     //     Some(pl) => pl,
+                        //     //     None => return,
+                        //     // };
+
+                        //     // let src = pipeline.by_name("src").unwrap();
+                        //     // println!("Element:{:?}", src);
+
+                        //     let new_structure = gst::Structure::new(
+                        //         "GstForceKeyUnit",
+                                
+                        //         &[
+                        //             // ("timestamp", &(timestamp)),
+                        //             // ("stream-time", &(stream_time)),
+                        //             // ("running-time", &(running_time)),
+                        //             ("all-headers", &true),
+                        //         ],
+                        //     );
+
+                        //     let event = CustomDownstream::new(new_structure);
+                        //     pipeline
+                        //     .send_event(event);
+                        
+                        //     let path = Path::new(&path_name);
+                        //     let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+
+                        //     let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
+                        //         .unwrap();
+                        //     let _ = fs::rename(
+                        //         format!("{}/hls_cp/{}", root_path, filename),
+                        //         format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
+                        //     )
+                        //     .unwrap();
+                        // }
                     }
                     None => {}
                 }
