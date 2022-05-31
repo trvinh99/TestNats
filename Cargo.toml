@@ -28,7 +28,6 @@ notify = "4.0.17"
 dashmap = "4.0.2"
 m3u8-rs="*"
 gst = { package = "gstreamer", version = "0.17", features = ["v1_14"] }
-gstreamer-video = "*"
-gstreamer-app = "*"
+gstreamer-sys = "*"
 
 anyhow="*"

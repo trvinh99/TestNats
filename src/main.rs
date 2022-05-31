@@ -7,7 +7,9 @@ use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use chrono::Utc;
 use dashmap::DashMap;
+use ffi::gst_structure_new;
 use gst::event::CustomDownstream;
+use gst::event::CustomUpstream;
 use gst::ffi;
 use gst::glib::SendValue;
 use gst::prelude::Cast;
@@ -285,20 +287,22 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                         //     None => return,
                         // };
 
-                        // let src = pipeline.by_name("src").unwrap();
+                        let src = pipeline.by_name("src").unwrap();
 
                         let new_structure = gst::Structure::new(
                             "GstForceKeyUnit",
-                            &[
-                                ("timestamp", &timestamp),
-                                ("stream-time", &stream_time),
-                                ("running-time", &running_time),
-                                ("all-headers", &true),
-                            ],
+                            &[]
+                            // &[
+                            //     ("timestamp", &timestamp),
+                            //     ("stream-time", &stream_time),
+                            //     ("running-time", &running_time),
+                            //     ("all-headers", &true),
+                            // ],
                         );
 
-                        let event = CustomDownstream::new(new_structure);
-                        pipeline.send_event(event);
+                        let event = CustomUpstream::new(new_structure);
+                        src.send_event(event);
+                        // pipeline.send_event(event);
 
                         // let _ = src.emit_by_name(
                         //     "new-transcript",
