@@ -7,9 +7,12 @@ use bastion::supervisor::SupervisionStrategy;
 use bastion::Bastion;
 use chrono::Utc;
 use dashmap::DashMap;
+use gst::event::CustomDownstream;
+use gst::ffi;
 use gst::glib::SendValue;
 use gst::prelude::Cast;
 use gst::prelude::ElementExt;
+use gst::prelude::ElementExtManual;
 use gst::prelude::GstBinExt;
 use gst::prelude::ObjectExt;
 use gst::prelude::ToSendValue;
@@ -233,7 +236,9 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     gst::init()?;
 
     let pipeline = gst::parse_launch(
-        &format!("rtspsrc name=src location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
+        &format!("videotestsrc name=src !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
+
+        // &format!("rtspsrc name=src location=rtsp://10.50.13.252/1/h264major ! rtph264depay !  vaapih264dec ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
         // &format!("rtspsrc location=rtsp://10.50.13.252/1/h264major ! rtph264depay ! vaapih264dec ! videoconvert !  x264enc tune=zerolatency ! mpegtsmux ! hlssink  message-forward=true playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=6", root_path, root_path)
     )?;
@@ -280,7 +285,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                         //     None => return,
                         // };
 
-                        let src = pipeline.by_name("src").unwrap();
+                        // let src = pipeline.by_name("src").unwrap();
 
                         let new_structure = gst::Structure::new(
                             "GstForceKeyUnit",
@@ -292,10 +297,13 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                             ],
                         );
 
-                        let _ = src.emit_by_name(
-                            "new-transcript",
-                            &[&new_structure, &None::<gst::Promise>],
-                        );
+                        let event = CustomDownstream::new(new_structure);
+                        pipeline.send_event(event);
+
+                        // let _ = src.emit_by_name(
+                        //     "new-transcript",
+                        //     &[&new_structure, &None::<gst::Promise>],
+                        // );
 
                         let path = Path::new(&path_name);
                         let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
