@@ -1,4 +1,8 @@
 pub mod record_saving_actor;
+pub mod test_actor;
+pub mod publisher_actor;
+pub mod subscriber_actor;
+pub mod throttle;
 
 use async_std::fs::create_dir;
 use bastion::distributor::Distributor;
@@ -66,8 +70,14 @@ fn main() {
     Bastion::init();
     Bastion::start();
 
-    let root_path = "/home/zero";
-    // let root_path = "/Users/shint1001/Desktop";
+    let parent_ref = Bastion::supervisor(|sp| sp.with_strategy(SupervisionStrategy::OneForOne))
+        .expect("could not create a supervisor");
+
+    RecordSavingActor::init(&parent_ref, "1".to_string()).unwrap();
+
+
+    // let root_path = "/home/zero";
+    let root_path = "/Users/shint1001/Desktop";
 
     start_pipeline(root_path.to_owned()).unwrap();
     // watch_file(root_path.to_owned());

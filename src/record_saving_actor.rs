@@ -20,6 +20,7 @@ pub struct RecordDocument {
     pub timestamp: i64,
     #[document(index)]
     pub record_cloud: bool,
+    pub duration: i64,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, Document)]
@@ -39,7 +40,7 @@ pub struct SaveRecordFrameMessage {
     pub cam_id: String,
     pub timestamp: i64,
     pub record_cloud: bool,
-    pub payload: Vec<u8>,
+    pub duration: i64,
 }
 
 lazy_static::lazy_static! {
@@ -106,35 +107,12 @@ impl RecordSavingActor {
                                                 id: None,
                                                 timestamp: message.timestamp,
                                                 record_cloud: message.record_cloud,
+                                                duration: message.duration,
                                             })
                                             .unwrap();
 
                                         // spawn!(async move {
                                         //Save a frame data into disk.
-                                        let rt = tokio::runtime::Runtime::new().unwrap();
-                                        rt.spawn_blocking(|| async move {
-                                            let folder_url = format!(
-                                                "src/record_frame/{}/{}",
-                                                date, message.cam_id,
-                                            );
-
-                                            match fs::create_dir_all(&folder_url).await {
-                                                Ok(_) => {
-                                                    let file_url = format!(
-                                                        "src/record_frame/{}/{}/{}",
-                                                        date,
-                                                        message.cam_id,
-                                                        message.timestamp.to_string()
-                                                    );
-
-                                                    let mut file = File::create(file_url.clone())
-                                                        .await
-                                                        .unwrap();
-                                                    file.write_all(&message.payload).await.unwrap();
-                                                }
-                                                Err(_) => {}
-                                            };
-                                        });
                                     },
                                 );
                             }

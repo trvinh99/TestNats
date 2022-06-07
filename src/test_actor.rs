@@ -1,8 +1,8 @@
-use crate::throttle::Throttle;
+
 use bastion::prelude::*;
 use dashmap::DashMap;
 use log::info;
-use serde::{Deserialize, Serialize};
+
 use serde_json::json;
 use smol::{future, Executor, Timer};
 use std::time::SystemTime;
@@ -15,6 +15,8 @@ use std::{
 };
 
 use crate::publisher_actor::EngineRequestPublish;
+use crate::subscriber_actor::EngineRequestSubscribe;
+use crate::throttle::Throttle;
 
 pub struct TestActor {
     supervisor_ref: SupervisorRef,
@@ -35,6 +37,14 @@ impl TestActor {
             .map_err(|_| {})?;
         let test_redundancy = test_redundancy.clone();
         let camera_source_map: Arc<DashMap<String, String>> = Arc::new(DashMap::new());
+        let nats = Distributor::named("subscriber_actor");
+        let subscriber = EngineRequestSubscribe {
+            distributor_name: "discovery".to_owned(),
+            topic: "test_actor".to_owned(),
+        };
+        nats.tell_one(subscriber)
+            .expect("[TEST ACTOR] could not subscribe to topic \"test_actor\"");
+
         let _children_ref = supervisor_ref
             .children(move |children| {
                 children

@@ -1,7 +1,6 @@
 
-use async_nats::Connection;
 use bastion::prelude::*;
-use std::{sync::Arc, time::Duration};
+use nats::asynk::Connection;
 
 
 pub struct SubscriberActor {
