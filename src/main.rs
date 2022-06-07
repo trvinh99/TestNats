@@ -76,8 +76,8 @@ fn main() {
     RecordSavingActor::init(&parent_ref, "1".to_string()).unwrap();
 
 
-    // let root_path = "/home/zero";
-    let root_path = "/Users/shint1001/Desktop";
+    let root_path = "/home/zero";
+    // let root_path = "/Users/shint1001/Desktop";
 
     start_pipeline(root_path.to_owned()).unwrap();
     // watch_file(root_path.to_owned());
@@ -252,7 +252,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
         // &format!("rtspsrc name=src location=rtsp://test:test123@192.168.1.11:88/videoMain ! rtph264depay ! avdec_h264 ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
-        &format!("rtspsrc location=rtsp://test:test123@192.168.1.11:88/videoMain ! rtph264depay ! avdec_h264 ! videoconvert ! x264enc ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=5 message-forward=true", root_path, root_path)
+        &format!("videotestsrc name=src pattern=ball is_live=true ! x264enc ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=5 message-forward=true", root_path, root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
@@ -303,6 +303,19 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
                                 println!("DURATION: {}", duration/1000000000);
 
                                 println!("DURATION_SYS: {}", now - duration as i64);
+
+                                let msg_to_record_saving = SaveRecordFrameMessage {
+                                    cam_id: "1".to_string(),
+                                    timestamp: now as i64,
+                                    duration: duration as i64,
+                                    record_cloud: false,
+                                };
+            
+                                let record_saving_actor =
+                                    Distributor::named(format!("record_saving_actor_{}", "1".to_string()));
+                                record_saving_actor
+                                    .tell_one(msg_to_record_saving)
+                                    .expect("Can't send the message!");
 
                                 let path = Path::new(&path_name);
                                 let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
