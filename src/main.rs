@@ -79,13 +79,21 @@ fn main() {
         .expect("could not create a supervisor");
 
     RecordSavingActor::init(&parent_ref, "1".to_string()).unwrap();
-    PublisherActor::start(&parent_ref, "https://stage-hub-svc.lexray.com/box/hubs/setting".to_owned(), "1".to_owned());
+    let _ = PublisherActor::start(&parent_ref, "https://stage-hub-svc.lexray.com/box/hubs/setting".to_owned(), "1".to_owned());
 
 
     let root_path = "/home/zero";
     // let root_path = "/Users/shint1001/Desktop";
 
     start_pipeline(root_path.to_owned()).unwrap();
+    // publish_frame(root_path.to_owned());
+
+
+
+
+
+    
+
     // watch_file(root_path.to_owned());
     // insert();
     // pawn!(query_db(1636637808736768110, 1636957818736768110));
