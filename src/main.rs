@@ -25,8 +25,13 @@ use gst::prelude::ToSendValue;
 use ledb::Collection;
 use m3u8_rs::Playlist;
 use notify::{watcher, RecursiveMode, Watcher};
+use publisher_actor::EngineRequestPublish;
+use publisher_actor::PublisherActor;
+use record_saving_actor::RecordDocument;
+use record_saving_actor::get_record_db;
 use serde::Deserialize;
 use serde::Serialize;
+use serde_json::json;
 use sled::Db;
 use smol::Timer;
 use std::fs;
@@ -74,6 +79,7 @@ fn main() {
         .expect("could not create a supervisor");
 
     RecordSavingActor::init(&parent_ref, "1".to_string()).unwrap();
+    PublisherActor::start(&parent_ref, "https://stage-hub-svc.lexray.com/box/hubs/setting".to_owned(), "1".to_owned());
 
 
     let root_path = "/home/zero";
@@ -131,6 +137,8 @@ fn main() {
 
     Bastion::block_until_stopped();
 }
+
+
 
 fn watch_file(root_path: String) {
     // Create a channel to receive the events.
@@ -240,6 +248,53 @@ fn watch_file(root_path: String) {
                 }
             }
             Err(e) => println!("watch error: {:?}", e),
+        }
+    }
+}
+
+fn publish_frame(root_path: String) {
+    let date = "2022-04-23".to_owned();
+    let record_db =
+        get_record_db(date.clone(), "i".to_owned());
+
+    let filter = query!(@filter timestamp in 1653646400000000000..1654646400000000000);
+    let elements: Vec<RecordDocument> = record_db
+        .find(filter, Order::Primary(OrderKind::Asc))
+        .unwrap()
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap();
+
+    for ele in elements {
+        let file_url = format!("src/record/url/{}/{}/{}", date, "1", ele.timestamp);
+
+        match File::open(&file_url) {
+            Ok(mut f) => {
+                let metadata =
+                    fs::metadata(&file_url).expect("unable to read metadata");
+                let mut buffer = vec![0; metadata.len() as usize];
+                f.read(&mut buffer).expect("buffer overflow");
+                let msg = json!(
+                    {
+                        "camera_id": "1",
+                        "duration": ele.duration,
+                        "payload": buffer
+                    }
+                );
+
+                let msg = EngineRequestPublish {
+                    topic: format!("playback.{}.frames", "1"),
+                    payload: serde_json::to_vec(&msg).unwrap(),
+                };
+
+                let publish_actor = Distributor::named("publish_actor_1");
+
+                publish_actor
+                    .tell_one(msg)
+                    .expect("Can't send the message!");
+
+                drop(buffer);
+            },
+            Err(_) => {},
         }
     }
 }
