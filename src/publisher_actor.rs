@@ -48,7 +48,7 @@ impl PublisherActor {
                                     })
                                     .reconnect_callback(|| println!("reconnected"))
                                     .disconnect_callback(|| println!("disconnected"))
-                                    .connect(&url)
+                                    .connect("nats://demo.nats.io:4222")
                                     .await,
                             );
 
@@ -78,7 +78,7 @@ impl PublisherActor {
                                             })
                                             .reconnect_callback(|| println!("reconnected"))
                                             .disconnect_callback(|| println!("disconnected"))
-                                            .connect(&url)
+                                            .connect("nats://demo.nats.io:4222")
                                             .await;
 
                                             // c_client
@@ -107,33 +107,33 @@ impl PublisherActor {
                                     //publish
                                     .on_tell(|message: EngineRequestPublish, _sender| {
                                         //println!("{:?}", message.topic);
-                                        let payload: Value =
-                                            serde_json::from_slice(&message.payload).unwrap();
-                                        let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH)
-                                            {
-                                                Ok(n) => n.as_millis(),
-                                                Err(_) => panic!("SystemTime before UNIX EPOCH!"),
-                                            };
-                                        let timestampstr = payload["timestamp"].as_str().unwrap().to_string();                                                   
-                                        let timestamp =  timestampstr.parse::<u128>().unwrap();
+                                        // let payload: Value =
+                                        //     serde_json::from_slice(&message.payload).unwrap();
+                                        // let now = match SystemTime::now().duration_since(SystemTime::UNIX_EPOCH)
+                                        //     {
+                                        //         Ok(n) => n.as_millis(),
+                                        //         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
+                                        //     };
+                                        // let timestampstr = payload["timestamp"].as_str().unwrap().to_string();                                                   
+                                        // let timestamp =  timestampstr.parse::<u128>().unwrap();
                                         
-                                        let delay = now - timestamp;
-                                        if delay > 1000 {
+                                        // let delay = now - timestamp;
+                                        // if delay > 1000 {
 
-                                            warn!(
-                                                "[BEFORE PUBLISH][LongDelay] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}",
-                                                payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(),delay
-                                            );
+                                        //     warn!(
+                                        //         "[BEFORE PUBLISH][LongDelay] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}",
+                                        //         payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(),delay
+                                        //     );
 
-                                        }
-                                        else {
+                                        // }
+                                        // else {
 
-                                            info!(
-                                                "[BEFORE PUBLISH][OK] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}",
-                                                payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(),delay
-                                            );
+                                        //     info!(
+                                        //         "[BEFORE PUBLISH][OK] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}",
+                                        //         payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(),delay
+                                        //     );
 
-                                        }
+                                        // }
                                         
                                          if message.payload.len() <= 1024 * 1024 {
                                         run!(async move {
@@ -155,26 +155,25 @@ impl PublisherActor {
                                                         Err(_) => panic!("SystemTime before UNIX EPOCH!"),
                                                     };
                                                   
-                                                    let delay1 = now1 - now;
+                                                    // let delay1 = now1 - now;
 
-                                                    if delay1 > 1000 {
-                                                        warn!(
-                                                            "[Published][LongDelay] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}, Payload length: {}",
-                                                            payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(), delay1, message.payload.len()
-                                                        );
-                                                    }
-                                                    else {
+                                                    // if delay1 > 1000 {
+                                                    //     warn!(
+                                                    //         "[Published][LongDelay] Cam id: {}, Sequence: {}, Timestamp: {}, Delay: {}, Payload length: {}",
+                                                    //         payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(), delay1, message.payload.len()
+                                                    //     );
+                                                    // }
+                                                    // else {
 
-                                                        info!(
-                                                            "[Published][OK] Cam id: {} Sequence: {}, Timestamp: {}, Delay: {}, Payload length: {}",
-                                                            payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(), delay1, message.payload.len()
-                                                        );
+                                                    //     info!(
+                                                    //         "[Published][OK] Cam id: {} Sequence: {}, Timestamp: {}, Delay: {}, Payload length: {}",
+                                                    //         payload["cam_id"].as_str().unwrap().to_string(), payload["seq"], payload["timestamp"].as_str().unwrap().to_string(), delay1, message.payload.len()
+                                                    //     );
 
-                                                    }
-                                                    // println!(
-                                                    //     "count: {}",
-                                                    //     *sequence.lock().unwrap()
-                                                    // );
+                                                    // }
+                                                    println!(
+                                                        "PUBLISH SUCCESS",
+                                                    );
                                                     // *sequence.lock().unwrap() += 1;
                                                 }
                                                 Err(err) => {}

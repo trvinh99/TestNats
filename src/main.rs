@@ -42,6 +42,7 @@ use std::io::Write;
 use std::path::Path;
 use std::sync::mpsc::channel;
 use std::sync::Arc;
+use std::thread::sleep;
 use std::time::Duration;
 use std::time::SystemTime;
 use std::time::UNIX_EPOCH;
@@ -79,14 +80,16 @@ fn main() {
         .expect("could not create a supervisor");
 
     RecordSavingActor::init(&parent_ref, "1".to_string()).unwrap();
-    let _ = PublisherActor::start(&parent_ref, "https://stage-hub-svc.lexray.com/box/hubs/setting".to_owned(), "1".to_owned());
+    let _ = PublisherActor::start(&parent_ref, "https://stage-hub-svc.lexray.com/box/hubs/setting".to_owned(), "publish_actor_1".to_owned());
+
+    sleep(Duration::from_secs(1));
 
 
     let root_path = "/home/zero";
     // let root_path = "/Users/shint1001/Desktop";
 
-    start_pipeline(root_path.to_owned()).unwrap();
-    // publish_frame(root_path.to_owned());
+    // start_pipeline(root_path.to_owned()).unwrap();
+    publish_frame(root_path.to_owned());
 
 
 
@@ -263,17 +266,19 @@ fn watch_file(root_path: String) {
 fn publish_frame(root_path: String) {
     let date = "2022-04-23".to_owned();
     let record_db =
-        get_record_db(date.clone(), "i".to_owned());
+        get_record_db(date.clone(), "1".to_owned());
 
-    let filter = query!(@filter timestamp in 1653646400000000000..1654646400000000000);
+    let filter = query!(@filter timestamp in 1653646400000000000..1655656400000000000);
     let elements: Vec<RecordDocument> = record_db
         .find(filter, Order::Primary(OrderKind::Asc))
         .unwrap()
         .collect::<Result<Vec<_>, _>>()
         .unwrap();
 
+    println!("ELEMENTS: {:?}", elements);
+
     for ele in elements {
-        let file_url = format!("src/record/url/{}/{}/{}", date, "1", ele.timestamp);
+        let file_url = format!("{}/hls_cp/{}.ts",root_path, ele.timestamp);
 
         match File::open(&file_url) {
             Ok(mut f) => {
@@ -302,7 +307,7 @@ fn publish_frame(root_path: String) {
 
                 drop(buffer);
             },
-            Err(_) => {},
+            Err(e) => {println!("ERR: {:?}", e)},
         }
     }
 }
@@ -315,7 +320,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
         // &format!("rtspsrc name=src location=rtsp://test:test123@192.168.1.11:88/videoMain ! rtph264depay ! avdec_h264 ! videoconvert !  x264enc ! mpegtsmux ! multifilesink max-files=5 max-file-duration=5000000000 post-messages=true next-file=5 location={}/hls/ch%05d.ts", root_path)
 
-        &format!("videotestsrc name=src pattern=ball is_live=true ! x264enc ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/ch%05d.ts target-duration=5 message-forward=true", root_path, root_path)
+        &format!("videotestsrc name=src pattern=ball is_live=true ! x264enc ! hlssink2 playlist-location={}/m3u8/hlstest.m3u8 location={}/hls/%01d.ts target-duration=5 message-forward=true", root_path, root_path)
     )?;
     let pipeline = pipeline.downcast::<gst::Pipeline>().unwrap();
 
@@ -326,6 +331,8 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
     let mut last_pipeline_timestamp = 0;
 
     let pl_weak = ObjectExt::downgrade(&pipeline);
+
+    let mut count = 0;
 
     for msg in bus.iter_timed(gst::ClockTime::NONE) {
         use gst::MessageView;
@@ -357,7 +364,7 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
                             }
                             _ => {
-                                let path_name = structure.get::<String>("location").unwrap();
+                                // let path_name = structure.get::<String>("location").unwrap();
                                 let running_time = structure.get::<u64>("running-time").unwrap();
                                 println!("CLOSE RUNTIME: {}", running_time);
 
@@ -367,29 +374,45 @@ fn start_pipeline(root_path: String) -> Result<(), anyhow::Error> {
 
                                 println!("DURATION_SYS: {}", now - duration as i64);
 
-                                let msg_to_record_saving = SaveRecordFrameMessage {
-                                    cam_id: "1".to_string(),
-                                    timestamp: now as i64,
-                                    duration: duration as i64,
-                                    record_cloud: false,
-                                };
-            
-                                let record_saving_actor =
-                                    Distributor::named(format!("record_saving_actor_{}", "1".to_string()));
-                                record_saving_actor
-                                    .tell_one(msg_to_record_saving)
-                                    .expect("Can't send the message!");
+                                let file_name = format!("{}.ts", count.to_string());
+                                // let path = "0".to_owned() + &count_str;
+                                // println!("count: {}", count_str.len());
+                                // let file_name = format!("{}.ts", &path[count_str.len()..]);
+                                // let path = Path::new(&path_name);
+                                // let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+                                println!("filename: {}", file_name);
 
-                                let path = Path::new(&path_name);
-                                let filename = path.file_name().unwrap().to_str().unwrap().to_owned();
+                                match fs::copy(format!("{}/hls/{}", root_path, file_name), format!("{}/hls_cp/{}", root_path, file_name)) {
+                                    Ok(_) => {
+                                        
+                                        let timestamp = now - duration as i64;
+                                        match fs::rename(
+                                            format!("{}/hls_cp/{}", root_path, file_name),
+                                            format!("{}/hls_cp/{}.ts", root_path, timestamp),
+                                        )
+                                        {
+                                            Ok(_) => {
+                                                let msg_to_record_saving = SaveRecordFrameMessage {
+                                                    cam_id: "1".to_string(),
+                                                    timestamp,
+                                                    duration: duration as i64,
+                                                    record_cloud: false,
+                                                };
+                            
+                                                let record_saving_actor = 
+                                                    Distributor::named(format!("record_saving_actor_{}", "1".to_string()));
+                                                record_saving_actor
+                                                    .tell_one(msg_to_record_saving)
+                                                    .expect("Can't send the message!");
 
-                                let _ = fs::copy(path_name, format!("{}/hls_cp/{}", root_path, filename))
-                                    .unwrap();
-                                let _ = fs::rename(
-                                    format!("{}/hls_cp/{}", root_path, filename),
-                                    format!("{}/hls_cp/{}.ts", root_path, now - duration as i64),
-                                )
-                                .unwrap();
+                                                count += 1;
+                                            },
+                                            Err(e) => {println!("ERROR RENAME FILE: {:?}", e)},
+                                        };
+                                    },
+                                    Err(e) => {println!("ERROR COPY FILE: {:?}", e)},
+                                }
+                            
                             }
                         }
                     }
